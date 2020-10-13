@@ -1,0 +1,24 @@
+"0","library(tidyverse)"
+"0","online_shoppers_intention <- read_csv('/Users/User/datascidani2/_posts/2020-05-29-data-cleaning-with-r/online_shoppers_intention.csv')"
+"2","Parsed with column specification:
+cols(
+  Administrative = [32mcol_double()[39m,
+  Administrative_Duration = [32mcol_double()[39m,
+  Informational = [32mcol_double()[39m,
+  Informational_Duration = [32mcol_double()[39m,
+  ProductRelated = [32mcol_double()[39m,
+  ProductRelated_Duration = [32mcol_double()[39m,
+  BounceRates = [32mcol_double()[39m,
+  ExitRates = [32mcol_double()[39m,
+  PageValues = [32mcol_double()[39m,
+  SpecialDay = [32mcol_double()[39m,
+  Month = [31mcol_character()[39m,
+  OperatingSystems = [32mcol_double()[39m,
+  Browser = [32mcol_double()[39m,
+  Region = [32mcol_double()[39m,
+  TrafficType = [32mcol_double()[39m,
+  VisitorType = [31mcol_character()[39m,
+  Weekend = [33mcol_logical()[39m,
+  Revenue = [33mcol_logical()[39m
+)
+"

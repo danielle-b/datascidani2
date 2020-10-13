@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "Some additional details about the blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2020-10-13T10:13:43-04:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Data Sci Dani",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2020-10-13T10:13:44-04:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

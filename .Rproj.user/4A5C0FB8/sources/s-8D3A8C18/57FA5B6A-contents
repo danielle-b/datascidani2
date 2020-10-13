@@ -1,0 +1,145 @@
+---
+title: "Fundamentals of String Manipulation"
+categories:
+  - data science 
+  - programming
+  - R
+  - string manipulation
+description: |
+  String manipulation in R.
+author:
+  - name: Danielle Brantley
+    url: https://gist.github.com/danielle-b
+date: 02-21-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+In previous posts, I’ve worked with variables with numerical data. This post will focus on working on variables with character data. The data set that I am using for this post was posted on Tidy Tuesday’s [Github](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/readme.md). This data set comes from Spotify and provides information about popular songs and their genres. So let’s get started!
+
+### Subsetting a String
+
+In this lesson, I worked with a tidyverse package called **stringr**. The stringr package contains tools for combining, splitting, adding, and removing spaces from, and other performing other useful string data manipulations. Functions in the stringr package all begin with the prefix **str_** and RStudio’s autocomplete feature makes this package especially fun to work with!
+
+I’ll first discuss a function I learned can subset strings, **str_sub()**. The str_sub function takes a string, subsets it based on positions of characters within the string, and returns a new string containing only the characters between the specified positions. The string that’s returned includes the characters of the positions specified as well as those between them. All characters are included, even spaces.
+
+Let’s look at an example. I am working with the data frame called **spotify_songs** and I want to subset the **track_artist** variable and return a new vector consisting of the first nine letters of each artist. I indexed the track_artist variable to include only the first twenty artists. I then subset the variable from left to right by position with 1 and 9 representing the position numbers.
+
+```{r include=FALSE}
+library(tidyverse)
+spotify_songs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv')
+View(spotify_songs)
+tibble::as_tibble(spotify_songs)
+```
+
+```{r echo=TRUE}
+str_sub(spotify_songs$track_artist[1:10], 1, 9)
+```
+
+I can see here that the function resulted in a return of strings with only the characters between the specified positions.
+
+To subset the same **track_artist** variable from right to left by position, I use a minus sign (–) before the position number, like so:
+
+```{r echo=TRUE}
+str_sub(spotify_songs$track_artist[1:10], -9, -1)
+```
+
+Note that the sub_str() function is vectorized. I could apply it to a vector and it will return a new vector.
+
+### Splitting A String
+
+Another technique for subsetting strings is splitting strings using the **str_split()** function. Unlike the str_sub() function, the str_split() function is not dependent on position. The str_split() function is used to split a string into pieces. The place where the string is split is called the delimeter. The delimeter refers to a space, comma, another character or characters.
+
+Let’s look at what happens when I use the str_split() function to split the strings listed in the first example.
+
+```{r echo=TRUE}
+artist_match <-str_sub(spotify_songs$track_artist[1:6], 1, 9)
+str_split(artist_match, " ")
+artist_match[1:6]
+```
+
+From the photos, I can see that the string split occurred where there is a space. I can also see that by default the output is a list.
+
+I can use the **simplify = TRUE** argument to simplify the output into a matrix, like so:
+
+```{r echo=TRUE}
+artist_match_split <-str_split(artist_match, " ", simplify = TRUE)
+artist_match_split[1:6]
+```
+
+### Combining Strings
+
+The function for combining strings is called **str_c()**.
+
+I’ll use str_c() to combine multiple strings from my spotify_songs data frame into a single variable.
+
+Let’s see what happens when I combine the variables **track_name** and **track_artist** into one variable.
+
+```{r echo=TRUE}
+str_c(spotify_songs$track_name[1:6], spotify_songs$track_artist[1:6])
+```
+
+I can use the **sep=** argument within the str_c() function to specify characters to place between the strings I’m combining.
+
+```{r}
+str_c(spotify_songs$track_name[1:6], spotify_songs$track_artist[1:6], sep =" ")
+```
+
+### Padding A String
+
+This is where I deviated from DataQuest a bit. After reading this section of the lesson, I was a bit confused. So I decided to do some research and came across this [tidyverse documentation](https://stringr.tidyverse.org/reference/str_pad.html) describing how to pad a string.
+
+The stringr function, **str_pad()** lets me specify characters into an existing string to make it a specified length.
+
+The function takes as arguments:
+
+- The string you’re working with
+- The minimum width of padded strings
+- The side on which padding is added
+Single character padding (space is the default)
+- To better understand the str_pad() function and its arguments, I took this screenshot of the tidyverse documentation.
+
+![Stringr Documentation](documentation.png)
+
+I have a few examples where I experimented with padding strings.
+
+```{r echo=TRUE}
+str_pad("Zara Larsson", c(8, 16, 24))
+```
+
+```{r echo=TRUE}
+str_pad(c("Ed Sheeran", "Maroon 5", "Zara Larsson"), 10)
+```
+
+```{r echo=TRUE}
+rbind(
+  str_pad("Ed Sheeran", 20, "left"),
+  str_pad("Maroon 5", 20, "right"),
+  str_pad("Zara Larsson", 20, "both")
+)
+```
+
+I can check the length of the strings in my vector using the **str_length** function. The str_length function returns a vector containing the number of characters in each string.
+
+For example, I took the strings from one of my str_pad() functions and called the str_length() function on them, I got the following result.
+
+```{r echo=TRUE}
+str_length("Maroon 5")
+```
+
+```{r echo=TRUE}
+str_length("Ed Sheeran")
+```
+
+```{r echo=TRUE}
+str_length("Zara Larsson")
+```
+
+I can see that the “Ed Sheeran” string has 10 characters, the “Maroon 5” string also has 8 characters, and “Zara Larsson” has 12 characters.
+
+That just about covers it for string manipulation. This was a fun lesson! This lesson also marks the end of the Intermediate R Programming course in the Data Analyst in R track. I’m moving on to data visualization! Until next time…

@@ -1,0 +1,20 @@
+name: "datascidani2"
+title: "Data Sci Dani"
+description: |
+  Data Sci Dani is my journey through data science.
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Projects"
+      href: projects.html
+    - icon: fa-github
+      href: https://github.com/danielle-b
+    - icon: fa-linkedin
+      href: https://www.linkedin.com/in/daniellebrantley
+    - icon: fa-twitter
+      href: https://twitter.com/daniebrant
+output: distill::distill_article

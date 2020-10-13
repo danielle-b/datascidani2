@@ -1,0 +1,30 @@
+"0","library(tidyverse)"
+"0","oscars_2018 <-read_csv('/Users/User/datascidani2/_posts/2020-02-10-vectorized-functions/Big ML Oscars Dataset 2018.csv')"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  year = [32mcol_double()[39m,
+  duration = [32mcol_double()[39m,
+  rate = [32mcol_double()[39m,
+  metascore = [32mcol_double()[39m,
+  votes = [32mcol_double()[39m,
+  gross = [32mcol_double()[39m,
+  user_reviews = [32mcol_double()[39m,
+  critic_reviews = [32mcol_double()[39m,
+  popularity = [32mcol_double()[39m,
+  awards_wins = [32mcol_double()[39m,
+  awards_nominations = [32mcol_double()[39m,
+  Oscar_nominated = [32mcol_double()[39m,
+  Golden_Globes_won = [32mcol_double()[39m,
+  Golden_Globes_nominated = [32mcol_double()[39m,
+  BAFTA_won = [32mcol_double()[39m,
+  BAFTA_nominated = [32mcol_double()[39m,
+  Screen_Actors_Guild_won = [32mcol_double()[39m,
+  Screen_Actors_Guild_nominated = [32mcol_double()[39m,
+  Critics_Choice_won = [32mcol_double()[39m,
+  Critics_Choice_nominated = [32mcol_double()[39m
+  # ... with 36 more columns
+)
+"
+"2","See spec(...) for full column specifications.
+"

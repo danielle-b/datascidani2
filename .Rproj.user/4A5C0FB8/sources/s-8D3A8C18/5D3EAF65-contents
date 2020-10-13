@@ -1,0 +1,116 @@
+---
+title: "Custom Functions"
+categories:
+  - data science 
+  - programming
+  - R
+  - custom functions
+description: |
+  Custom functions in R.
+author:
+  - name: Danielle Brantley
+    url: https://gist.github.com/danielle-b
+date: 02-12-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+This post will go over DataQuest’s Writing Custom Functions lesson. I decided to continue with the movie-theme in honor of the Academy Awards that took place on Sunday. I will continue to use the data set from my previous vectorized functions post. The data set comes from [Kaggle](https://www.kaggle.com/kikun1234/big-ml-oscars-dataset-2018) and was composed by a Kaggle member with the user name of kikun1234. It explores award nominations of movies released between 2000-2018. Like I did in the last post, I loaded the tidyverse library and loaded the data set into a data frame called **oscars_2018**. 
+
+```{r include=FALSE}
+library(tidyverse)
+library(formatR)
+oscars_2018 <-read_csv('/Users/User/datascidani2/_posts/2020-02-12-custom-functions/Big ML Oscars Dataset 2018.csv')
+```
+
+So without further delay, let’s get started!
+
+There are times where base R functions and functions that are part of a package will not do. If I find myself copying and pasting the same blocks of code repeatedly to perform a task, it’s best to streamline my workflow and write a function. I learned that pre-written R functions are written in a complied language and have an R “wrapper” that I as a user interact with. With this DataQuest lesson, I gained a deeper understanding of how functions work.
+
+I want to begin with the components of an R function. In R, the components of a function consists of the following:
+
+- **Body**: The code inside the function.
+- **Arguments**: The list of inputs that control how the function is called.
+- **Environment**: The location where the function was created.
+
+Let me show you an example. As shown here, the name of this function is **multiply_2**. The name of the function should ideally describe what the function does. The **x** represents the data the function is being applied to, or the function argument. The **x * 2** represent the body of the function. In this case, I want to multiply the values of the popularity variable of my data set by 2. I then decided to save it to a vector called **double_popularity**. The value returned by a function will be whatever the output of the last line that got executed is. This happens by default.
+
+```{r echo=TRUE}
+multiply_2 <-function(x) {
+  x * 2
+}
+double_popularity<-multiply_2(x=oscars_2018$popularity)
+double_popularity[1:10]
+```
+
+In R, functions are objects. Once they are created, they are stored in the environment you created them in. The following screenshot shows me where the functions created in the global environment in R Studio.
+
+![Global Environment in R Studio](global_environment.jpg)
+
+DataQuest does a very good job of detailing how the local and global environment work when calling a function. Because I can’t say it better myself, I’ll just leave their explanation here:
+
+> “When you call a function, the function executes in its own local environment 
+>
+> which consists of a temporary copy of everything in the global environment plus
+>
+> whatever data was passed to the function as arguments. When the function  
+>
+> finishes executing, the returned value is placed in the environment you called
+>
+> the function in, and the function’s local environment is discarded.”
+
+I can call this function in a multiple ways: I could have done:
+
+- multiply_2(2)
+- multiply_2(x=2)
+
+However, here I decided to the **multiply_2** function on a vector. That would be the popularity variable of the **oscars_2018** data frame.
+
+### Writing Functions with Two Arguments As Arguments
+
+The example above is a function written with one argument. However, functions can take on multiple variables as arguments. There are some instances where a function requires multiple variables. Let’s say I wanted to calculate the averages of the **user_reviews** and **critic_reviews** variables in my data set. Then, add them together. I would write the following:
+
+```{r echo=TRUE}
+average_reviews <- function(x,y) {
+  mean(x) + mean(y)
+}
+
+user_critic_reviews <- average_reviews(x = oscars_2018$user_reviews, y=oscars_2018$critic_reviews)
+
+user_critic_reviews
+```
+
+As shown here, I assigned **x** to user_reviews and **y** to critic_reviews. I took the average of each variable, then added them together.
+
+### Writing Functions with More Than Two Arguments
+
+Functions can take any number of arguments. Here, I will demonstrate a function taking three arguments. Let’s say I wanted to write a function to calculate the sum of two numbers(x,y) and divide the sum by a third number(z). I’ll call these variables, x, y, and z respectively.
+
+- x will represent user_reviews
+- y will represent critic_reviews
+- z will represent metascore
+
+I want to add up the reviews for the The Lord of the Rings movie and divide the sum by the movie’s Metacritic score. I would write the following:
+
+```{r echo=TRUE}
+average_reviews_one<-function(x,y){
+  if (x+y > 0) {
+    mean(x) + mean(y)
+  }else {
+    0
+  }
+} 
+
+average_reviews_one(x=oscars_2018$user_reviews[5], y=oscars_2018$critic_reviews[5])
+```
+
+The number five represents the position the Lord of Rings movie is in my data set.
+
+This wraps up my writing custom functions post, I’ll admit that this was one of the more difficult posts to write in the beginning because I’m still wrapping head around the topic and the whole local/global environment concept.
+
+But I thank you taking the time to read my posts and be on the look out for my next post! Until next time…

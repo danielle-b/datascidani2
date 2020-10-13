@@ -1,0 +1,75 @@
+---
+title: "Packages I Learned about at R Conference NYC"
+categories:
+  - data science 
+  - programming
+  - R
+  - R conference
+description: |
+  Packages I learned about attending R Conference NYC.
+author:
+  - name: Danielle Brantley
+    url: https://gist.github.com/danielle-b
+date: 08-20-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The R Conference took place this past weekend August 14-15. The event, usually held in New York City was held virtually and it went rather smoothly. Jared, Amada and the rest of the Lander Analytics team did a great job putting together a great virtual experience.
+
+As an R newbie, I was blown away by the talks I watched. I continue to be amazed by the possibilities of R and how people from different fields are using the R language in their work.
+
+One of my favorite things about R are the packages and there were no shortage of packages at this conference. I tried to keep a list of packages that were mentioned but I probably failed as there were so many. I would love to try every package mentioned at this conference but for right now, I want to discuss a few that really interested me.
+
+1. **crosstalk**
+
+I first heard of the crosswalk package through Tom Mock’s talk on RMarkdown. I was very excited for this talk as I use RMarkdown pretty heavily and could use some cool tips and tricks. Crosstalk is a R package that adds on to the [HTMLwidgets](http://www.htmlwidgets.org/develop_intro.html) package. It provides the building blocks for HTMLwidgets to communicate with one another with or without Shiny. Basically this package allows for cross-widget interactivity.
+
+Read more on the {crosstalk} package [here](https://rstudio.github.io/crosstalk/).
+
+2. **tmap**
+
+This package was introduced to me during Emily Dodwell’s talk about visualizing spatiotemporal data. This package allows you to create thematic maps. The maps I saw in Emily’s talk were really cool and I’d like to one day create maps like those. At the end of her talk she recommended a book called *Geocomputation in R* that I’ll have to look into.
+
+Read more on the {tmap} package [here](https://github.com/mtennekes/tmap) and [here](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html).
+
+3. **widyr**
+
+We talk a lot about the importance of tidy data in the R community, particularly when dealing with the tidyverse. However, sometimes we may need to un-tidy the data to perform certain mathematical operations. This is where widyr comes in. Widyr is a package developed by David Robinson, Julia Siege and Kanishka Misra that un-tidys the dataset into a wide matrix, performs some processing, then re-tidys the dataset. As I learn more about math and stats in R, I hope to take advantage of this package.
+
+Read more on the {widyr} package [here](https://github.com/dgrtwo/widyr).
+
+4. **arrow**
+
+If you were to ask me how to load data in R about two months ago I would have told you about the readr package. I would have also shared that you can see the first and last parts of a dataset using the head() and tail() functions. Since that time however, I’ve been introduced to other ways to load data such as data.table, vroom and now arrow. The arrow package, created by Ursa Labs allows for the fast loading and processing of large data. In their talk, Wes McKinney and Dr. Neal Richardson showed us how much faster arrow was in comparison to read.csv or read_csv which I normally use to load data. As my datasets become larger though, I’ll start taking a look at arrow.
+
+Read more about the {arrow} package [here](https://arrow.apache.org/docs/r/).
+
+5. **funneljoin**
+
+Emily Robinson introduced the funneljoin package during her talk. Funneljoin allows you to do time-based joins to analyze a sequence of events. With this package you can analyze behavior funnels. Emily stated in her blog post, “If you work with data where you have events with their time and associated user, you probably have a problem funneljoin can help with.” One example Emily provided was an e-commerce site where you want to find out all the times an item was clicked on then added to the cart within 2 days. I’ve worked with online shoppers data in a past blog post and would like to try out this package using similar data sets.
+
+Read more about {funneljoin} [here](https://github.com/robinsones/funneljoin). You can also check out Emily’s blog post [here](https://hookedondata.org/introducing-the-funneljoin-package/).
+
+6. **bootstraplib**
+
+Once upon a time I took a front-end web development course. In addition to HTML, CSS and the little bit of Javascript and jQuery I learned, I also learned about Bootstrap and Sass. I even used a bootstrap theme for my website at one point! So when Dr. Jacqueline Nolis talked about using bootstraplib for her shiny website, I was all ears. Boostraplib is a package that provides tools for styling Shiny apps and RMarkdown documents using Bootstrap Sass. I do want to get into Shiny and I use already use RMarkdown so I’ll definitely want to experiment with this package.
+
+Read more about {bootstraplib} package [here](https://rstudio.github.io/bootstraplib/).
+
+7. **fable**
+
+The last R package I want to mention on this list is fable. Fable provides a collection of time series forecasting models. According to the fable's READ.me on Github, these models work within the fable framework, which provides the tools to evaluate, visualize, and combine models in a workflow consistent with the tidyverse. Dr. Rob J. Hyndman, who is one of the authors of the fable package, did an awesome talk discussing ensemble forecasts where he used this package. I am still very new when it comes to time series and forecasting models. I mean, I know what they are but have yet to build any sort of model. I hope to change that soon especially now that I know about this package.
+
+Read more on the {fable} package [here](https://github.com/tidyverts/fable).
+
+I learned so much during my attendance of the R conference. There are so many things I want to try. I left this conference feeling inspired to keep going and keep learning R. One day I hope to do a talk and build something that inspires someone like the talks at this conference inspired me. Until next time…
+
+
+
