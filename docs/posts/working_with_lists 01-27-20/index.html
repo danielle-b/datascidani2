@@ -84,38 +84,38 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Data Sci Dani: Welcome to Data Sci Dani</title>
+<title>Data Sci Dani: Working With Lists</title>
 
-<meta property="description" itemprop="description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="description" itemprop="description" content="Working with lists in R."/>
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2020-01-07"/>
-<meta property="article:created" itemprop="dateCreated" content="2020-01-07"/>
+<meta property="article:published" itemprop="datePublished" content="2020-01-27"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-01-27"/>
 <meta name="article:author" content="Danielle Brantley"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
+<meta property="og:title" content="Data Sci Dani: Working With Lists"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="og:description" content="Working with lists in R."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Data Sci Dani"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
-<meta property="twitter:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="twitter:title" content="Data Sci Dani: Working With Lists"/>
+<meta property="twitter:description" content="Working with lists in R."/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to Data Sci Dani"]},{"type":"character","attributes":{},"value":["data science","programming","learning","statistics"]},{"type":"character","attributes":{},"value":["\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["01-07-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Working With Lists"]},{"type":"character","attributes":{},"value":["data science","data types","programming","R","lists"]},{"type":"character","attributes":{},"value":["Working with lists in R."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["01-27-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["music_event_title.png","performances.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -1808,7 +1808,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Welcome to Data Sci Dani","description":"\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-01-07T00:00:00.000-05:00","citationText":"Brantley, 2020"}
+{"title":"Working With Lists","description":"Working with lists in R.","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-01-27T00:00:00.000-05:00","citationText":"Brantley, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1841,27 +1841,520 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Welcome to Data Sci Dani</h1>
+<h1>Working With Lists</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
   <a href="../../index.html#category:data_science" class="dt-tag">data science</a>
+  <a href="../../index.html#category:data_types" class="dt-tag">data types</a>
   <a href="../../index.html#category:programming" class="dt-tag">programming</a>
-  <a href="../../index.html#category:learning" class="dt-tag">learning</a>
-  <a href="../../index.html#category:statistics" class="dt-tag">statistics</a>
+  <a href="../../index.html#category:R" class="dt-tag">R</a>
+  <a href="../../index.html#category:lists" class="dt-tag">lists</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p>“One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.”— Henry Ford</p>
+<p>Working with lists in R.</p>
 </div>
 
 <div class="d-byline">
   Danielle Brantley <a href="https://gist.github.com/danielle-b" class="uri">https://gist.github.com/danielle-b</a> 
   
-<br/>01-07-2020
+<br/>01-27-2020
 </div>
 
 <div class="d-article">
-<p>I’ve decided to face my fear and enter the world of data science. I’ve always admired data visualizations and have long been interested in how data is used to make business decisions. However, the idea of programming combined with statistics has always intimidated me a bit. My goal is to become a data analyst (and eventually a data scientist) by strengthening my programming and statistical skills. I’ll share what I’m learning; I’ll discuss projects, books/articles I’ve read and really any thoughts I have pertaining to data science.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<style>
+    pre code {
+      white-space: pre-wrap;
+    }
+</style>
+<p>The next topic I learned about in the DataQuest Data Analyst in R track is a list. I decided that in honor of music’s biggest night, also known the Grammys that took place last night, the examples in this post are going to be music focused. So without further ado, let’s get it started!</p>
+<p>DataQuest defines lists as specialized vectors that contain multiple types of objects. These objects can be different data structures including single data elements, vectors, and matrices. So why lists? Storing objects in lists allow me to make use of some of R’s features for performing the same operation on each object in the list. The list is created using the list() function, like so:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_genres</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='st'>"jazz"</span>, <span class='st'>"reggae"</span>, <span class='st'>"pop"</span>, <span class='st'>"hip hop"</span>, <span class='st'>"R&amp;B"</span>, <span class='st'>"rock"</span>, <span class='st'>"country"</span><span class='op'>)</span>
+<span class='va'>music_genres</span>
+</code></pre>
+</div>
+<pre><code>[[1]]
+[1] &quot;jazz&quot;
+
+[[2]]
+[1] &quot;reggae&quot;
+
+[[3]]
+[1] &quot;pop&quot;
+
+[[4]]
+[1] &quot;hip hop&quot;
+
+[[5]]
+[1] &quot;R&amp;B&quot;
+
+[[6]]
+[1] &quot;rock&quot;
+
+[[7]]
+[1] &quot;country&quot;</code></pre>
+</div>
+<p>Note that the numbers one through seven tell you the order of the objects stored in this list.</p>
+<p>To give you a better idea of how lists in R work, I’ll give another example. In this example, I have some data gathered for the Grammys. I want to store this information in a list.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event_title</span> <span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"The 2020 Grammys"</span><span class='op'>)</span>
+<span class='va'>music_event_description</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Music's biggest night!"</span><span class='op'>)</span>
+<span class='va'>music_event_location</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Los Angeles"</span>, <span class='st'>"Staples Center"</span><span class='op'>)</span>
+<span class='va'>music_event_day</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Sunday"</span><span class='op'>)</span>
+<span class='va'>music_event_time</span> <span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"8:00 pm Eastern"</span>, <span class='st'>"5:00 pm Pacific"</span><span class='op'>)</span>
+<span class='va'>big_categories</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Album of the Year"</span>, <span class='st'>"Song of the Year"</span>, <span class='st'>"Record of the Year"</span>, <span class='st'>"Best New Artist"</span><span class='op'>)</span>
+<span class='va'>winners</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Billie Ellish"</span>, <span class='st'>"Nipsey Hussle"</span>, <span class='st'>"Lizzo"</span>, <span class='st'>"Tyler the Creator"</span>, <span class='st'>"Beyonce"</span>, <span class='st'>"PJ Morton"</span><span class='op'>)</span>
+<span class='va'>performances</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Ariana Grande"</span>, <span class='st'>"Demi Lovato"</span>, <span class='st'>"Usher"</span>,<span class='st'>"Nipsey Hussle Tribute"</span>, <span class='st'>"Gary Clark Jr"</span>, <span class='st'>"Nas"</span>, <span class='st'>"Lil Nas X"</span> <span class='op'>)</span>
+<span class='va'>most_nominations</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>12</span>, <span class='fl'>11</span>, <span class='fl'>10</span>, <span class='fl'>9</span><span class='op'>)</span>
+
+<span class='va'>music_event_meeting</span> <span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>rbind</a></span><span class='op'>(</span><span class='va'>music_event_day</span>, <span class='va'>music_event_time</span><span class='op'>)</span>
+<span class='va'>music_event</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='va'>music_event_title</span>, <span class='va'>music_event_description</span>, <span class='va'>music_event_location</span>, <span class='va'>music_event_meeting</span>, <span class='va'>big_categories</span>, <span class='va'>winners</span>, <span class='va'>performances</span>, <span class='va'>most_nominations</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p>I call this element music_event which will give me a list that looks like this.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event</span>
+</code></pre>
+</div>
+<pre><code>[[1]]
+[1] &quot;The 2020 Grammys&quot;
+
+[[2]]
+[1] &quot;Music&#39;s biggest night!&quot;
+
+[[3]]
+[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;
+
+[[4]]
+                 [,1]              [,2]             
+music_event_day  &quot;Sunday&quot;          &quot;Sunday&quot;         
+music_event_time &quot;8:00 pm Eastern&quot; &quot;5:00 pm Pacific&quot;
+
+[[5]]
+[1] &quot;Album of the Year&quot;  &quot;Song of the Year&quot;   &quot;Record of the Year&quot;
+[4] &quot;Best New Artist&quot;   
+
+[[6]]
+[1] &quot;Billie Ellish&quot;     &quot;Nipsey Hussle&quot;     &quot;Lizzo&quot;            
+[4] &quot;Tyler the Creator&quot; &quot;Beyonce&quot;           &quot;PJ Morton&quot;        
+
+[[7]]
+[1] &quot;Ariana Grande&quot;         &quot;Demi Lovato&quot;          
+[3] &quot;Usher&quot;                 &quot;Nipsey Hussle Tribute&quot;
+[5] &quot;Gary Clark Jr&quot;         &quot;Nas&quot;                  
+[7] &quot;Lil Nas X&quot;            
+
+[[8]]
+[1] 12 11 10  9</code></pre>
+</div>
+<h2 id="naming-lists">Naming Lists</h2>
+<p>Similar to naming elements in a vector, I can assign names to objects in a list using the <strong>names()</strong> function.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event_names</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"music_event_title"</span>, <span class='st'>"music_event_description"</span>, <span class='st'>"music_event_location"</span>, <span class='st'>"music_event_meeting"</span>, <span class='st'>"big_categories"</span>, <span class='st'>"winners"</span>, <span class='st'>"performances"</span>, <span class='st'>"most_nominations"</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='va'>music_event</span><span class='op'>)</span><span class='op'>&lt;-</span><span class='va'>music_event_names</span>
+</code></pre>
+</div>
+</div>
+<p>Once again, I’ll call <strong>music_event</strong> and my list’s elements will have names.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event</span>
+</code></pre>
+</div>
+<pre><code>$music_event_title
+[1] &quot;The 2020 Grammys&quot;
+
+$music_event_description
+[1] &quot;Music&#39;s biggest night!&quot;
+
+$music_event_location
+[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;
+
+$music_event_meeting
+                 [,1]              [,2]             
+music_event_day  &quot;Sunday&quot;          &quot;Sunday&quot;         
+music_event_time &quot;8:00 pm Eastern&quot; &quot;5:00 pm Pacific&quot;
+
+$big_categories
+[1] &quot;Album of the Year&quot;  &quot;Song of the Year&quot;   &quot;Record of the Year&quot;
+[4] &quot;Best New Artist&quot;   
+
+$winners
+[1] &quot;Billie Ellish&quot;     &quot;Nipsey Hussle&quot;     &quot;Lizzo&quot;            
+[4] &quot;Tyler the Creator&quot; &quot;Beyonce&quot;           &quot;PJ Morton&quot;        
+
+$performances
+[1] &quot;Ariana Grande&quot;         &quot;Demi Lovato&quot;          
+[3] &quot;Usher&quot;                 &quot;Nipsey Hussle Tribute&quot;
+[5] &quot;Gary Clark Jr&quot;         &quot;Nas&quot;                  
+[7] &quot;Lil Nas X&quot;            
+
+$most_nominations
+[1] 12 11 10  9</code></pre>
+</div>
+<p>If you call the names() function in a list without assigned names, the function will return <strong>NULL</strong>. This also applies to vectors.</p>
+<h2 id="indexing-lists">Indexing Lists</h2>
+<p>Just as I did with vectors and matrices, I can also index lists. DataQuest tells me there are two different indexing operations used on lists:</p>
+<ul>
+<li>single brackets to return a list of selected elements []</li>
+<li>double brackets to return a single element [[]]</li>
+</ul>
+<p>For example, I want to extract the third object in my list. I would type the following:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event</span><span class='op'>[</span><span class='fl'>3</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>$music_event_location
+[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/typeof.html'>typeof</a></span><span class='op'>(</span><span class='va'>music_event</span><span class='op'>[</span><span class='fl'>3</span><span class='op'>]</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;list&quot;</code></pre>
+</div>
+<p>Note that in this example, I use the <strong>typeof()</strong> function. This function allows me to check the data type of an object. When I checked the data type for this object, I see that it is a list.</p>
+<p>I could also use the following methods to return a list of selected items.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event</span><span class='op'>[</span><span class='st'>"music_event_location"</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>$music_event_location
+[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1</span>,<span class='fl'>3</span><span class='op'>)</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>$music_event_title
+[1] &quot;The 2020 Grammys&quot;
+
+$music_event_location
+[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;</code></pre>
+</div>
+<p>Now I’m going to use double brackets to return a single element. Again, I want extract the third object in my list. I’ll do the following:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event</span><span class='op'>[[</span><span class='fl'>3</span><span class='op'>]</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/typeof.html'>typeof</a></span><span class='op'>(</span><span class='va'>music_event</span><span class='op'>[[</span><span class='fl'>3</span><span class='op'>]</span><span class='op'>]</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;character&quot;</code></pre>
+</div>
+<p>Note that when using the typeof() function to check the data type of this object, I see that it is a character data type.</p>
+<p>I could also use the following ways to return a single element.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event</span><span class='op'>[[</span><span class='st'>"music_event_location"</span><span class='op'>]</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event</span><span class='op'>$</span><span class='st'>"music_event_location"</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;</code></pre>
+</div>
+<p>To return a value contained in a list element, I could do this:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event</span><span class='op'>[[</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>3</span>,<span class='fl'>2</span><span class='op'>)</span><span class='op'>]</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;Staples Center&quot;</code></pre>
+</div>
+<h2 id="manipulating-lists">Manipulating Lists</h2>
+<h3 id="modifying-list-elements">Modifying List Elements</h3>
+<p>I can index lists to change specific list elements. Recall the element in <strong>music_event_title:</strong></p>
+<figure>
+<img src="music_event_title.png" alt="Title of Music Event" /><figcaption>Title of Music Event</figcaption>
+</figure>
+<p>As you can see the “The 2020 Grammys” is the element in music_event_title. I want to change this element to the official title of the Grammys ceremony. I would write it like this:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event</span><span class='op'>[[</span><span class='fl'>1</span><span class='op'>]</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='st'>"The 62nd Annual Grammy Awards"</span>
+<span class='va'>music_event</span>
+</code></pre>
+</div>
+<pre><code>$music_event_title
+[1] &quot;The 62nd Annual Grammy Awards&quot;
+
+$music_event_description
+[1] &quot;Music&#39;s biggest night!&quot;
+
+$music_event_location
+[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;
+
+$music_event_meeting
+                 [,1]              [,2]             
+music_event_day  &quot;Sunday&quot;          &quot;Sunday&quot;         
+music_event_time &quot;8:00 pm Eastern&quot; &quot;5:00 pm Pacific&quot;
+
+$big_categories
+[1] &quot;Album of the Year&quot;  &quot;Song of the Year&quot;   &quot;Record of the Year&quot;
+[4] &quot;Best New Artist&quot;   
+
+$winners
+[1] &quot;Billie Ellish&quot;     &quot;Nipsey Hussle&quot;     &quot;Lizzo&quot;            
+[4] &quot;Tyler the Creator&quot; &quot;Beyonce&quot;           &quot;PJ Morton&quot;        
+
+$performances
+[1] &quot;Ariana Grande&quot;         &quot;Demi Lovato&quot;          
+[3] &quot;Usher&quot;                 &quot;Nipsey Hussle Tribute&quot;
+[5] &quot;Gary Clark Jr&quot;         &quot;Nas&quot;                  
+[7] &quot;Lil Nas X&quot;            
+
+$most_nominations
+[1] 12 11 10  9</code></pre>
+</div>
+<p>I would first index the element I want to replace, then type its replacement. When I called the music_event list, you can see that the title has changed.</p>
+<p>Let’s do another example. Let’s look at the <strong>performances</strong> element.</p>
+<figure>
+<img src="performances.png" alt="Some of the performers at the Grammys in 2020" /><figcaption>Some of the performers at the Grammys in 2020</figcaption>
+</figure>
+<p>Let’s say I wanted to replace Demi Lovato with H.E.R. I would write the following:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event</span><span class='op'>[[</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>7.2</span><span class='op'>)</span><span class='op'>]</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='st'>"H.E.R."</span>
+<span class='va'>music_event</span><span class='op'>[</span><span class='fl'>7</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>$performances
+[1] &quot;H.E.R.&quot;</code></pre>
+</div>
+<h2 id="adding-elements-to-a-list">Adding Elements to a List</h2>
+<p>I could also add elements to a list. Let’s say I wanted to add an historic event that took place at last night’s Grammys. I can create an element called <strong>music_event_history</strong> add it to my list. When I call the music_event list, the new element is added.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event_history</span> <span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Billie Ellish is the youngest person to take home awards in each of the four major categories."</span><span class='op'>)</span>
+<span class='va'>music_event</span><span class='op'>[[</span><span class='fl'>9</span><span class='op'>]</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='va'>music_event_history</span>
+<span class='va'>music_event</span>
+</code></pre>
+</div>
+<pre><code>$music_event_title
+[1] &quot;The 62nd Annual Grammy Awards&quot;
+
+$music_event_description
+[1] &quot;Music&#39;s biggest night!&quot;
+
+$music_event_location
+[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;
+
+$music_event_meeting
+                 [,1]              [,2]             
+music_event_day  &quot;Sunday&quot;          &quot;Sunday&quot;         
+music_event_time &quot;8:00 pm Eastern&quot; &quot;5:00 pm Pacific&quot;
+
+$big_categories
+[1] &quot;Album of the Year&quot;  &quot;Song of the Year&quot;   &quot;Record of the Year&quot;
+[4] &quot;Best New Artist&quot;   
+
+$winners
+[1] &quot;Billie Ellish&quot;     &quot;Nipsey Hussle&quot;     &quot;Lizzo&quot;            
+[4] &quot;Tyler the Creator&quot; &quot;Beyonce&quot;           &quot;PJ Morton&quot;        
+
+$performances
+[1] &quot;H.E.R.&quot;
+
+$most_nominations
+[1] 12 11 10  9
+
+[[9]]
+[1] &quot;Billie Ellish is the youngest person to take home awards in each of the four major categories.&quot;</code></pre>
+</div>
+<p>I could also do it this way and get the same result.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_event</span><span class='op'>[[</span><span class='st'>"music_event_history"</span><span class='op'>]</span><span class='op'>]</span> <span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Billie Ellish is the youngest person to take home awards in each of the four major categories."</span><span class='op'>)</span>
+<span class='va'>music_event</span>
+</code></pre>
+</div>
+<pre><code>$music_event_title
+[1] &quot;The 62nd Annual Grammy Awards&quot;
+
+$music_event_description
+[1] &quot;Music&#39;s biggest night!&quot;
+
+$music_event_location
+[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;
+
+$music_event_meeting
+                 [,1]              [,2]             
+music_event_day  &quot;Sunday&quot;          &quot;Sunday&quot;         
+music_event_time &quot;8:00 pm Eastern&quot; &quot;5:00 pm Pacific&quot;
+
+$big_categories
+[1] &quot;Album of the Year&quot;  &quot;Song of the Year&quot;   &quot;Record of the Year&quot;
+[4] &quot;Best New Artist&quot;   
+
+$winners
+[1] &quot;Billie Ellish&quot;     &quot;Nipsey Hussle&quot;     &quot;Lizzo&quot;            
+[4] &quot;Tyler the Creator&quot; &quot;Beyonce&quot;           &quot;PJ Morton&quot;        
+
+$performances
+[1] &quot;H.E.R.&quot;
+
+$most_nominations
+[1] 12 11 10  9
+
+[[9]]
+[1] &quot;Billie Ellish is the youngest person to take home awards in each of the four major categories.&quot;
+
+$music_event_history
+[1] &quot;Billie Ellish is the youngest person to take home awards in each of the four major categories.&quot;</code></pre>
+</div>
+<h2 id="combining-lists">Combining Lists</h2>
+<p>I can combine lists too. Let’s recall the two lists I made earlier.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_genres</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='st'>"jazz"</span>, <span class='st'>"reggae"</span>, <span class='st'>"pop"</span>, <span class='st'>"hip hop"</span>, <span class='st'>"R&amp;B"</span>, <span class='st'>"rock"</span>, <span class='st'>"country"</span><span class='op'>)</span>
+
+<span class='va'>music_event</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='va'>music_event_title</span>, <span class='va'>music_event_description</span>, <span class='va'>music_event_location</span>, <span class='va'>music_event_meeting</span>, <span class='va'>big_categories</span>, <span class='va'>winners</span>, <span class='va'>performances</span>, <span class='va'>most_nominations</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p>When I combine the lists, I can see that the lists objects are combined into one list.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>music_night</span> <span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='va'>music_genres</span>, <span class='va'>music_event</span><span class='op'>)</span>
+<span class='va'>music_night</span>
+</code></pre>
+</div>
+<pre><code>[[1]]
+[1] &quot;jazz&quot;
+
+[[2]]
+[1] &quot;reggae&quot;
+
+[[3]]
+[1] &quot;pop&quot;
+
+[[4]]
+[1] &quot;hip hop&quot;
+
+[[5]]
+[1] &quot;R&amp;B&quot;
+
+[[6]]
+[1] &quot;rock&quot;
+
+[[7]]
+[1] &quot;country&quot;
+
+[[8]]
+[1] &quot;The 2020 Grammys&quot;
+
+[[9]]
+[1] &quot;Music&#39;s biggest night!&quot;
+
+[[10]]
+[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;
+
+[[11]]
+                 [,1]              [,2]             
+music_event_day  &quot;Sunday&quot;          &quot;Sunday&quot;         
+music_event_time &quot;8:00 pm Eastern&quot; &quot;5:00 pm Pacific&quot;
+
+[[12]]
+[1] &quot;Album of the Year&quot;  &quot;Song of the Year&quot;   &quot;Record of the Year&quot;
+[4] &quot;Best New Artist&quot;   
+
+[[13]]
+[1] &quot;Billie Ellish&quot;     &quot;Nipsey Hussle&quot;     &quot;Lizzo&quot;            
+[4] &quot;Tyler the Creator&quot; &quot;Beyonce&quot;           &quot;PJ Morton&quot;        
+
+[[14]]
+[1] &quot;Ariana Grande&quot;         &quot;Demi Lovato&quot;          
+[3] &quot;Usher&quot;                 &quot;Nipsey Hussle Tribute&quot;
+[5] &quot;Gary Clark Jr&quot;         &quot;Nas&quot;                  
+[7] &quot;Lil Nas X&quot;            
+
+[[15]]
+[1] 12 11 10  9</code></pre>
+</div>
+<h2 id="nested-lists">Nested Lists</h2>
+<p>Finally for this post, I’ll cover nested lists. Nested Lists are lists inside of lists. Let’s take the previous example. What if instead of combining lists, I want to create a lists of lists. I would write:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>grammy_night_list</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>music_genres<span class='op'>=</span> <span class='va'>music_genres</span>, music_event <span class='op'>=</span> <span class='va'>music_event</span><span class='op'>)</span>
+<span class='va'>grammy_night_list</span>
+</code></pre>
+</div>
+<pre><code>$music_genres
+$music_genres[[1]]
+[1] &quot;jazz&quot;
+
+$music_genres[[2]]
+[1] &quot;reggae&quot;
+
+$music_genres[[3]]
+[1] &quot;pop&quot;
+
+$music_genres[[4]]
+[1] &quot;hip hop&quot;
+
+$music_genres[[5]]
+[1] &quot;R&amp;B&quot;
+
+$music_genres[[6]]
+[1] &quot;rock&quot;
+
+$music_genres[[7]]
+[1] &quot;country&quot;
+
+
+$music_event
+$music_event[[1]]
+[1] &quot;The 2020 Grammys&quot;
+
+$music_event[[2]]
+[1] &quot;Music&#39;s biggest night!&quot;
+
+$music_event[[3]]
+[1] &quot;Los Angeles&quot;    &quot;Staples Center&quot;
+
+$music_event[[4]]
+                 [,1]              [,2]             
+music_event_day  &quot;Sunday&quot;          &quot;Sunday&quot;         
+music_event_time &quot;8:00 pm Eastern&quot; &quot;5:00 pm Pacific&quot;
+
+$music_event[[5]]
+[1] &quot;Album of the Year&quot;  &quot;Song of the Year&quot;   &quot;Record of the Year&quot;
+[4] &quot;Best New Artist&quot;   
+
+$music_event[[6]]
+[1] &quot;Billie Ellish&quot;     &quot;Nipsey Hussle&quot;     &quot;Lizzo&quot;            
+[4] &quot;Tyler the Creator&quot; &quot;Beyonce&quot;           &quot;PJ Morton&quot;        
+
+$music_event[[7]]
+[1] &quot;Ariana Grande&quot;         &quot;Demi Lovato&quot;          
+[3] &quot;Usher&quot;                 &quot;Nipsey Hussle Tribute&quot;
+[5] &quot;Gary Clark Jr&quot;         &quot;Nas&quot;                  
+[7] &quot;Lil Nas X&quot;            
+
+$music_event[[8]]
+[1] 12 11 10  9</code></pre>
+</div>
+<p>This resulting list contains my two lists, <strong>music_genres</strong> and <strong>music_events</strong> as objects.</p>
+<p>This concludes my lesson in lists in R! I had a lot of fun using Grammy data for this post. Until next time..</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

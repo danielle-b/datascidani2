@@ -84,38 +84,38 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Data Sci Dani: Welcome to Data Sci Dani</title>
+<title>Data Sci Dani: Working With Data Frames</title>
 
-<meta property="description" itemprop="description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="description" itemprop="description" content="Working with data frames in R."/>
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2020-01-07"/>
-<meta property="article:created" itemprop="dateCreated" content="2020-01-07"/>
+<meta property="article:published" itemprop="datePublished" content="2020-01-30"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-01-30"/>
 <meta name="article:author" content="Danielle Brantley"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
+<meta property="og:title" content="Data Sci Dani: Working With Data Frames"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="og:description" content="Working with data frames in R."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Data Sci Dani"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
-<meta property="twitter:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="twitter:title" content="Data Sci Dani: Working With Data Frames"/>
+<meta property="twitter:description" content="Working with data frames in R."/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to Data Sci Dani"]},{"type":"character","attributes":{},"value":["data science","programming","learning","statistics"]},{"type":"character","attributes":{},"value":["\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["01-07-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Working With Data Frames"]},{"type":"character","attributes":{},"value":["data science","data types","programming","R","data frames"]},{"type":"character","attributes":{},"value":["Working with data frames in R."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["01-30-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["draft-age.png","import-screen.png","index-dataframe-method-3.png","install_load_packages.png","NBA_player_of_the_week.csv","open-file.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -1808,7 +1808,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Welcome to Data Sci Dani","description":"\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-01-07T00:00:00.000-05:00","citationText":"Brantley, 2020"}
+{"title":"Working With Data Frames","description":"Working with data frames in R.","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-01-30T00:00:00.000-05:00","citationText":"Brantley, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1841,27 +1841,398 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Welcome to Data Sci Dani</h1>
+<h1>Working With Data Frames</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
   <a href="../../index.html#category:data_science" class="dt-tag">data science</a>
+  <a href="../../index.html#category:data_types" class="dt-tag">data types</a>
   <a href="../../index.html#category:programming" class="dt-tag">programming</a>
-  <a href="../../index.html#category:learning" class="dt-tag">learning</a>
-  <a href="../../index.html#category:statistics" class="dt-tag">statistics</a>
+  <a href="../../index.html#category:R" class="dt-tag">R</a>
+  <a href="../../index.html#category:data_frames" class="dt-tag">data frames</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p>“One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.”— Henry Ford</p>
+<p>Working with data frames in R.</p>
 </div>
 
 <div class="d-byline">
   Danielle Brantley <a href="https://gist.github.com/danielle-b" class="uri">https://gist.github.com/danielle-b</a> 
   
-<br/>01-07-2020
+<br/>01-30-2020
 </div>
 
 <div class="d-article">
-<p>I’ve decided to face my fear and enter the world of data science. I’ve always admired data visualizations and have long been interested in how data is used to make business decisions. However, the idea of programming combined with statistics has always intimidated me a bit. My goal is to become a data analyst (and eventually a data scientist) by strengthening my programming and statistical skills. I’ll share what I’m learning; I’ll discuss projects, books/articles I’ve read and really any thoughts I have pertaining to data science.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<style>
+    pre code {
+      white-space: pre-wrap;
+    }
+</style>
+<p>Basketball has been heavy on mind lately. One reason being the All the Smoke podcast that I listen to with Matt Barnes and Stephen Jackson every week. I’ve been listening to the podcast since day one. Another reason has been the recent passing of Kobe Bryant, his daughter Gianna and the seven other lives that were taken in that helicopter accident. When I think of Kobe, I think about my brother and the kids I went to school with. They would shout ‘KOBE’ anytime they threw something.</p>
+<p>Because of people like my brother, like those kids I went to school with, I decided to go with a basketball theme with this post. I wanted to shed light on some of the players that Kobe inspired and some that maybe inspired him. The data set that I will use for this blog post was posted on <a href="https://www.kaggle.com/jacobbaruch/nba-player-of-the-week/data">Kaggle</a> by Jason Baruch. Baruch created the NBA Player of the Week data set that analyzes player of the week data from 1979-80 season to the present. I decided to download the csv and play around a bit. With that said, let’s get into data frames in R.</p>
+<p><strong>Data frames</strong> are a list of vectors of equal length. They can contain multiple data types and they are probably the most common data structure in R. Not only did I learn about data frames but I learned about some R packages that makes doing data science with data frames efficient.</p>
+<h2 id="installing-and-loading-packages">Installing and Loading Packages</h2>
+<p>The first thing I did as part of the DataQuest lesson was to install the <strong>readr</strong> package, which is part of the <strong>tidyverse</strong>. Readr is designed to improve data science workflow. DataQuest gives me a few ways that readr does this:</p>
+<ul>
+<li><strong>Speed:</strong> Importing larger data files with readr functions is generally faster than using base R functions. By the way, base R is just the basic software that comes with the R programming language.</li>
+<li><strong>Code reproducibility:</strong> While base R function behavior depends in part on your operating system and environment variables, this is not the case for readr. When you use readr to import files, code that works on your computer will work on someone else’s.</li>
+<li><strong>Consistency:</strong> The readr package shares a common syntax and design philosophy with other tidyverse packages that we’ll introduce in upcoming courses.</li>
+</ul>
+<p>After installing readr, I loaded the package using the <strong>library</strong> function.</p>
+<figure>
+<img src="install_load_packages.png" alt="Installing readr package" /><figcaption>Installing readr package</figcaption>
+</figure>
+<h2 id="importing-data-with-r">Importing Data with R</h2>
+<p>RStudio (the IDE I’ve been using in my posts) has an option to import data. To do this I went to <strong>File -&gt; Import Dataset -&gt; From Text(readr)</strong>. This leads to a screen that prompts me type a file name or URL. However, I decided to click on <strong>Browse</strong> which leads me to import a document. When I imported my csv that I downloaded from Kaggle, this is what I get:</p>
+<figure>
+<img src="import-screen.png" alt="Importing dataset into RStudio" /><figcaption>Importing dataset into RStudio</figcaption>
+</figure>
+<p>After I click import, my csv file is opened like this.</p>
+<figure>
+<img src="open-file.png" alt="Opening dataset in RStudio" /><figcaption>Opening dataset in RStudio</figcaption>
+</figure>
+<p><em>Note:</em> The tidyverse is a collection of packages designed to make using R for data science more effective. In addition to readr, tidyverse includes dplyr which will be discussed later. Instead of installing each package, I installed tidyverse just as I did with readr example in the above screenshots.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+
+<span class='va'>NBA_player_of_the_week</span> <span class='op'>&lt;-</span> <span class='fu'>read_csv</span><span class='op'>(</span><span class='st'>'/Users/User/datascidani2/_posts/working_with_dataframes 01-30-20/NBA_player_of_the_week.csv'</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/utils/View.html'>View</a></span><span class='op'>(</span><span class='va'>NBA_player_of_the_week</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h2 id="tibbles">Tibbles</h2>
+<p>To make the data easier to work with, I decided to get my data frame into a <strong>tibble</strong>. A tibble is the same as a data frame in base R. DataQuest mentions that they are two-dimensional data structures that store data of multiple types. They also have very important advantages: clarity, consistency and printing. You can type the name of a tibble and R will only print the first 10 rows.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'>tibble</span><span class='fu'>::</span><span class='fu'><a href='https://tibble.tidyverse.org/reference/as_tibble.html'>as_tibble</a></span><span class='op'>(</span><span class='va'>NBA_player_of_the_week</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 1,334 x 17
+   Player Team  Conference Date  Position Height Weight   Age
+   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;
+ 1 Ben S… Phil… East       20-J… PF       6&#39;10      230    23
+ 2 Kawhi… Los … West       20-J… F        6&#39;7       230    28
+ 3 Josh … Phil… East       13-J… G        6&#39;6       200    26
+ 4 DeMar… San … West       13-J… GF       6&#39;7       220    30
+ 5 Giann… Milw… East       6-Ja… F        6&#39;11      242    25
+ 6 LeBro… Los … West       6-Ja… F        6&#39;8       250    35
+ 7 Jayle… Bost… East       30-D… SF       6&#39;7       220    23
+ 8 Brand… New … West       30-D… SF       6&#39;9       190    22
+ 9 Kyle … Toro… East       23-D… PG       6&#39;1       196    33
+10 Denni… Okla… West       23-D… PG       6&#39;1       172    26
+# … with 1,324 more rows, and 9 more variables: Draft_Year &lt;dbl&gt;,
+#   Seasons_in_league &lt;dbl&gt;, Season &lt;chr&gt;, Season_short &lt;dbl&gt;,
+#   Pre_draft_Team &lt;chr&gt;, Real_value &lt;dbl&gt;, Height_CM &lt;dbl&gt;,
+#   Weight_KG &lt;dbl&gt;, Last_Season &lt;dbl&gt;</code></pre>
+</div>
+<h2 id="indexing-data-frames">Indexing Data Frames</h2>
+<p>For data frames, I can use indexing to return a specific, row, column or value. It’s pretty similar to indexing matrices. If I wanted to index the column “Team”, I could do this in a couple of ways:</p>
+<p>By position :</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week</span><span class='op'>[</span>, <span class='fl'>2</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 1,334 x 1
+   Team                 
+   &lt;chr&gt;                
+ 1 Philadelphia Sixers  
+ 2 Los Angeles Clippers 
+ 3 Philadelphia Sixers  
+ 4 San Antonio Spurs    
+ 5 Milwaukee Bucks      
+ 6 Los Angeles Lakers   
+ 7 Boston Celtics       
+ 8 New Orleans Pelicans 
+ 9 Toronto Raptors      
+10 Oklahoma City Thunder
+# … with 1,324 more rows</code></pre>
+</div>
+<p>By column name:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week</span><span class='op'>[</span>, <span class='st'>"Team"</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 1,334 x 1
+   Team                 
+   &lt;chr&gt;                
+ 1 Philadelphia Sixers  
+ 2 Los Angeles Clippers 
+ 3 Philadelphia Sixers  
+ 4 San Antonio Spurs    
+ 5 Milwaukee Bucks      
+ 6 Los Angeles Lakers   
+ 7 Boston Celtics       
+ 8 New Orleans Pelicans 
+ 9 Toronto Raptors      
+10 Oklahoma City Thunder
+# … with 1,324 more rows</code></pre>
+</div>
+<p>DataQuest also mentioned that I could use a <strong>$</strong> symbol to specify a column though when I tried this method R printed 1000 rows of data.</p>
+<figure>
+<img src="index-dataframe-method-3.png" alt="Using the dollar sign to specify a column" /><figcaption>Using the dollar sign to specify a column</figcaption>
+</figure>
+<p>Here are some more examples of indexing data frames:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week</span><span class='op'>$</span><span class='va'>Team</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;Los Angeles Clippers&quot;</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week</span><span class='op'>[</span><span class='fl'>6</span>,<span class='fl'>2</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 1 x 1
+  Team              
+  &lt;chr&gt;             
+1 Los Angeles Lakers</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week</span><span class='op'>[</span><span class='fl'>6</span>, <span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 1 x 17
+  Player Team  Conference Date  Position Height Weight   Age
+  &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;
+1 LeBro… Los … West       6-Ja… F        6&#39;8       250    35
+# … with 9 more variables: Draft_Year &lt;dbl&gt;, Seasons_in_league &lt;dbl&gt;,
+#   Season &lt;chr&gt;, Season_short &lt;dbl&gt;, Pre_draft_Team &lt;chr&gt;,
+#   Real_value &lt;dbl&gt;, Height_CM &lt;dbl&gt;, Weight_KG &lt;dbl&gt;,
+#   Last_Season &lt;dbl&gt;</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>2</span><span class='op'>:</span><span class='fl'>8</span><span class='op'>)</span>, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Player"</span>, <span class='st'>"Pre_draft_Team"</span><span class='op'>)</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 7 x 2
+  Player                Pre_draft_Team                         
+  &lt;chr&gt;                 &lt;chr&gt;                                  
+1 Kawhi Leonard         San Diego State                        
+2 Josh Richardson       Tennessee                              
+3 DeMar DeRozan         USC                                    
+4 Giannis Antetokounmpo Filathlitikos Div II Greece (Greece)   
+5 LeBron James          St. Vincent St. Mary High School (Ohio)
+6 Jaylen Brown          California                             
+7 Brandon Ingram        Duke                                   </code></pre>
+</div>
+<h2 id="working-with-data-frame-columns">Working With Data Frame Columns</h2>
+<p>I could simplify my data frame to contain only variables(the column names) that are relevant for my data analysis.</p>
+<p>For example, I want to create a new data frame that includes the names of the players, their teams, characteristics(height, weight, age), draft year and how many seasons they’ve played in the league. I would use <strong>dplyr</strong>, a tidyverse package designed for analyzing data in data frames.</p>
+<p>To use this package, I would install and load it just as I did with the readr package. The dplyr function <strong>select()</strong> allows me to create a new data frame with only the columns containing the variables I want to use for my analysis. I realized that I already have tidyverse installed so I loaded that before creating this new data frame.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week_select</span> <span class='op'>&lt;-</span> <span class='va'>NBA_player_of_the_week</span> <span class='op'>%&gt;%</span> <span class='fu'>select</span><span class='op'>(</span><span class='va'>Player</span>, <span class='va'>Team</span>, <span class='va'>Position</span>, <span class='va'>Height</span>, <span class='va'>Weight</span>, <span class='va'>Age</span>, <span class='va'>Draft_Year</span>, <span class='va'>Seasons_in_league</span><span class='op'>)</span>
+
+<span class='va'>NBA_player_of_the_week_select</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 1,334 x 8
+   Player Team  Position Height Weight   Age Draft_Year
+   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;      &lt;dbl&gt;
+ 1 Ben S… Phil… PF       6&#39;10      230    23       2016
+ 2 Kawhi… Los … F        6&#39;7       230    28       2011
+ 3 Josh … Phil… G        6&#39;6       200    26       2015
+ 4 DeMar… San … GF       6&#39;7       220    30       2009
+ 5 Giann… Milw… F        6&#39;11      242    25       2013
+ 6 LeBro… Los … F        6&#39;8       250    35       2003
+ 7 Jayle… Bost… SF       6&#39;7       220    23       2016
+ 8 Brand… New … SF       6&#39;9       190    22       2016
+ 9 Kyle … Toro… PG       6&#39;1       196    33       2006
+10 Denni… Okla… PG       6&#39;1       172    26       2013
+# … with 1,324 more rows, and 1 more variable:
+#   Seasons_in_league &lt;dbl&gt;</code></pre>
+</div>
+<p>I could also create new variables and add them to my data frame as columns using another dplyr function called <strong>mutate()</strong>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week_mutate</span> <span class='op'>&lt;-</span> <span class='va'>NBA_player_of_the_week</span> <span class='op'>%&gt;%</span> <span class='fu'>mutate</span><span class='op'>(</span>Draft_Age <span class='op'>=</span> <span class='va'>Age</span><span class='op'>-</span><span class='op'>(</span><span class='fl'>2020</span><span class='op'>-</span><span class='va'>Draft_Year</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='va'>NBA_player_of_the_week_mutate</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 1,334 x 18
+   Player Team  Conference Date  Position Height Weight   Age
+   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;
+ 1 Ben S… Phil… East       20-J… PF       6&#39;10      230    23
+ 2 Kawhi… Los … West       20-J… F        6&#39;7       230    28
+ 3 Josh … Phil… East       13-J… G        6&#39;6       200    26
+ 4 DeMar… San … West       13-J… GF       6&#39;7       220    30
+ 5 Giann… Milw… East       6-Ja… F        6&#39;11      242    25
+ 6 LeBro… Los … West       6-Ja… F        6&#39;8       250    35
+ 7 Jayle… Bost… East       30-D… SF       6&#39;7       220    23
+ 8 Brand… New … West       30-D… SF       6&#39;9       190    22
+ 9 Kyle … Toro… East       23-D… PG       6&#39;1       196    33
+10 Denni… Okla… West       23-D… PG       6&#39;1       172    26
+# … with 1,324 more rows, and 10 more variables: Draft_Year &lt;dbl&gt;,
+#   Seasons_in_league &lt;dbl&gt;, Season &lt;chr&gt;, Season_short &lt;dbl&gt;,
+#   Pre_draft_Team &lt;chr&gt;, Real_value &lt;dbl&gt;, Height_CM &lt;dbl&gt;,
+#   Weight_KG &lt;dbl&gt;, Last_Season &lt;dbl&gt;, Draft_Age &lt;dbl&gt;</code></pre>
+</div>
+<p>As you can see, a new column called <strong>Draft_Age</strong> was added to my table.</p>
+<figure>
+<img src="draft-age.png" alt="Draft Age Column" /><figcaption>Draft Age Column</figcaption>
+</figure>
+<h2 id="filtering-a-data-frame">Filtering A Data Frame</h2>
+<p>Using the <strong>filter()</strong> function, I could filter a data frame either using a single condition or multiple conditions. This is where the comparison operators come in.</p>
+<h3 id="single-conditions">Single Conditions</h3>
+<p>I could simplify my data frame further by filtering. I would use another dplyr function, <strong>filter()</strong> to specify conditions that variables must meet in order to be retained in my data frame.</p>
+<p>If I want to retain data on players who play for the Eastern Conference, I would type this:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week_east</span> <span class='op'>&lt;-</span> <span class='va'>NBA_player_of_the_week</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>Conference</span> <span class='op'>==</span> <span class='st'>"East"</span><span class='op'>)</span>
+
+<span class='va'>NBA_player_of_the_week_east</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 417 x 17
+   Player Team  Conference Date  Position Height Weight   Age
+   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;
+ 1 Ben S… Phil… East       20-J… PF       6&#39;10      230    23
+ 2 Josh … Phil… East       13-J… G        6&#39;6       200    26
+ 3 Giann… Milw… East       6-Ja… F        6&#39;11      242    25
+ 4 Jayle… Bost… East       30-D… SF       6&#39;7       220    23
+ 5 Kyle … Toro… East       23-D… PG       6&#39;1       196    33
+ 6 Bam A… Miam… East       16-D… C        6&#39;10      255    22
+ 7 Jimmy… Miam… East       9-De… GF       6&#39;8       232    30
+ 8 Giann… Milw… East       2-De… F        6&#39;11      242    25
+ 9 Spenc… Broo… East       25-N… PG       6&#39;6       210    26
+10 Nikol… Orla… East       18-N… PF       7&#39;0       260    29
+# … with 407 more rows, and 9 more variables: Draft_Year &lt;dbl&gt;,
+#   Seasons_in_league &lt;dbl&gt;, Season &lt;chr&gt;, Season_short &lt;dbl&gt;,
+#   Pre_draft_Team &lt;chr&gt;, Real_value &lt;dbl&gt;, Height_CM &lt;dbl&gt;,
+#   Weight_KG &lt;dbl&gt;, Last_Season &lt;dbl&gt;</code></pre>
+</div>
+<p>Let’s say I wanted to retain data on players whose weight is greater than 200 pounds. I would write this:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week_weight</span> <span class='op'>&lt;-</span> <span class='va'>NBA_player_of_the_week</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>Weight</span> <span class='op'>&gt;</span> <span class='fl'>200</span><span class='op'>)</span>
+
+<span class='va'>NBA_player_of_the_week_weight</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 1,004 x 17
+   Player Team  Conference Date  Position Height Weight   Age
+   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;
+ 1 Ben S… Phil… East       20-J… PF       6&#39;10      230    23
+ 2 Kawhi… Los … West       20-J… F        6&#39;7       230    28
+ 3 DeMar… San … West       13-J… GF       6&#39;7       220    30
+ 4 Giann… Milw… East       6-Ja… F        6&#39;11      242    25
+ 5 LeBro… Los … West       6-Ja… F        6&#39;8       250    35
+ 6 Jayle… Bost… East       30-D… SF       6&#39;7       220    23
+ 7 Bam A… Miam… East       16-D… C        6&#39;10      255    22
+ 8 LeBro… Los … West       16-D… F        6&#39;8       250    35
+ 9 Jimmy… Miam… East       9-De… GF       6&#39;8       232    30
+10 Antho… Los … West       9-De… PF       6&#39;10      253    26
+# … with 994 more rows, and 9 more variables: Draft_Year &lt;dbl&gt;,
+#   Seasons_in_league &lt;dbl&gt;, Season &lt;chr&gt;, Season_short &lt;dbl&gt;,
+#   Pre_draft_Team &lt;chr&gt;, Real_value &lt;dbl&gt;, Height_CM &lt;dbl&gt;,
+#   Weight_KG &lt;dbl&gt;, Last_Season &lt;dbl&gt;</code></pre>
+</div>
+<h3 id="multiple-conditions">Multiple Conditions</h3>
+<p>I was introduced to two new operators: The <strong>&amp;</strong> operator specifies that <strong>both criteria</strong> in an expression must be met. The <strong>|</strong> operator specifies that at least <strong>one of the criteria</strong> in the expression must be met.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week_stature</span> <span class='op'>&lt;-</span> <span class='va'>NBA_player_of_the_week</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>Weight</span> <span class='op'>&gt;</span> <span class='fl'>200</span> <span class='op'>&amp;</span> <span class='va'>Height</span> <span class='op'>&gt;</span> <span class='st'>"6'5"</span><span class='op'>)</span>
+
+<span class='va'>NBA_player_of_the_week_stature</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 684 x 17
+   Player Team  Conference Date  Position Height Weight   Age
+   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;
+ 1 Kawhi… Los … West       20-J… F        6&#39;7       230    28
+ 2 DeMar… San … West       13-J… GF       6&#39;7       220    30
+ 3 LeBro… Los … West       6-Ja… F        6&#39;8       250    35
+ 4 Jayle… Bost… East       30-D… SF       6&#39;7       220    23
+ 5 LeBro… Los … West       16-D… F        6&#39;8       250    35
+ 6 Jimmy… Miam… East       9-De… GF       6&#39;8       232    30
+ 7 Carme… Port… West       2-De… F        6&#39;8       240    35
+ 8 Spenc… Broo… East       25-N… PG       6&#39;6       210    26
+ 9 Luka … Dall… West       25-N… SF       6&#39;7       218    21
+10 Nikol… Orla… East       18-N… PF       7&#39;0       260    29
+# … with 674 more rows, and 9 more variables: Draft_Year &lt;dbl&gt;,
+#   Seasons_in_league &lt;dbl&gt;, Season &lt;chr&gt;, Season_short &lt;dbl&gt;,
+#   Pre_draft_Team &lt;chr&gt;, Real_value &lt;dbl&gt;, Height_CM &lt;dbl&gt;,
+#   Weight_KG &lt;dbl&gt;, Last_Season &lt;dbl&gt;</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week_draft</span> <span class='op'>&lt;-</span> <span class='va'>NBA_player_of_the_week</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>Draft_Year</span> <span class='op'>&gt;</span> <span class='fl'>2014</span> <span class='op'>|</span> <span class='va'>Seasons_in_league</span> <span class='op'>&lt;=</span> <span class='fl'>5</span><span class='op'>)</span>
+
+<span class='va'>NBA_player_of_the_week_draft</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 692 x 17
+   Player Team  Conference Date  Position Height Weight   Age
+   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;
+ 1 Ben S… Phil… East       20-J… PF       6&#39;10      230    23
+ 2 Josh … Phil… East       13-J… G        6&#39;6       200    26
+ 3 Jayle… Bost… East       30-D… SF       6&#39;7       220    23
+ 4 Brand… New … West       30-D… SF       6&#39;9       190    22
+ 5 Bam A… Miam… East       16-D… C        6&#39;10      255    22
+ 6 Spenc… Broo… East       25-N… PG       6&#39;6       210    26
+ 7 Luka … Dall… West       25-N… SF       6&#39;7       218    21
+ 8 Pasca… Toro… East       11-N… F        6&#39;9       230    25
+ 9 Trae … Atla… East       28-O… PG       6&#39;2       180    21
+10 Karl-… Minn… West       28-O… C        7&#39;0       248    24
+# … with 682 more rows, and 9 more variables: Draft_Year &lt;dbl&gt;,
+#   Seasons_in_league &lt;dbl&gt;, Season &lt;chr&gt;, Season_short &lt;dbl&gt;,
+#   Pre_draft_Team &lt;chr&gt;, Real_value &lt;dbl&gt;, Height_CM &lt;dbl&gt;,
+#   Weight_KG &lt;dbl&gt;, Last_Season &lt;dbl&gt;</code></pre>
+</div>
+<h2 id="arranging-data-frames-by-variables">Arranging Data Frames by Variables</h2>
+<p>Another dplyr function, <strong>arrange()</strong> allows me to specify a variable I want to use to reorder rows of my data frame. Let’s say that I want to arrange my data so that the players’ draft year is in ascending order. I would type this:</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code># A tibble: 1,334 x 17
+   Player Team  Conference Date  Position Height Weight   Age
+   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;
+ 1 Rick … Hous… &lt;NA&gt;       10-F… F        6&#39;7       205    35
+ 2 Elvin… Wash… &lt;NA&gt;       9-No… FC       6&#39;9       235    35
+ 3 Karee… Los … &lt;NA&gt;       24-M… C        7&#39;2       225    37
+ 4 Karee… Los … &lt;NA&gt;       8-Ap… C        7&#39;2       225    36
+ 5 Karee… Los … &lt;NA&gt;       12-F… C        7&#39;2       225    36
+ 6 Karee… Los … &lt;NA&gt;       28-F… C        7&#39;2       225    34
+ 7 Karee… Los … &lt;NA&gt;       21-D… C        7&#39;2       225    33
+ 8 Karee… Los … &lt;NA&gt;       17-F… C        7&#39;2       225    32
+ 9 Karee… Los … &lt;NA&gt;       9-De… C        7&#39;2       225    32
+10 Tiny … Bost… &lt;NA&gt;       11-J… PG       6&#39;1       150    32
+# … with 1,324 more rows, and 9 more variables: Draft_Year &lt;dbl&gt;,
+#   Seasons_in_league &lt;dbl&gt;, Season &lt;chr&gt;, Season_short &lt;dbl&gt;,
+#   Pre_draft_Team &lt;chr&gt;, Real_value &lt;dbl&gt;, Height_CM &lt;dbl&gt;,
+#   Weight_KG &lt;dbl&gt;, Last_Season &lt;dbl&gt;</code></pre>
+</div>
+<p>Let’s say I change my mind and I want the players’ draft year to be in descending order. It would look like this:</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code># A tibble: 1,334 x 17
+   Player Team  Conference Date  Position Height Weight   Age
+   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;
+ 1 Luka … Dall… West       25-N… SF       6&#39;7       218    21
+ 2 Trae … Atla… East       28-O… PG       6&#39;2       180    21
+ 3 Trae … Atla… East       25-M… PG       6&#39;2       180    20
+ 4 Bam A… Miam… East       16-D… C        6&#39;10      255    22
+ 5 Donov… Utah… West       4-Ma… SG       6&#39;3       215    22
+ 6 Donov… Utah… West       14-J… SG       6&#39;3       215    22
+ 7 Ben S… Phil… East       20-J… PF       6&#39;10      230    23
+ 8 Jayle… Bost… East       30-D… SF       6&#39;7       220    23
+ 9 Brand… New … West       30-D… SF       6&#39;9       190    22
+10 Pasca… Toro… East       11-N… F        6&#39;9       230    25
+# … with 1,324 more rows, and 9 more variables: Draft_Year &lt;dbl&gt;,
+#   Seasons_in_league &lt;dbl&gt;, Season &lt;chr&gt;, Season_short &lt;dbl&gt;,
+#   Pre_draft_Team &lt;chr&gt;, Real_value &lt;dbl&gt;, Height_CM &lt;dbl&gt;,
+#   Weight_KG &lt;dbl&gt;, Last_Season &lt;dbl&gt;</code></pre>
+</div>
+<p>Whew, okay that was a lot! That’s it for data frames! Until next time…</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

@@ -84,38 +84,38 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Data Sci Dani: Welcome to Data Sci Dani</title>
+<title>Data Sci Dani: Vectorized Functions</title>
 
-<meta property="description" itemprop="description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="description" itemprop="description" content="Vectorized Functions in R."/>
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2020-01-07"/>
-<meta property="article:created" itemprop="dateCreated" content="2020-01-07"/>
+<meta property="article:published" itemprop="datePublished" content="2020-02-10"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-02-10"/>
 <meta name="article:author" content="Danielle Brantley"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
+<meta property="og:title" content="Data Sci Dani: Vectorized Functions"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="og:description" content="Vectorized Functions in R."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Data Sci Dani"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
-<meta property="twitter:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="twitter:title" content="Data Sci Dani: Vectorized Functions"/>
+<meta property="twitter:description" content="Vectorized Functions in R."/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to Data Sci Dani"]},{"type":"character","attributes":{},"value":["data science","programming","learning","statistics"]},{"type":"character","attributes":{},"value":["\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["01-07-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Vectorized Functions"]},{"type":"character","attributes":{},"value":["data science","programming","R","vectorized functions"]},{"type":"character","attributes":{},"value":["Vectorized Functions in R."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["02-10-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["Big ML Oscars Dataset 2018.csv","total_reviews.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -1808,7 +1808,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Welcome to Data Sci Dani","description":"\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-01-07T00:00:00.000-05:00","citationText":"Brantley, 2020"}
+{"title":"Vectorized Functions","description":"Vectorized Functions in R.","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-02-10T00:00:00.000-05:00","citationText":"Brantley, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1841,27 +1841,252 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Welcome to Data Sci Dani</h1>
+<h1>Vectorized Functions</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
   <a href="../../index.html#category:data_science" class="dt-tag">data science</a>
   <a href="../../index.html#category:programming" class="dt-tag">programming</a>
-  <a href="../../index.html#category:learning" class="dt-tag">learning</a>
-  <a href="../../index.html#category:statistics" class="dt-tag">statistics</a>
+  <a href="../../index.html#category:R" class="dt-tag">R</a>
+  <a href="../../index.html#category:vectorized_functions" class="dt-tag">vectorized functions</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p>“One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.”— Henry Ford</p>
+<p>Vectorized Functions in R.</p>
 </div>
 
 <div class="d-byline">
   Danielle Brantley <a href="https://gist.github.com/danielle-b" class="uri">https://gist.github.com/danielle-b</a> 
   
-<br/>01-07-2020
+<br/>02-10-2020
 </div>
 
 <div class="d-article">
-<p>I’ve decided to face my fear and enter the world of data science. I’ve always admired data visualizations and have long been interested in how data is used to make business decisions. However, the idea of programming combined with statistics has always intimidated me a bit. My goal is to become a data analyst (and eventually a data scientist) by strengthening my programming and statistical skills. I’ll share what I’m learning; I’ll discuss projects, books/articles I’ve read and really any thoughts I have pertaining to data science.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<style>
+    pre code {
+      white-space: pre-wrap;
+    }
+</style>
+<p>In my last post, I went over for-loops. For-loops are a common programming task and it’s important in understanding how programming works. However, in R for-loops are not written as often as it is for other programming languages.</p>
+<p>Many of R’s built-in functions contain for-loops. One could say that many R functions serve as an alternative to for-loops. Many R functions are vectorized meaning that you can use them to operate on all the elements of a vector quickly. Some of these functions, like sum() and mean() for example, I’ve covered in previous posts. Using <strong>vectorized functions</strong> not only makes code easier to understand, but its run time is faster than for-loops. As DataQuest explains, this is because applying the function to the entire vector allows R to interpret the input and pass it to the compiled code once.</p>
+<p>This post will go over DataQuest’s Working With Vectorized Functions lesson. I decided to make this post movie-themed in honor of the Academy Awards that took place last night. The data set I will use in this post comes from <a href="https://www.kaggle.com/kikun1234/big-ml-oscars-dataset-2018">Kaggle</a> and was composed by a Kaggle member with the user name of kikun1234. It explores award nominations of movies released between 2000-2018. I loaded the data set into a data frame called <strong>oscars_2018</strong>. So without further delay, let’s get started!</p>
+<p>I already loaded the tidyverse package and imported our data.</p>
+<p>Now I am printing our dataset as a tibble.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'>as_tibble</span><span class='op'>(</span><span class='va'>oscars_2018</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>10</span><span class='op'>]</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 1,235 x 10
+    year movie movie_id certificate duration genre  rate metascore
+   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt;     &lt;dbl&gt;
+ 1  2001 Kate… tt00354… PG-13            118 Come…  6.40        44
+ 2  2000 Chic… tt01206… G                 84 Anim…  7           88
+ 3  2005 Fant… tt01206… PG-13            106 Acti…  5.70        40
+ 4  2002 Frida tt01206… R                123 Biog…  7.40        61
+ 5  2001 The … tt01207… PG-13            178 Adve…  8.80        92
+ 6  2000 Miss… tt01207… PG-13            123 Acti…  6.10        59
+ 7  2002 Resi… tt01208… R                100 Acti…  6.70        33
+ 8  2000 X-Men tt01209… PG-13            104 Acti…  7.40        64
+ 9  2000 The … tt01209… G                 78 Anim…  7.30        70
+10  2005 Corp… tt01211… PG                77 Anim…  7.40        83
+# … with 1,225 more rows, and 2 more variables: synopsis &lt;chr&gt;,
+#   votes &lt;dbl&gt;</code></pre>
+</div>
+<h2 id="writing-vectorized-ifelse-statements">Writing Vectorized If/Else Statements</h2>
+<p>My last post covered one way to write if/else statements. In this lesson, however, I learned that there is a vectorized solution for this. I could use the <strong>if/else()</strong> function, which is part of the <strong>dplyr package</strong>, for applying if/else statements. The if/else function could replace the for-loops I wrote in the previous post. This function requires the following:</p>
+<ul>
+<li>A Vector/Multiple Vectors</li>
+<li>A Condition</li>
+<li>An action to perform if condition is true</li>
+<li>An action to perform if condition is false</li>
+</ul>
+<p>Let’s look at an example. I want to see if the movies in my data frame recieved more Golden Globe nominations than Oscar nominations. If a movie recieved more Golden Globe nominations, then the statement “more popular at the Golden Globes” would print. If a movie recieved more Oscar nominations, then the statement, “more popular at the Oscars” would print.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>awards_popular</span> <span class='op'>&lt;-</span> <span class='fu'>if_else</span><span class='op'>(</span><span class='va'>oscars_2018</span><span class='op'>$</span><span class='va'>Golden_Globes_nominated</span> <span class='op'>&gt;</span> <span class='va'>oscars_2018</span><span class='op'>$</span><span class='va'>Oscar_nominated</span>, <span class='st'>"more popular at the Golden Globes"</span>, <span class='st'>"more Popular at the Oscars"</span><span class='op'>)</span>
+
+<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'>as_tibble</span><span class='op'>(</span><span class='va'>awards_popular</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 1,235 x 1
+   value                            
+   &lt;chr&gt;                            
+ 1 more popular at the Golden Globes
+ 2 more popular at the Golden Globes
+ 3 more Popular at the Oscars       
+ 4 more Popular at the Oscars       
+ 5 more Popular at the Oscars       
+ 6 more Popular at the Oscars       
+ 7 more Popular at the Oscars       
+ 8 more Popular at the Oscars       
+ 9 more Popular at the Oscars       
+10 more Popular at the Oscars       
+# … with 1,225 more rows</code></pre>
+</div>
+<h3 id="nested-if_else-functions">Nested if_else() Functions</h3>
+<p>Similar to nested if/else statements, I can take a vectorized approach by nesting if_else() functions. When nesting these functions, I would specify a different if_else function to perform an action if the first condition is not met. In the below screenshot, I have three different if_else() functions representing three different conditions:</p>
+<ul>
+<li>If number of Golden Globes nominations are greater than number of Oscar nominations then print “more popular at the Golden Globes”</li>
+<li>If number of Golden Globes nominations are less number of than Oscar nominations then print “more popular at the Oscars”</li>
+<li>If number of Golden Globes nominations are equal to number of Oscar nominations then print “both the Golden Globes and Oscars love you”</li>
+</ul>
+<p>For each if_else() function in this chain, if the condition is not met, the R interpreter moves on to the next if_else function.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>awards_popular_result</span> <span class='op'>&lt;-</span> <span class='fu'>if_else</span><span class='op'>(</span><span class='va'>oscars_2018</span><span class='op'>$</span><span class='va'>Golden_Globes_nominated</span> <span class='op'>&gt;</span> <span class='va'>oscars_2018</span><span class='op'>$</span><span class='va'>Oscar_nominated</span>, <span class='st'>"more popular at the Golden Globes"</span>,
+                                 <span class='fu'>if_else</span><span class='op'>(</span><span class='va'>oscars_2018</span><span class='op'>$</span><span class='va'>Golden_Globes_nominated</span> <span class='op'>&lt;</span> <span class='va'>oscars_2018</span><span class='op'>$</span><span class='va'>Oscar_nominated</span>, <span class='st'>"more popular at the Oscars"</span>,
+                                         <span class='fu'>if_else</span><span class='op'>(</span><span class='va'>oscars_2018</span><span class='op'>$</span><span class='va'>Golden_Globes_nominated</span> <span class='op'>==</span> <span class='va'>oscars_2018</span><span class='op'>$</span><span class='va'>Oscar_nominated</span>, <span class='st'>"both the Golden Globes and Oscars love you"</span>, <span class='st'>""</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'>as_tibble</span><span class='op'>(</span><span class='va'>awards_popular_result</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 1,235 x 1
+   value                                     
+   &lt;chr&gt;                                     
+ 1 more popular at the Golden Globes         
+ 2 more popular at the Golden Globes         
+ 3 both the Golden Globes and Oscars love you
+ 4 more popular at the Oscars                
+ 5 more popular at the Oscars                
+ 6 both the Golden Globes and Oscars love you
+ 7 both the Golden Globes and Oscars love you
+ 8 both the Golden Globes and Oscars love you
+ 9 both the Golden Globes and Oscars love you
+10 more popular at the Oscars                
+# … with 1,225 more rows</code></pre>
+</div>
+<p>Each if_else function requires that I specify two action to take place based on whether or not the condition is true or false. However because I only have three cases here, I used a pair of empty quotes as the second action in the last if_else() function.</p>
+<h2 id="grouping-and-summarizing-data-frames">Grouping and Summarizing Data Frames</h2>
+<p>One huge takeaway from this lesson is learning how to solve what are known as <strong>“split-apply-combine”</strong> problems in R. With a split-apply-combine problem, the data is split into groups, a function is performed on each group, and the results are summarized. According to DataQuest, this is useful for solving many data analysis problems that require the calculation of summary statistics. Let’s start by discussing how to group data.</p>
+<p>Two functions that are useful for working on split-apply-combine problems are the <strong>group_by()</strong> function and the <strong>summarize()</strong> function. Both functions are part of the <strong>dplyr</strong> package. The group_by() function allows me to group data by variable. The summarize() function lets me apply a function like <strong>sum()</strong> or <strong>n()</strong> to each group. The n() function counts the number of data frame rows in each group.</p>
+<p>Let’s look at this example. I want to group my <strong>oscars_2018</strong> data frame based on the genre variable. This is what the code looks like. As you recall from a previous post, the pipe operator(%&gt;%) is used to chain functions together. This code splits rows of my oscars_2018 data frame into groups based on genre. I then saved this to the <strong>genre_wins</strong> data frame.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>genre_wins</span> <span class='op'>&lt;-</span> <span class='va'>oscars_2018</span> <span class='op'>%&gt;%</span> <span class='fu'>group_by</span><span class='op'>(</span><span class='va'>genre</span><span class='op'>)</span>
+<span class='va'>genre_wins</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>10</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 1,235 x 10
+# Groups:   genre [228]
+    year movie movie_id certificate duration genre  rate metascore
+   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt;     &lt;dbl&gt;
+ 1  2001 Kate… tt00354… PG-13            118 Come…  6.40        44
+ 2  2000 Chic… tt01206… G                 84 Anim…  7           88
+ 3  2005 Fant… tt01206… PG-13            106 Acti…  5.70        40
+ 4  2002 Frida tt01206… R                123 Biog…  7.40        61
+ 5  2001 The … tt01207… PG-13            178 Adve…  8.80        92
+ 6  2000 Miss… tt01207… PG-13            123 Acti…  6.10        59
+ 7  2002 Resi… tt01208… R                100 Acti…  6.70        33
+ 8  2000 X-Men tt01209… PG-13            104 Acti…  7.40        64
+ 9  2000 The … tt01209… G                 78 Anim…  7.30        70
+10  2005 Corp… tt01211… PG                77 Anim…  7.40        83
+# … with 1,225 more rows, and 2 more variables: synopsis &lt;chr&gt;,
+#   votes &lt;dbl&gt;</code></pre>
+</div>
+<p>When I print the first few rows of my new <strong>genre_wins</strong> data frame, I can see the grouping variable and the number of groups specified. The grouping variable is genre and there are 228 genre groups.</p>
+<p>Once the data frame is grouped, I can perform operations on each group using the summarize() function.</p>
+<p>Take a look at the example below. Let’s say I wanted to calculate how many awards were won in each genre. Once again, I grouped my data frame by genre and then used the summarize() function to add up the awards won in each genre. This was saved into a data frame I call <strong>genre_wins_one</strong>. When I print this data frame, I end up with the following:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>genre_wins_one</span> <span class='op'>&lt;-</span> <span class='va'>oscars_2018</span> <span class='op'>%&gt;%</span> <span class='fu'>group_by</span><span class='op'>(</span><span class='va'>genre</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'>summarize</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='va'>awards_wins</span><span class='op'>)</span><span class='op'>)</span>
+<span class='va'>genre_wins_one</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 228 x 2
+   genre                      `sum(awards_wins)`
+   &lt;chr&gt;                                   &lt;dbl&gt;
+ 1 Action|Adventure                            5
+ 2 Action|Adventure|Biography                  0
+ 3 Action|Adventure|Comedy                     6
+ 4 Action|Adventure|Crime                      2
+ 5 Action|Adventure|Drama                     48
+ 6 Action|Adventure|Family                     3
+ 7 Action|Adventure|Fantasy                   73
+ 8 Action|Adventure|History                    5
+ 9 Action|Adventure|Horror                     0
+10 Action|Adventure|Mystery                    3
+# … with 218 more rows</code></pre>
+</div>
+<p>I can see that the Action|Adventure|Fantasy genre has won 73 awards.</p>
+<h2 id="multiple-grouping-and-summarizing">Multiple Grouping and Summarizing</h2>
+<p>I can also group my data frame by multiple variables like the screenshot below. I can see that my data frame is grouped by the <strong>genre</strong> and <strong>certificate</strong> variables. I then use the summarize() function to apply the n() function. As I mentioned earlier in the post, the n() function counts counts the number of data frame rows in each group.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>oscars_2018</span> <span class='op'>%&gt;%</span> <span class='fu'>group_by</span><span class='op'>(</span><span class='va'>genre</span>,<span class='va'>certificate</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'>summarize</span><span class='op'>(</span>total <span class='op'>=</span> <span class='fu'>n</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 360 x 3
+# Groups:   genre [228]
+   genre                      certificate total
+   &lt;chr&gt;                      &lt;chr&gt;       &lt;int&gt;
+ 1 Action|Adventure           PG-13           8
+ 2 Action|Adventure|Biography PG-13           1
+ 3 Action|Adventure|Biography R               1
+ 4 Action|Adventure|Comedy    PG              3
+ 5 Action|Adventure|Comedy    PG-13           7
+ 6 Action|Adventure|Comedy    R               2
+ 7 Action|Adventure|Crime     PG-13           5
+ 8 Action|Adventure|Drama     PG-13          14
+ 9 Action|Adventure|Drama     R               4
+10 Action|Adventure|Family    PG              3
+# … with 350 more rows</code></pre>
+</div>
+<p>Just as I grouped my data frame by multiple variables, I can specify multiple operations using the summarize() function.</p>
+<p>Let’s say I want to know the minimum, maximum and average Metacritic (stored in the <strong>metascore</strong> variable) score for each genre. I would first group my data frame by genre. I then use the summarize() function to apply the following functions: min(), max() and mean() to the <strong>metascore</strong> variable.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>oscars_2018</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>group_by</span><span class='op'>(</span><span class='va'>genre</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>summarize</span><span class='op'>(</span>min <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Extremes.html'>min</a></span><span class='op'>(</span><span class='va'>metascore</span><span class='op'>)</span>,
+            max <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Extremes.html'>max</a></span><span class='op'>(</span><span class='va'>metascore</span><span class='op'>)</span>,
+            avg <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>metascore</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code># A tibble: 228 x 4
+   genre                        min   max   avg
+   &lt;chr&gt;                      &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+ 1 Action|Adventure              35    83  61.4
+ 2 Action|Adventure|Biography    39    47  43  
+ 3 Action|Adventure|Comedy       29    67  50.8
+ 4 Action|Adventure|Crime        37    57  46.2
+ 5 Action|Adventure|Drama        46    89  65.2
+ 6 Action|Adventure|Family       20    56  38.8
+ 7 Action|Adventure|Fantasy      30    93  55.5
+ 8 Action|Adventure|History      85    85  85  
+ 9 Action|Adventure|Horror       37    63  50  
+10 Action|Adventure|Mystery      43    76  58.5
+# … with 218 more rows</code></pre>
+</div>
+<p>When I’m done with a grouped data frame, it’s best to return it to its previous state by ungrouping it like so:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>oscars_2018</span> <span class='op'>%&gt;%</span> <span class='fu'>ungroup</span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h2 id="the-pipe-operator">The Pipe Operator</h2>
+<p>I mentioned earlier that the pipe operator(%&gt;%) is used to chain functions together. It makes code easier to read and write but how does it work? DataQuest explains it this way:</p>
+<blockquote>
+<p>The pipe originated with a package called maggritR. The tidyverse has adopted</p>
+<p>the pipe as a key feature of its packages, so loading tidyverse packages loads</p>
+<p>%&gt;% automatically. The pipe operator allows you to write code so that the</p>
+<p>output of a function is passed to the next function from left to right. Most R &gt; functions do a lot of computing work for you behind the scenes, and you as a</p>
+<p>user interact with a “wrapper”. The pipe is a good example of this.</p>
+</blockquote>
+<p>I think this is best demonstrated with an example. Let’s say I wanted to add up the total number of reviews for the movie, The Lord of the Rings: The Fellowship of the Ring. I would first filter the data to retain information about the movie. Then, I would add a new column called total_reviews, containing the total number of reviews (adding user_reviews + critics_reviews variables). I store this in a data frame called <strong>lord_rings_reviews</strong>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>lord_rings_reviews</span> <span class='op'>&lt;-</span> <span class='va'>oscars_2018</span> <span class='op'>%&gt;%</span> 
+     <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>movie</span> <span class='op'>==</span> <span class='st'>"The Lord of the Rings: The Fellowship of the Ring"</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+     <span class='fu'>mutate</span><span class='op'>(</span>total_reviews <span class='op'>=</span> <span class='va'>user_reviews</span> <span class='op'>+</span> <span class='va'>critic_reviews</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p>When I type <strong>View(lord_rings_reviews)</strong>, a file opens up containing all the data on this Lord of the Rings movie. The column <strong>total_reviews</strong> has been added in as the last column in the data frame.</p>
+<figure>
+<img src="total_reviews.jpg" alt="Total Reviews" /><figcaption>Total Reviews</figcaption>
+</figure>
+<p>Whew, that just about covers it for vectorized functions. Until next time…</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

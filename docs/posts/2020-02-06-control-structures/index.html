@@ -84,38 +84,38 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Data Sci Dani: Welcome to Data Sci Dani</title>
+<title>Data Sci Dani: Control Structures</title>
 
-<meta property="description" itemprop="description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="description" itemprop="description" content="Working with control structures in R."/>
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2020-01-07"/>
-<meta property="article:created" itemprop="dateCreated" content="2020-01-07"/>
+<meta property="article:published" itemprop="datePublished" content="2020-02-06"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-02-06"/>
 <meta name="article:author" content="Danielle Brantley"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
+<meta property="og:title" content="Data Sci Dani: Control Structures"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="og:description" content="Working with control structures in R."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Data Sci Dani"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
-<meta property="twitter:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="twitter:title" content="Data Sci Dani: Control Structures"/>
+<meta property="twitter:description" content="Working with control structures in R."/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to Data Sci Dani"]},{"type":"character","attributes":{},"value":["data science","programming","learning","statistics"]},{"type":"character","attributes":{},"value":["\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["01-07-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Control Structures"]},{"type":"character","attributes":{},"value":["data science","programming","R","control structures"]},{"type":"character","attributes":{},"value":["Working with control structures in R."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["02-06-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["superbowl.csv"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -1808,7 +1808,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Welcome to Data Sci Dani","description":"\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-01-07T00:00:00.000-05:00","citationText":"Brantley, 2020"}
+{"title":"Control Structures","description":"Working with control structures in R.","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-02-06T00:00:00.000-05:00","citationText":"Brantley, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1841,27 +1841,349 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Welcome to Data Sci Dani</h1>
+<h1>Control Structures</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
   <a href="../../index.html#category:data_science" class="dt-tag">data science</a>
   <a href="../../index.html#category:programming" class="dt-tag">programming</a>
-  <a href="../../index.html#category:learning" class="dt-tag">learning</a>
-  <a href="../../index.html#category:statistics" class="dt-tag">statistics</a>
+  <a href="../../index.html#category:R" class="dt-tag">R</a>
+  <a href="../../index.html#category:control_structures" class="dt-tag">control structures</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p>“One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.”— Henry Ford</p>
+<p>Working with control structures in R.</p>
 </div>
 
 <div class="d-byline">
   Danielle Brantley <a href="https://gist.github.com/danielle-b" class="uri">https://gist.github.com/danielle-b</a> 
   
-<br/>01-07-2020
+<br/>02-06-2020
 </div>
 
 <div class="d-article">
-<p>I’ve decided to face my fear and enter the world of data science. I’ve always admired data visualizations and have long been interested in how data is used to make business decisions. However, the idea of programming combined with statistics has always intimidated me a bit. My goal is to become a data analyst (and eventually a data scientist) by strengthening my programming and statistical skills. I’ll share what I’m learning; I’ll discuss projects, books/articles I’ve read and really any thoughts I have pertaining to data science.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<style>
+    pre code {
+      white-space: pre-wrap;
+    }
+</style>
+<p>This past weekend was the Super Bowl. I thought for this post I would use a data set that was posted on Kaggle that contains data on the Super Bowl games from 1967 to present. This data set was put together by Timo Bozsolik.</p>
+<p>In this post, I’m going to get into <strong>control structures</strong>. DataQuest says that control structures are necessary for repeated application or to execute an action only if a condition is met. Otherwise, writing code would be very tedious and not as fun.</p>
+<p>I admit I struggled with control structures in other languages. However with R, I finally feel like I have a grasp on this concept. I feel like something clicked in this lesson. So without further delay, let’s get into it!</p>
+<p>I’ll first load the tidyverse and janitor packages. I learned about the janitor package about a few days ago. It has simple functions for examining and cleaning data. This package came in handy for cleaning up the names of the columns in this dataset.</p>
+<p>After installing and loading the janitor package, I imported the data. Next, I created a new object called clean_superbowl, that has the clean names. The last line of code gives you a side by side comparison of the column names of the imported data and the cleaned data frame. You can find more information about the janitor package <a href="https://garthtarr.github.io/meatR/janitor.html">here</a>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/sfirke/janitor'>janitor</a></span><span class='op'>)</span>
+<span class='va'>superbowl</span> <span class='op'>&lt;-</span><span class='fu'>read_csv</span><span class='op'>(</span><span class='st'>'/Users/User/datascidani2/_posts/2020-02-06-control-structures/superbowl.csv'</span><span class='op'>)</span>
+<span class='va'>clean_superbowl</span> <span class='op'>&lt;-</span><span class='fu'>janitor</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/janitor/man/clean_names.html'>clean_names</a></span><span class='op'>(</span><span class='va'>superbowl</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span>superbowl <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>superbowl</span><span class='op'>)</span>, clean_superbowl <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>    superbowl clean_superbowl
+1        Date            date
+2          SB              sb
+3      Winner          winner
+4  Winner Pts      winner_pts
+5       Loser           loser
+6   Loser Pts       loser_pts
+7         MVP             mvp
+8     Stadium         stadium
+9        City            city
+10      State           state</code></pre>
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/utils/View.html'>View</a></span><span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h2 id="conditional-statements">Conditional Statements</h2>
+<p>A conditional statement is a type of control structure that performs different calculations or actions based on whether or not a predefined condition is <strong>TRUE</strong> or <strong>FALSE</strong>. You can express conditional statements using comparison operators. One type of conditional statement is called an if statement. Let’s look at the screenshot below. I created a conditional statement that looks at the titles of the Super Bowl games. In this case, the <strong>condition</strong> is the first element of the Super Bowl title column being greater than 53. The <strong>action</strong> is the print statement, “Jennifer Lopez and Shakira performed at this Super Bowl.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='kw'>if</span> <span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>sb</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span> <span class='op'>&gt;</span> <span class='fl'>53</span><span class='op'>)</span> <span class='op'>{</span>
+     <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='st'>"JLo and Shakira performed at this Superbowl."</span><span class='op'>)</span>
+<span class='op'>}</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;JLo and Shakira performed at this Superbowl.&quot;</code></pre>
+</div>
+<p>I could add another type of conditional statement called the <strong>else statement</strong>. I can combine my if and else statements to form what is called an <strong>if/else statement</strong>. An action is executed if the condition in the if statement is <strong>TRUE</strong>. If that condition is not <strong>TRUE</strong>, the action in the else statement is executed.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='kw'>if</span> <span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>sb</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span> <span class='op'>&lt;=</span> <span class='fl'>53</span><span class='op'>)</span> <span class='op'>{</span>
+     <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='st'>"JLo and Shakira performed at this Superbowl."</span><span class='op'>)</span>
+<span class='op'>}</span><span class='kw'>else</span><span class='op'>{</span>
+     <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='st'>"No performance from JLo and Shakira at this Superbowl."</span><span class='op'>)</span>
+<span class='op'>}</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;No performance from JLo and Shakira at this Superbowl.&quot;</code></pre>
+</div>
+<p>There is also something called <strong>nested else/if statements</strong> where an else/if statement is written within another else/if statement like so…</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='kw'>if</span><span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>sb</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span> <span class='op'>&gt;</span> <span class='fl'>53</span><span class='op'>)</span><span class='op'>{</span>
+    <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='st'>"JLo and Shakira performed at this Superbowl."</span><span class='op'>)</span>
+<span class='op'>}</span><span class='kw'>else</span> <span class='kw'>if</span><span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>sb</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span> <span class='op'>&lt;</span> <span class='fl'>53</span><span class='op'>)</span> <span class='op'>{</span>
+    <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='st'>"No performance from JLo and Shakira at this Superbowl."</span><span class='op'>)</span>
+<span class='op'>}</span><span class='kw'>else</span> <span class='kw'>if</span> <span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>sb</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span> <span class='op'>==</span> <span class='fl'>53</span><span class='op'>)</span><span class='op'>{</span>
+      <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='st'>"Maroon 5 played at the 2019 Superbowl."</span><span class='op'>)</span>
+<span class='op'>}</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;JLo and Shakira performed at this Superbowl.&quot;</code></pre>
+</div>
+<p>The problem with conditional statements is that they are inefficient. They are lengthy and if you have a situation where you have multiple conditional statements, it becomes repetitive. Another type of control structure solves the problem of repetition: <strong>For-loops</strong>.</p>
+<h2 id="for-loops">For-loops</h2>
+<h3 id="print-elements-of-a-sequence">Print Elements of A Sequence</h3>
+<p>For-loops perform an operation a given number of times, allowing me to execute a piece of code repeatedly on elements of a sequence. For example, let’s say I want to print all the Super Bowl titles. I could write a for-loop that looks like this:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='kw'>for</span><span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>sb</span><span class='op'>)</span> <span class='op'>{</span>
+       <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>i</span><span class='op'>)</span>
+<span class='op'>}</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;LIV (54)&quot;
+[1] &quot;LIII (53)&quot;
+[1] &quot;LII (52)&quot;
+[1] &quot;LI (51)&quot;
+[1] &quot;50&quot;
+[1] &quot;XLIX (49)&quot;
+[1] &quot;XLVIII (48)&quot;
+[1] &quot;XLVII (47)&quot;
+[1] &quot;XLVI (46)&quot;
+[1] &quot;XLV (45)&quot;
+[1] &quot;XLIV (44)&quot;
+[1] &quot;XLIII (43)&quot;
+[1] &quot;XLII (42)&quot;
+[1] &quot;XLI (41)&quot;
+[1] &quot;XL (40)&quot;
+[1] &quot;XXXIX (39)&quot;
+[1] &quot;XXXVIII (38)&quot;
+[1] &quot;XXXVII (37)&quot;
+[1] &quot;XXXVI (36)&quot;
+[1] &quot;XXXV (35)&quot;
+[1] &quot;XXXIV (34)&quot;
+[1] &quot;XXXIII (33)&quot;
+[1] &quot;XXXII (32)&quot;
+[1] &quot;XXXI (31)&quot;
+[1] &quot;XXX (30)&quot;
+[1] &quot;XXIX (29)&quot;
+[1] &quot;XXVIII (28)&quot;
+[1] &quot;XXVII (27)&quot;
+[1] &quot;XXVI (26)&quot;
+[1] &quot;XXV (25)&quot;
+[1] &quot;XXIV (24)&quot;
+[1] &quot;XXIII (23)&quot;
+[1] &quot;XXII (22)&quot;
+[1] &quot;XXI (21)&quot;
+[1] &quot;XX (20)&quot;
+[1] &quot;XIX (19)&quot;
+[1] &quot;XVIII (18)&quot;
+[1] &quot;XVII (17)&quot;
+[1] &quot;XVI (16)&quot;
+[1] &quot;XV (15)&quot;
+[1] &quot;XIV (14)&quot;
+[1] &quot;XIII (13)&quot;
+[1] &quot;XII (12)&quot;
+[1] &quot;XI (11)&quot;
+[1] &quot;X (10)&quot;
+[1] &quot;IX (9)&quot;
+[1] &quot;VIII (8)&quot;
+[1] &quot;VII (7)&quot;
+[1] &quot;VI (6)&quot;
+[1] &quot;V (5)&quot;
+[1] &quot;IV (4)&quot;
+[1] &quot;III (3)&quot;
+[1] &quot;II (2)&quot;
+[1] &quot;I (1)&quot;</code></pre>
+</div>
+<p>Let’s examine this for-loop. The index variable i represents the element of a sequence. I can read this as <strong>“for every element in the sb column of the clean_superbowl data frame, print the element.”</strong> Although not shown here, this for-loop printed every single Super Bowl title until it reached the end of all the titles(in this case Super Bowl I (1)).</p>
+<p>I don’t always have to use i. I could use any variable name. The variable name should describe what the variable represents making code more readable. I also would avoid using common names as variables. For example, I would not use sum as a variable name because it can cause problems if I wanted to use the sum() function later on.</p>
+<h3 id="looping-over-rows-in-a-data-frame">Looping Over Rows in a Data Frame</h3>
+<p>When writing a for-loop, the elements I specify can be values, vectors, or data structures. In this next example, I wrote a for-loop to execute an operation on elements that are rows in a data frame. This for-loop calculates how many points the winning team won by for each game.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>winner_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='op'>-</span> <span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>loser_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>)</span>
+<span class='op'>}</span>
+</code></pre>
+</div>
+<pre><code>[1] 11
+[1] 10
+[1] 8
+[1] 6
+[1] 14
+[1] 4
+[1] 35
+[1] 3
+[1] 4
+[1] 6
+[1] 14
+[1] 4
+[1] 3
+[1] 12
+[1] 11
+[1] 3
+[1] 3
+[1] 27
+[1] 3
+[1] 27
+[1] 7
+[1] 15
+[1] 7
+[1] 14
+[1] 10
+[1] 23
+[1] 17
+[1] 35
+[1] 13
+[1] 1
+[1] 45
+[1] 4
+[1] 32
+[1] 19
+[1] 36
+[1] 22
+[1] 29
+[1] 10
+[1] 5
+[1] 17
+[1] 12
+[1] 4
+[1] 17
+[1] 18
+[1] 4
+[1] 10
+[1] 17
+[1] 7
+[1] 21
+[1] 3
+[1] 16
+[1] 9
+[1] 19
+[1] 25</code></pre>
+</div>
+<p>Let’s break this down further. I’ll start by explaining the first line of code. In the <strong>clean_superbowl</strong> data frame, each match has its own row. Since I want to perform the subtraction operation for each row of the data frame, the first part of the for-loop will consist of defining i as an element of the sequence of numbers from one to fifty-four (the number of rows in the data frame).</p>
+<p>The <strong>nrow(clean_superbowl)</strong> returns the number of rows in the data frame. The <strong>print() function</strong> is used to display the results.</p>
+<h3 id="nested-control-structures">Nested Control Structures</h3>
+<p>As I mentioned previously, executing one or more control structures inside another is called nesting. A for-loop can be used to loop over conditional statements. In this example, I used a for-loop, that for each row in the <strong>clean_superbowl</strong> data frame, print “Aww it was so close!” if the difference between the winner points and loser points is less than 10 and ” A Total Blowout!” if not.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='kw'>for</span><span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='kw'>if</span> <span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>winner_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>-</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>loser_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='op'>&lt;</span> <span class='fl'>10</span><span class='op'>)</span> <span class='op'>{</span>
+    <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='st'>"Aww it was so close!"</span><span class='op'>)</span>
+  <span class='op'>}</span> <span class='kw'>else</span> <span class='op'>{</span> 
+    <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='st'>"A Total Blowout!"</span><span class='op'>)</span>
+  <span class='op'>}</span>
+<span class='op'>}</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;Aww it was so close!&quot;
+[1] &quot;A Total Blowout!&quot;
+[1] &quot;A Total Blowout!&quot;</code></pre>
+</div>
+<h3 id="storing-for-loop-output-in-objects">Storing For-Loop Output in Objects</h3>
+<p>Though I can print out the output of my for-loop, I ultimately want to store the output of my for-loop in an object so that I can use it. In this next example, I wanted to calculate the total number of points scored in each Super Bowl game. I first created an empty vector, <strong>total_points_scored</strong>. I then wrote the for-loop to add new elements into the vector. The new elements are the sums of <strong>winner_pts</strong> and <strong>loser_pts</strong> for each game.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>total_points_scored</span> <span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>)</span>
+<span class='kw'>for</span><span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+    <span class='va'>total_points_scored</span> <span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='va'>total_points_scored</span>, <span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>winner_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>+</span> <span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>loser_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>)</span>
+<span class='op'>}</span>
+
+<span class='va'>total_points_scored</span>
+</code></pre>
+</div>
+<pre><code> [1] 51 16 74 62 34 52 51 65 38 56 48 50 31 46 31 45 61 69 37 41 39 53
+[23] 55 56 44 75 43 69 61 39 65 36 52 59 56 54 47 44 47 37 50 66 37 46
+[45] 38 22 31 21 27 29 30 23 47 45</code></pre>
+</div>
+<p>After running the for-loop, the <strong>total_points_scored</strong> vector contains a sum <strong>winner_pts</strong> and <strong>loser_pts</strong> for each game.</p>
+<h3 id="more-than-two-cases">More Than Two Cases</h3>
+<p>There are times where my code would need to specify more than two outcomes. This is where <strong>selection control statements</strong> come in. Selection control statements allow me to specify more than two outcomes by adding else if statements to my code. Let’s say if I wanted to specify three conditions: games that were won by less than or equal to 10 points, games that were won by greater than or equal to 11 points and less than or equal to 20 points, games that were won by greater than 21 points. I can write the following:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>superbowl_won_by</span> <span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>)</span>
+
+<span class='kw'>for</span><span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='kw'>if</span><span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>winner_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>-</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>loser_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='op'>&lt;</span> <span class='fl'>10</span><span class='op'>)</span> <span class='op'>{</span>
+    <span class='va'>superbowl_won_by</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='va'>superbowl_won_by</span>, <span class='st'>"A Close Game!"</span><span class='op'>)</span>
+  <span class='op'>}</span><span class='kw'>else</span> <span class='kw'>if</span> <span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>winner_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>-</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>loser_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='op'>&gt;=</span> <span class='fl'>11</span> <span class='op'>&amp;</span> <span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>winner_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>-</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>loser_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='op'>&lt;=</span> <span class='fl'>20</span><span class='op'>)</span><span class='op'>{</span>
+    <span class='va'>superbowl_won_by</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='va'>superbowl_won_by</span>, <span class='st'>"A Total Blowout!"</span><span class='op'>)</span>
+  <span class='op'>}</span> <span class='kw'>else</span> <span class='kw'>if</span> <span class='op'>(</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>winner_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>-</span><span class='va'>clean_superbowl</span><span class='op'>$</span><span class='va'>loser_pts</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='op'>&gt;</span> <span class='fl'>21</span><span class='op'>)</span><span class='op'>{</span>
+    <span class='va'>superbowl_won_by</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='va'>superbowl_won_by</span>, <span class='st'>"Go back to the drawing board!"</span><span class='op'>)</span>
+  <span class='op'>}</span>
+<span class='op'>}</span>
+
+<span class='va'>superbowl_won_by</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>20</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code> [1] &quot;A Total Blowout!&quot;              &quot;A Close Game!&quot;                
+ [3] &quot;A Close Game!&quot;                 &quot;A Total Blowout!&quot;             
+ [5] &quot;A Close Game!&quot;                 &quot;Go back to the drawing board!&quot;
+ [7] &quot;A Close Game!&quot;                 &quot;A Close Game!&quot;                
+ [9] &quot;A Close Game!&quot;                 &quot;A Total Blowout!&quot;             
+[11] &quot;A Close Game!&quot;                 &quot;A Close Game!&quot;                
+[13] &quot;A Total Blowout!&quot;              &quot;A Total Blowout!&quot;             
+[15] &quot;A Close Game!&quot;                 &quot;A Close Game!&quot;                
+[17] &quot;Go back to the drawing board!&quot; &quot;A Close Game!&quot;                
+[19] &quot;Go back to the drawing board!&quot; &quot;A Close Game!&quot;                </code></pre>
+</div>
+<p>As you can see, each row printed a statement based on the condition I specified.</p>
+<p>Okay, that’s all for this post. I’m signing off for now! Until next time…</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

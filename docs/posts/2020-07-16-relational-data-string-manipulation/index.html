@@ -84,38 +84,38 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Data Sci Dani: Welcome to Data Sci Dani</title>
+<title>Data Sci Dani: String Manipulation and Relational Data</title>
 
-<meta property="description" itemprop="description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="description" itemprop="description" content="Learning more string manipulation and relational data in R."/>
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2020-01-07"/>
-<meta property="article:created" itemprop="dateCreated" content="2020-01-07"/>
+<meta property="article:published" itemprop="datePublished" content="2020-07-16"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-07-16"/>
 <meta name="article:author" content="Danielle Brantley"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
+<meta property="og:title" content="Data Sci Dani: String Manipulation and Relational Data"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="og:description" content="Learning more string manipulation and relational data in R."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Data Sci Dani"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
-<meta property="twitter:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="twitter:title" content="Data Sci Dani: String Manipulation and Relational Data"/>
+<meta property="twitter:description" content="Learning more string manipulation and relational data in R."/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to Data Sci Dani"]},{"type":"character","attributes":{},"value":["data science","programming","learning","statistics"]},{"type":"character","attributes":{},"value":["\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["01-07-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["String Manipulation and Relational Data"]},{"type":"character","attributes":{},"value":["data science","programming","R","joins","string manipulation","relational data"]},{"type":"character","attributes":{},"value":["Learning more string manipulation and relational data in R."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["07-16-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["full_join.png","inner_join.png","left_join.png","right-join.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -1808,7 +1808,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Welcome to Data Sci Dani","description":"\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-01-07T00:00:00.000-05:00","citationText":"Brantley, 2020"}
+{"title":"String Manipulation and Relational Data","description":"Learning more string manipulation and relational data in R.","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-07-16T00:00:00.000-04:00","citationText":"Brantley, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1841,27 +1841,137 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Welcome to Data Sci Dani</h1>
+<h1>String Manipulation and Relational Data</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
   <a href="../../index.html#category:data_science" class="dt-tag">data science</a>
   <a href="../../index.html#category:programming" class="dt-tag">programming</a>
-  <a href="../../index.html#category:learning" class="dt-tag">learning</a>
-  <a href="../../index.html#category:statistics" class="dt-tag">statistics</a>
+  <a href="../../index.html#category:R" class="dt-tag">R</a>
+  <a href="../../index.html#category:joins" class="dt-tag">joins</a>
+  <a href="../../index.html#category:string_manipulation" class="dt-tag">string manipulation</a>
+  <a href="../../index.html#category:relational_data" class="dt-tag">relational data</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p>“One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.”— Henry Ford</p>
+<p>Learning more string manipulation and relational data in R.</p>
 </div>
 
 <div class="d-byline">
   Danielle Brantley <a href="https://gist.github.com/danielle-b" class="uri">https://gist.github.com/danielle-b</a> 
   
-<br/>01-07-2020
+<br/>07-16-2020
 </div>
 
 <div class="d-article">
-<p>I’ve decided to face my fear and enter the world of data science. I’ve always admired data visualizations and have long been interested in how data is used to make business decisions. However, the idea of programming combined with statistics has always intimidated me a bit. My goal is to become a data analyst (and eventually a data scientist) by strengthening my programming and statistical skills. I’ll share what I’m learning; I’ll discuss projects, books/articles I’ve read and really any thoughts I have pertaining to data science.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<style>
+    pre code {
+      white-space: pre-wrap;
+    }
+</style>
+<p>Hello everyone! Long time no see. I’m happy to be back with another post with this post focusing on what I learned in Dataquest’s String Manipulation and Relational Data lesson. I thought I switch up these posts a bit. Instead of sharing every single thing I’ve learned in these lessons, I have decided to focus on functions and concepts that stick out to me.</p>
+<p>In this lesson I learned about manipulating strings to create new variables and relational data using joins and keys. This post will focus on two new concepts I learned: the <strong>parse_number()</strong> function and the types of joins that are used to combine data frames.</p>
+<h2 id="parse_number">Parse_number()</h2>
+<p>The <em>parse_number()</em> function is part of the readr package and it drops any non-numeric characters before or after the first number. The example below shows that every non-numeric character was dropped to parse out the number 87.35.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'>parse_number</span><span class='op'>(</span><span class='st'>"This shirt cost $87.35, that is so expensive!"</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] 87.35</code></pre>
+</div>
+<p>What happens when I have more than one numeric character I want to extract? This is where regex, better known as regular expressions come in. However, I’ll probably cover more regular expression topics in a future post.</p>
+<h2 id="joins">Joins</h2>
+<p>The biggest takeaway from this lesson had to with joins. Recall from a previous post that to combine vectors and matrices, I used rbind() to combine by rows and cbind() to combine by columns. When you combine vectors and matrices, the values of the rows and columns are combined based on their position.</p>
+<p>If I wanted to join data frames, however, I would join the columns together based on matching values of a variable. A key is a variable that is used to combine data frames. We use the dplyr package to work with data frames. The dplyr functions used to combine tables are for executing mutating joins. Mutating joins add new variables to a data frame based on matching values in another data frame. The concept of having multiple tables containing data that you are interested in relationships between is referred to as relational data.</p>
+<p>When I learned of joins in R, I was excited because it immediately reminded me of learning of joins in Tableau. I’ve also heard of joins in SQL so I thought this topic would be very important for me to learn, understand and eventually share. Enough of me yapping, let’s get to the joins!</p>
+<h2 id="inner-join">Inner Join</h2>
+<p>Inner joins match pairs of variables in two data frames when their values of the key are the same. Any rows with unmatched keys are dropped. Let’s look at the example below.</p>
+<p>A few weeks back, I decided to look up some information about the top five paperback nonfiction books on the New York Times’ bestseller list. From my research, I created the two data frames below. The first data frame is referred to as <strong>paperback_nonfiction</strong>. The second data frame is referred to as <strong>publisher_info</strong>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>paperback_nonfiction</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='st'>"ISBN_13"</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>9780807047416</span>, <span class='fl'>9781580058827</span>, <span class='fl'>9780465060869</span>, <span class='fl'>9781631494536</span>, <span class='fl'>9781568585987</span><span class='op'>)</span>,
+                                   <span class='st'>"Title"</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"White Fragility"</span>, <span class='st'>"So You Want to Talk about Race"</span>, <span class='st'>"Why Are All The Blacks Sitting Together in the Cafeteria"</span>, <span class='st'>"The Color of Law"</span>, <span class='st'>"Stamped From The Beginning"</span><span class='op'>)</span>,
+                                   <span class='st'>"Author"</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Robin DiAngelo"</span>, <span class='st'>"Ijeoma Oluo"</span>, <span class='st'>"Beverly Tatum"</span>, <span class='st'>"Richard Rothstein"</span>, <span class='st'>"Ibram X. Kendi"</span><span class='op'>)</span>,
+                                   <span class='st'>"Weeks_on_List"</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>94</span>, <span class='fl'>5</span>, <span class='fl'>3</span>, <span class='fl'>8</span>, <span class='fl'>5</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>publisher_info</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='st'>"Publisher"</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Beacon Press"</span>, <span class='st'>"Seal Press"</span>, <span class='st'>"Basic Books"</span>, <span class='st'>"Liveright"</span>, <span class='st'>"Bold Type Books"</span><span class='op'>)</span>,
+                             <span class='st'>"ISBN_13"</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>9780807047415</span>, <span class='fl'>9781580058827</span>, <span class='fl'>9780465060869</span>, <span class='fl'>9781631494536</span>, <span class='fl'>9781568585987</span><span class='op'>)</span>,
+                             <span class='st'>"Pages"</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>192</span>, <span class='fl'>272</span>, <span class='fl'>464</span>, <span class='fl'>368</span>, <span class='fl'>608</span><span class='op'>)</span>,
+                             <span class='st'>"Amazon_Prices"</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>10.62</span>, <span class='fl'>10.19</span>, <span class='fl'>11.39</span>, <span class='fl'>9.99</span>, <span class='fl'>11.99</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p>After creating the data frames, I decided to perform an inner join because I wanted to only include results that appeared in both data frames I’m joining. Using the code below, I joined the two data frames using the variable <strong>ISBN_13</strong> as my key.</p>
+<p>As you can see, when I performed an inner join, it kept the rows that matched from the data frames. Notice that the first row of the <strong>paperback_nonfiction</strong> data frame and the first row of the <strong>publisher_info</strong> data frame were dropped because those two rows were not a match. The data frame below is referred to as <strong>best_paperback_nonfiction</strong>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>best_paperback_nonfiction</span> <span class='op'>&lt;-</span> <span class='va'>paperback_nonfiction</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>inner_join</span><span class='op'>(</span><span class='va'>publisher_info</span>, by <span class='op'>=</span> <span class='st'>"ISBN_13"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<figure>
+<img src="inner_join.png" alt="Inner Join" /><figcaption>Inner Join</figcaption>
+</figure>
+<h2 id="outer-joins">Outer Joins</h2>
+<p>Outer joins keep values that appear in at least one of the data frames you’re combining. Any missing values will be filled in with “NA”. There are three types of outer joins:</p>
+<ul>
+<li>left join</li>
+<li>right join</li>
+<li>full join</li>
+</ul>
+<p>Let’s go over these in more detail.</p>
+<h3 id="left-join">Left Join</h3>
+<p>A left join keeps all the values in the data frame to the left and drops the values from the data frame to the right that have no key match.</p>
+<p>I used the code below to perform a left join on the paperback_nonfiction and publisher_info data frames I used before.</p>
+<p>The result of the following code is that when the data frames are joined together, the values of the data frame on the right (the publisher_info data frame) are dropped.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>best_paperback_nonfiction</span> <span class='op'>&lt;-</span> <span class='va'>paperback_nonfiction</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>left_join</span><span class='op'>(</span><span class='va'>publisher_info</span>, by <span class='op'>=</span> <span class='st'>"ISBN_13"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<figure>
+<img src="left_join.png" alt="Left Join" /><figcaption>Left Join</figcaption>
+</figure>
+<h3 id="right-join">Right Join</h3>
+<p>A right join keeps values in the data frame to the right and drops the values from the data frame to the left that have no key match.</p>
+<p>The result of the following code is that when the data frames are joined together, the values of the data frame on the left (the paperback_nonfiction data frame) are dropped.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>best_paperback_nonfiction</span> <span class='op'>&lt;-</span> <span class='va'>paperback_nonfiction</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>right_join</span><span class='op'>(</span><span class='va'>publisher_info</span>, by <span class='op'>=</span> <span class='st'>"ISBN_13"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<figure>
+<img src="right-join.png" alt="Right Join" /><figcaption>Right Join</figcaption>
+</figure>
+<h2 id="full-join">Full Join</h2>
+<p>A full join keeps all observations from the data frames you’re joining. Again when there is no key match, values are dropped.</p>
+<p>The result of the following code is that when the data frames are joined together, the values of the data frame on the left (the paperback_nonfiction data frame) and the data frame on the right (the publisher_info data frame) are dropped since they are not a match.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>best_paperback_nonfiction</span> <span class='op'>&lt;-</span> <span class='va'>paperback_nonfiction</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>full_join</span><span class='op'>(</span><span class='va'>publisher_info</span>, by <span class='op'>=</span> <span class='st'>"ISBN_13"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<figure>
+<img src="full_join.png" alt="Full Join" /><figcaption>Full Join</figcaption>
+</figure>
+<p>Whew! Okay I know that was a lot but just wanted to share. The more I do these posts the better I understand these important R and programming concepts. Until next time…</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

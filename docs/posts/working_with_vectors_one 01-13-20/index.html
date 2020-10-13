@@ -84,38 +84,38 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Data Sci Dani: Welcome to Data Sci Dani</title>
+<title>Data Sci Dani: Working With Vectors(Part 1)</title>
 
-<meta property="description" itemprop="description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="description" itemprop="description" content="Part one of working with vectors in R."/>
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2020-01-07"/>
-<meta property="article:created" itemprop="dateCreated" content="2020-01-07"/>
+<meta property="article:published" itemprop="datePublished" content="2020-01-13"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-01-13"/>
 <meta name="article:author" content="Danielle Brantley"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
+<meta property="og:title" content="Data Sci Dani: Working With Vectors(Part 1)"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="og:description" content="Part one of working with vectors in R."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Data Sci Dani"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
-<meta property="twitter:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="twitter:title" content="Data Sci Dani: Working With Vectors(Part 1)"/>
+<meta property="twitter:description" content="Part one of working with vectors in R."/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to Data Sci Dani"]},{"type":"character","attributes":{},"value":["data science","programming","learning","statistics"]},{"type":"character","attributes":{},"value":["\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["01-07-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Working With Vectors(Part 1)"]},{"type":"character","attributes":{},"value":["data science","data types","programming","R","vectors"]},{"type":"character","attributes":{},"value":["Part one of working with vectors in R."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["01-13-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["twitterscreen-shot.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -1808,7 +1808,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Welcome to Data Sci Dani","description":"\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-01-07T00:00:00.000-05:00","citationText":"Brantley, 2020"}
+{"title":"Working With Vectors(Part 1)","description":"Part one of working with vectors in R.","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-01-13T00:00:00.000-05:00","citationText":"Brantley, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1841,27 +1841,152 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Welcome to Data Sci Dani</h1>
+<h1>Working With Vectors(Part 1)</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
   <a href="../../index.html#category:data_science" class="dt-tag">data science</a>
+  <a href="../../index.html#category:data_types" class="dt-tag">data types</a>
   <a href="../../index.html#category:programming" class="dt-tag">programming</a>
-  <a href="../../index.html#category:learning" class="dt-tag">learning</a>
-  <a href="../../index.html#category:statistics" class="dt-tag">statistics</a>
+  <a href="../../index.html#category:R" class="dt-tag">R</a>
+  <a href="../../index.html#category:vectors" class="dt-tag">vectors</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p>“One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.”— Henry Ford</p>
+<p>Part one of working with vectors in R.</p>
 </div>
 
 <div class="d-byline">
   Danielle Brantley <a href="https://gist.github.com/danielle-b" class="uri">https://gist.github.com/danielle-b</a> 
   
-<br/>01-07-2020
+<br/>01-13-2020
 </div>
 
 <div class="d-article">
-<p>I’ve decided to face my fear and enter the world of data science. I’ve always admired data visualizations and have long been interested in how data is used to make business decisions. However, the idea of programming combined with statistics has always intimidated me a bit. My goal is to become a data analyst (and eventually a data scientist) by strengthening my programming and statistical skills. I’ll share what I’m learning; I’ll discuss projects, books/articles I’ve read and really any thoughts I have pertaining to data science.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>For this post, I’ll discuss the working with vectors lesson on DataQuest’s Data Analyst in R track. I’m going to dive deeper into vectors, talking about indexing in R and R’s different data types. There was so much that I learned in this lesson that I decided to break this topic up into two posts. So let’s jump right in!</p>
+<p>As mentioned in my last post, vectors are storage objects that stores a sequence of values. Vectors can be indexed to select the subset of elements they contain. Each element of a vector is assigned a position. This reminds me of lists in Python with one key difference. R is an 1-indexed programming language so the first element in a vector is assigned the position of one. This is very different from what I learned in Python or JavaScript where indexing starts at zero. I think it’s a bit easier though because when we count we usually start from one.</p>
+<h2 id="indexing-by-position">Indexing By Position</h2>
+<p>You can <em>index vectors by position</em> using a single element, a range of elements or multiple elements. Let’s take the example vector from my previous Intro To R Programming post.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h3 id="index-using-a-single-element">Index Using a Single Element:</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>tea_price</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>[1] 4</code></pre>
+</div>
+<h3 id="index-by-range-of-elements">Index by Range of Elements:</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>tea_price</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>:</span><span class='fl'>4</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>[1] 4 2 2</code></pre>
+</div>
+<h3 id="index-using-multiple-elements">Index Using Multiple Elements:</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>tea_price</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='fl'>3</span>, <span class='fl'>5</span><span class='op'>)</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>[1] 5 2 3</code></pre>
+</div>
+<h2 id="rs-data-types">R’s Data Types</h2>
+<p>Like other programming languages, R also has data types. In this lesson, DataQuest presents three basic data types:</p>
+<p><strong>Numeric(Double)</strong>– consists of numbers( 4, 32.6, 32.67521, -2 , -7.9)</p>
+<p><strong>Character</strong>– consists of letters, numbers and special characters. Character data is surrounded by quotation marks (“snake”, “&amp;”, “%” , “special0964”, “cool + beans”)</p>
+<p><strong>Logical</strong>-stores boolean values TRUE and FALSE</p>
+<p>To find out the type of data type I’m working with, I learned to use <strong>typeof()</strong> function.</p>
+<p>This is where things got a bit confusing for me. I decided to try this for myself in both R Studio and the R console that comes with R. I ended up with the following:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/typeof.html'>typeof</a></span><span class='op'>(</span><span class='fl'>88</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;double&quot;</code></pre>
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/typeof.html'>typeof</a></span><span class='op'>(</span><span class='fl'>6.7</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;double&quot;</code></pre>
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/typeof.html'>typeof</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>0.75</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;double&quot;</code></pre>
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/typeof.html'>typeof</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>4.93</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;double&quot;</code></pre>
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/typeof.html'>typeof</a></span><span class='op'>(</span><span class='fl'>47</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;double&quot;</code></pre>
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/typeof.html'>typeof</a></span><span class='op'>(</span><span class='fl'>392</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;double&quot;</code></pre>
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/typeof.html'>typeof</a></span><span class='op'>(</span><span class='fl'>9.6666667</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;double&quot;</code></pre>
+</div>
+<p>As you can see when I use the typeof() function on both whole numbers and decimals, it doesn’t come back as numeric, it comes back as double. From the lesson, I understood double to mean just decimal numbers.</p>
+<p>I decided to consult the #rstats community on Twitter.</p>
+<figure>
+<img src="twitterscreen-shot.png" alt="Posing a question to #rstats twitter" /><figcaption>Posing a question to #rstats twitter</figcaption>
+</figure>
+<p>A few members of the #rstats community, Maarten Demeyer, Tyson Barrett, and Colin Fay came through with helpful responses that helped clarify the confusion I had. A special thank you to them! Check out their responses here.</p>
+<p>What I gathered from these responses and further research is that numeric is a class and the double data type fall into that class. There are also more data types in R but I won’t get into those right now.</p>
+<h2 id="names-function">Names() Function</h2>
+<p>I also learned that in R you can assign names to vector elements. To do this, we use the <strong>names()</strong> function. Again, taking the example from my Intro to R Programming post, if I wanted to assign the values contained in tea_flavors to the values stored in tea_prices, it would look like this:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>tea_flavors</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"chai"</span>, <span class='st'>"matcha"</span>, <span class='st'>"black"</span>, <span class='st'>"green"</span>, <span class='st'>"white"</span><span class='op'>)</span>
+<span class='va'>tea_prices</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>5</span>, <span class='fl'>4</span>, <span class='fl'>2</span>, <span class='fl'>2</span>, <span class='fl'>3</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='va'>tea_prices</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='va'>tea_flavors</span>
+<span class='va'>tea_prices</span>
+</code></pre>
+</div>
+<pre><code>  chai matcha  black  green  white 
+     5      4      2      2      3 </code></pre>
+</div>
+<p>I could also use the names() function to return the names of the elements in a vector like this:</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] &quot;chai&quot;   &quot;matcha&quot; &quot;black&quot;  &quot;green&quot;  &quot;white&quot; </code></pre>
+</div>
+<h2 id="indexing-by-name">Indexing By Name</h2>
+<p>Lastly for part one, I’ll talk about indexing by name. In R, you can <em>index vectors by name</em>. Note that I get the same result when I index by name and position.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>tea_prices</span><span class='op'>[</span><span class='st'>"matcha"</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>matcha 
+     4 </code></pre>
+<div class="sourceCode">
+<pre><code><span class='va'>tea_prices</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>matcha 
+     4 </code></pre>
+</div>
+<p>Earlier in this post you saw how I indexed by position using multiple elements. You can do the same when indexing by name.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>tea_prices</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"black"</span>, <span class='st'>"white"</span><span class='op'>)</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>black white 
+    2     3 </code></pre>
+</div>
+<p>Whew, that was a lot to cover! That’s it for Part One working with vectors. Part Two is coming soon!</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

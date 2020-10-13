@@ -84,38 +84,38 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Data Sci Dani: Welcome to Data Sci Dani</title>
+<title>Data Sci Dani: Scatter Plots</title>
 
-<meta property="description" itemprop="description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="description" itemprop="description" content="How to create scatter plots in R."/>
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2020-01-07"/>
-<meta property="article:created" itemprop="dateCreated" content="2020-01-07"/>
+<meta property="article:published" itemprop="datePublished" content="2020-03-11"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-03-11"/>
 <meta name="article:author" content="Danielle Brantley"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
+<meta property="og:title" content="Data Sci Dani: Scatter Plots"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="og:description" content="How to create scatter plots in R."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Data Sci Dani"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
-<meta property="twitter:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="twitter:title" content="Data Sci Dani: Scatter Plots"/>
+<meta property="twitter:description" content="How to create scatter plots in R."/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to Data Sci Dani"]},{"type":"character","attributes":{},"value":["data science","programming","learning","statistics"]},{"type":"character","attributes":{},"value":["\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["01-07-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Scatter Plots"]},{"type":"character","attributes":{},"value":["data science","programming","R","scatter plots","exploratory data analysis"]},{"type":"character","attributes":{},"value":["How to create scatter plots in R."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["03-11-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["ScatterPlots_files/figure-html5/unnamed-chunk-2-1.png","ScatterPlots_files/figure-html5/unnamed-chunk-3-1.png","ScatterPlots_files/figure-html5/unnamed-chunk-4-1.png","ScatterPlots_files/figure-html5/unnamed-chunk-4-2.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -1808,7 +1808,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Welcome to Data Sci Dani","description":"\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-01-07T00:00:00.000-05:00","citationText":"Brantley, 2020"}
+{"title":"Scatter Plots","description":"How to create scatter plots in R.","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-03-11T00:00:00.000-04:00","citationText":"Brantley, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1841,27 +1841,100 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Welcome to Data Sci Dani</h1>
+<h1>Scatter Plots</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
   <a href="../../index.html#category:data_science" class="dt-tag">data science</a>
   <a href="../../index.html#category:programming" class="dt-tag">programming</a>
-  <a href="../../index.html#category:learning" class="dt-tag">learning</a>
-  <a href="../../index.html#category:statistics" class="dt-tag">statistics</a>
+  <a href="../../index.html#category:R" class="dt-tag">R</a>
+  <a href="../../index.html#category:scatter_plots" class="dt-tag">scatter plots</a>
+  <a href="../../index.html#category:exploratory_data_analysis" class="dt-tag">exploratory data analysis</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p>“One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.”— Henry Ford</p>
+<p>How to create scatter plots in R.</p>
 </div>
 
 <div class="d-byline">
   Danielle Brantley <a href="https://gist.github.com/danielle-b" class="uri">https://gist.github.com/danielle-b</a> 
   
-<br/>01-07-2020
+<br/>03-11-2020
 </div>
 
 <div class="d-article">
-<p>I’ve decided to face my fear and enter the world of data science. I’ve always admired data visualizations and have long been interested in how data is used to make business decisions. However, the idea of programming combined with statistics has always intimidated me a bit. My goal is to become a data analyst (and eventually a data scientist) by strengthening my programming and statistical skills. I’ll share what I’m learning; I’ll discuss projects, books/articles I’ve read and really any thoughts I have pertaining to data science.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>In the last few posts, I went over different types of plots: line graphs, bar charts, histograms, and box plots. In this post, I’ll go over the scatter plots lesson that is part of DataQuest’s Data Analyst in R track. The DataQuest lesson is called Scatter Plots for Exploratory Analysis.</p>
+<p>The month of March is Women’s History Month and in honor of Women’s History Month, I decided to use the data sets in the Tidy Tuesday repo called Women in the Workplace. These data sets are about <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-03-05">women in the workforce</a>, specifically jobs, employment, and earnings. With that being said let’s go into scatter plots.</p>
+<p><strong>Scatter plots</strong> represent data using points that have the value of one variable determining the position on the x-axis and the value of the other variable determining the position on the y-axis. Unlike the other plots I’ve studied, scatter plots do not require that values of one variable depend on the values of another variable. Instead, I’m looking for any sort of relationship between the variables.</p>
+<p>There are different types of relationships between variables. I’ll use <strong>variable_x</strong> and <strong>variable_y</strong> as examples here:</p>
+<ul>
+<li><strong>Positive relationship:</strong> As the values of variable_x increase, so do the values of variable_y.</li>
+<li><strong>Negative relationship:</strong> As the values of variable_x decrease, the values of variable_y increase.</li>
+<li><strong>Strong relationship:</strong> Points are clustered together as opposed to being spread out.</li>
+<li><strong>Weak relationship:</strong> Points are spread out as opposed to being clustered together.</li>
+<li><strong>No Relationship:</strong> It appears that the points are arranged in a shapeless cloud.</li>
+</ul>
+<p>I can create a scatter plot similar to how I created plots before. However, the layer <strong>geom_point()</strong> is what creates a scatter plot. Let’s look at an example from a data set I’m working with. The following code and scatter plot look at female earnings by year. As you can see, the format for the ggplot and aes layers are the same as I did with previous plots. The difference is the geom_point() layer which differentiates the scatter plot from other kinds of plots.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'>ggplot</span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>earnings_female</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>aes</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>Year</span>, y <span class='op'>=</span> <span class='va'>percent</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>geom_point</span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+<p><img src="ScatterPlots_files/figure-html5/unnamed-chunk-2-1.png" width="624" /></p>
+</div>
+<p>What kind of relationship do the variables have in this example? What can you conclude by looking at this scatter plot?</p>
+<h3 id="informative-scatter-plots">Informative Scatter Plots</h3>
+<p>There are a few layers that I could add that would make my plot easier to interpret. As I discussed in my multiple line graphs post, I could adjust my axis ranges. I can specify a scatter plot’s x- and y-axis ranges by adding a separate layer for each to my plot using <strong>xlim()</strong> and <strong>ylim()</strong>. In this example, I adjusted the x-axis to show the years 1981 through 2011 and y-axis to specify ranges of 50 through 100.</p>
+<p>You’ll also notice in this block of code the argument <strong>alpha =</strong> . This argument makes the points on the plot more transparent. Alpha uses values from 0 through 1 to determine transparency with the value of 0 specifying complete transparency and the value of 1 specifying complete opacity. The intermediate values specify varying degrees of transparency. DataQuest says that alpha values of 0.2 to 0.5 usually will help make overlapping points easier to see.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'>ggplot</span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>earnings_female</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>aes</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>Year</span>, y <span class='op'>=</span> <span class='va'>percent</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>geom_point</span><span class='op'>(</span>alpha <span class='op'>=</span> <span class='fl'>0.3</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://rdrr.io/r/graphics/plot.window.html'>xlim</a></span><span class='op'>(</span><span class='fl'>1981</span>, <span class='fl'>2011</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://rdrr.io/r/graphics/plot.window.html'>ylim</a></span><span class='op'>(</span><span class='fl'>50</span>, <span class='fl'>100</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>theme</span><span class='op'>(</span>panel.background <span class='op'>=</span> <span class='fu'>element_rect</span><span class='op'>(</span>fill<span class='op'>=</span><span class='st'>"white"</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+<p><img src="ScatterPlots_files/figure-html5/unnamed-chunk-3-1.png" width="624" /></p>
+</div>
+<h3 id="making-multiple-scatter-plots-using-functions">Making Multiple Scatter Plots Using Functions</h3>
+<p>I could create multiple scatter plots by copying and pasting the code block from the second example. However, in programming if you find yourself copying and pasting repeatedly, there is likely a much more efficient solution.</p>
+<p>This brings us to functions. I could use what I learned about writing custom functions and visualizing data to write a function to create a scatter plot. I could then use my knowledge of functionals to apply my function to the data to create multiple scatter plots at once.</p>
+<p>Let’s look at the code below. I decided to use another data set within the the Women in the Workplace repo that looks at employment for both men and women. However, I decided to focus on the women here.</p>
+<p>As you can see the code within the function is similar to what I’ve done previously. However instead of using aes() to map variables to axes, I would use <strong>aes_string()</strong> which allows me to pass vectors of variable names into my function.</p>
+<p>I can then use a functional from the purrr package to apply the <strong>create_scatter()</strong> function to the variables I want to look at relationships between. In this case, I’m looking for a relationship between year and the percentages of women working part-time and full-time.</p>
+<p>The create_scatter() function is a two-variable function so I need to use the functional <strong>map2()</strong>. Recall from my post on functionals that map2() takes two variables as arguments and returns a list.</p>
+<p>So what kind of output am I looking to obtain with this function? I want to create two scatter plots exploring the following relationships:</p>
+<ul>
+<li>Year and Percentage of Women Working Part-Time</li>
+<li>Year and Percentage of Women Working Full-Time</li>
+</ul>
+<p>I assigned the year variable to the x-axis using x_var. The y-axis will consist of variables I want to compare: part_time_female and full_time_female and I assigned these variables to y_var. In this instance, I decided to type out the names of the variables. However, I could do this another way. I could index the data frame to select specific rows and use the names() function to extract row names.</p>
+<p>The result of this code are the scatter plots below.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>create_scatter</span> <span class='op'>=</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>x</span>,<span class='va'>y</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='fu'>ggplot</span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>employed_gender</span><span class='op'>)</span> <span class='op'>+</span>
+   <span class='fu'>aes_string</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>x</span>, y <span class='op'>=</span> <span class='va'>y</span><span class='op'>)</span> <span class='op'>+</span>
+   <span class='fu'>geom_point</span><span class='op'>(</span>alpha <span class='op'>=</span> <span class='fl'>0.3</span><span class='op'>)</span> <span class='op'>+</span>
+    <span class='fu'><a href='https://rdrr.io/r/graphics/plot.window.html'>xlim</a></span><span class='op'>(</span><span class='fl'>1970</span>, <span class='fl'>2015</span><span class='op'>)</span> <span class='op'>+</span>
+    <span class='fu'><a href='https://rdrr.io/r/graphics/plot.window.html'>ylim</a></span><span class='op'>(</span><span class='fl'>20</span>, <span class='fl'>100</span><span class='op'>)</span> <span class='op'>+</span>
+    <span class='fu'>theme</span><span class='op'>(</span>panel.background <span class='op'>=</span> <span class='fu'>element_rect</span><span class='op'>(</span>fill<span class='op'>=</span><span class='st'>"white"</span><span class='op'>)</span><span class='op'>)</span>
+<span class='op'>}</span>
+<span class='va'>x_var</span> <span class='op'>&lt;-</span> <span class='st'>"year"</span>
+<span class='va'>y_var</span> <span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"part_time_female"</span>, <span class='st'>"full_time_female"</span><span class='op'>)</span>
+<span class='fu'>map2</span><span class='op'>(</span><span class='va'>x_var</span>, <span class='va'>y_var</span>, <span class='va'>create_scatter</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[[1]]</code></pre>
+<p><img src="ScatterPlots_files/figure-html5/unnamed-chunk-4-1.png" width="624" /></p>
+<pre><code>
+[[2]]</code></pre>
+<p><img src="ScatterPlots_files/figure-html5/unnamed-chunk-4-2.png" width="624" /></p>
+</div>
+<p>Well this just about does it for scatter plots. This was another really fun lesson to work on. The next post will be about a project that covers what I learned thus far. Until next time…</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

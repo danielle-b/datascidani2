@@ -84,38 +84,38 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Data Sci Dani: Welcome to Data Sci Dani</title>
+<title>Data Sci Dani: Fundamentals of String Manipulation</title>
 
-<meta property="description" itemprop="description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="description" itemprop="description" content="String manipulation in R."/>
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2020-01-07"/>
-<meta property="article:created" itemprop="dateCreated" content="2020-01-07"/>
+<meta property="article:published" itemprop="datePublished" content="2020-02-21"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-02-21"/>
 <meta name="article:author" content="Danielle Brantley"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
+<meta property="og:title" content="Data Sci Dani: Fundamentals of String Manipulation"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="og:description" content="String manipulation in R."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Data Sci Dani"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Data Sci Dani: Welcome to Data Sci Dani"/>
-<meta property="twitter:description" content="&quot;One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.&quot;— Henry Ford"/>
+<meta property="twitter:title" content="Data Sci Dani: Fundamentals of String Manipulation"/>
+<meta property="twitter:description" content="String manipulation in R."/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to Data Sci Dani"]},{"type":"character","attributes":{},"value":["data science","programming","learning","statistics"]},{"type":"character","attributes":{},"value":["\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["01-07-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Fundamentals of String Manipulation"]},{"type":"character","attributes":{},"value":["data science","programming","R","string manipulation"]},{"type":"character","attributes":{},"value":["String manipulation in R."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Danielle Brantley"]},{"type":"character","attributes":{},"value":["https://gist.github.com/danielle-b"]}]}]},{"type":"character","attributes":{},"value":["02-21-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["documentation.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -1808,7 +1808,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Welcome to Data Sci Dani","description":"\"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.\"— Henry Ford","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-01-07T00:00:00.000-05:00","citationText":"Brantley, 2020"}
+{"title":"Fundamentals of String Manipulation","description":"String manipulation in R.","authors":[{"author":"Danielle Brantley","authorURL":"https://gist.github.com/danielle-b","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-02-21T00:00:00.000-05:00","citationText":"Brantley, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1841,27 +1841,186 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Welcome to Data Sci Dani</h1>
+<h1>Fundamentals of String Manipulation</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
   <a href="../../index.html#category:data_science" class="dt-tag">data science</a>
   <a href="../../index.html#category:programming" class="dt-tag">programming</a>
-  <a href="../../index.html#category:learning" class="dt-tag">learning</a>
-  <a href="../../index.html#category:statistics" class="dt-tag">statistics</a>
+  <a href="../../index.html#category:R" class="dt-tag">R</a>
+  <a href="../../index.html#category:string_manipulation" class="dt-tag">string manipulation</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p>“One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do.”— Henry Ford</p>
+<p>String manipulation in R.</p>
 </div>
 
 <div class="d-byline">
   Danielle Brantley <a href="https://gist.github.com/danielle-b" class="uri">https://gist.github.com/danielle-b</a> 
   
-<br/>01-07-2020
+<br/>02-21-2020
 </div>
 
 <div class="d-article">
-<p>I’ve decided to face my fear and enter the world of data science. I’ve always admired data visualizations and have long been interested in how data is used to make business decisions. However, the idea of programming combined with statistics has always intimidated me a bit. My goal is to become a data analyst (and eventually a data scientist) by strengthening my programming and statistical skills. I’ll share what I’m learning; I’ll discuss projects, books/articles I’ve read and really any thoughts I have pertaining to data science.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>In previous posts, I’ve worked with variables with numerical data. This post will focus on working on variables with character data. The data set that I am using for this post was posted on Tidy Tuesday’s <a href="https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/readme.md">Github</a>. This data set comes from Spotify and provides information about popular songs and their genres. So let’s get started!</p>
+<h3 id="subsetting-a-string">Subsetting a String</h3>
+<p>In this lesson, I worked with a tidyverse package called <strong>stringr</strong>. The stringr package contains tools for combining, splitting, adding, and removing spaces from, and other performing other useful string data manipulations. Functions in the stringr package all begin with the prefix <strong>str_</strong> and RStudio’s autocomplete feature makes this package especially fun to work with!</p>
+<p>I’ll first discuss a function I learned can subset strings, <strong>str_sub()</strong>. The str_sub function takes a string, subsets it based on positions of characters within the string, and returns a new string containing only the characters between the specified positions. The string that’s returned includes the characters of the positions specified as well as those between them. All characters are included, even spaces.</p>
+<p>Let’s look at an example. I am working with the data frame called <strong>spotify_songs</strong> and I want to subset the <strong>track_artist</strong> variable and return a new vector consisting of the first nine letters of each artist. I indexed the track_artist variable to include only the first twenty artists. I then subset the variable from left to right by position with 1 and 9 representing the position numbers.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'>str_sub</span><span class='op'>(</span><span class='va'>spotify_songs</span><span class='op'>$</span><span class='va'>track_artist</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>10</span><span class='op'>]</span>, <span class='fl'>1</span>, <span class='fl'>9</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code> [1] &quot;Ed Sheera&quot; &quot;Maroon 5&quot;  &quot;Zara Lars&quot; &quot;The Chain&quot; &quot;Lewis Cap&quot;
+ [6] &quot;Ed Sheera&quot; &quot;Katy Perr&quot; &quot;Sam Feldt&quot; &quot;Avicii&quot;    &quot;Shawn Men&quot;</code></pre>
+</div>
+<p>I can see here that the function resulted in a return of strings with only the characters between the specified positions.</p>
+<p>To subset the same <strong>track_artist</strong> variable from right to left by position, I use a minus sign (–) before the position number, like so:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'>str_sub</span><span class='op'>(</span><span class='va'>spotify_songs</span><span class='op'>$</span><span class='va'>track_artist</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>10</span><span class='op'>]</span>, <span class='op'>-</span><span class='fl'>9</span>, <span class='op'>-</span><span class='fl'>1</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code> [1] &quot;d Sheeran&quot; &quot;Maroon 5&quot;  &quot;a Larsson&quot; &quot;insmokers&quot; &quot;s Capaldi&quot;
+ [6] &quot;d Sheeran&quot; &quot;aty Perry&quot; &quot;Sam Feldt&quot; &quot;Avicii&quot;    &quot;wn Mendes&quot;</code></pre>
+</div>
+<p>Note that the sub_str() function is vectorized. I could apply it to a vector and it will return a new vector.</p>
+<h3 id="splitting-a-string">Splitting A String</h3>
+<p>Another technique for subsetting strings is splitting strings using the <strong>str_split()</strong> function. Unlike the str_sub() function, the str_split() function is not dependent on position. The str_split() function is used to split a string into pieces. The place where the string is split is called the delimeter. The delimeter refers to a space, comma, another character or characters.</p>
+<p>Let’s look at what happens when I use the str_split() function to split the strings listed in the first example.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>artist_match</span> <span class='op'>&lt;-</span><span class='fu'>str_sub</span><span class='op'>(</span><span class='va'>spotify_songs</span><span class='op'>$</span><span class='va'>track_artist</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>6</span><span class='op'>]</span>, <span class='fl'>1</span>, <span class='fl'>9</span><span class='op'>)</span>
+<span class='fu'>str_split</span><span class='op'>(</span><span class='va'>artist_match</span>, <span class='st'>" "</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[[1]]
+[1] &quot;Ed&quot;     &quot;Sheera&quot;
+
+[[2]]
+[1] &quot;Maroon&quot; &quot;5&quot;     
+
+[[3]]
+[1] &quot;Zara&quot; &quot;Lars&quot;
+
+[[4]]
+[1] &quot;The&quot;   &quot;Chain&quot;
+
+[[5]]
+[1] &quot;Lewis&quot; &quot;Cap&quot;  
+
+[[6]]
+[1] &quot;Ed&quot;     &quot;Sheera&quot;</code></pre>
+<div class="sourceCode">
+<pre><code><span class='va'>artist_match</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>6</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;Ed Sheera&quot; &quot;Maroon 5&quot;  &quot;Zara Lars&quot; &quot;The Chain&quot; &quot;Lewis Cap&quot;
+[6] &quot;Ed Sheera&quot;</code></pre>
+</div>
+<p>From the photos, I can see that the string split occurred where there is a space. I can also see that by default the output is a list.</p>
+<p>I can use the <strong>simplify = TRUE</strong> argument to simplify the output into a matrix, like so:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>artist_match_split</span> <span class='op'>&lt;-</span><span class='fu'>str_split</span><span class='op'>(</span><span class='va'>artist_match</span>, <span class='st'>" "</span>, simplify <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
+<span class='va'>artist_match_split</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>6</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;Ed&quot;     &quot;Maroon&quot; &quot;Zara&quot;   &quot;The&quot;    &quot;Lewis&quot;  &quot;Ed&quot;    </code></pre>
+</div>
+<h3 id="combining-strings">Combining Strings</h3>
+<p>The function for combining strings is called <strong>str_c()</strong>.</p>
+<p>I’ll use str_c() to combine multiple strings from my spotify_songs data frame into a single variable.</p>
+<p>Let’s see what happens when I combine the variables <strong>track_name</strong> and <strong>track_artist</strong> into one variable.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'>str_c</span><span class='op'>(</span><span class='va'>spotify_songs</span><span class='op'>$</span><span class='va'>track_name</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>6</span><span class='op'>]</span>, <span class='va'>spotify_songs</span><span class='op'>$</span><span class='va'>track_artist</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>6</span><span class='op'>]</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;I Don&#39;t Care (with Justin Bieber) - Loud Luxury RemixEd Sheeran&quot;
+[2] &quot;Memories - Dillon Francis RemixMaroon 5&quot;                        
+[3] &quot;All the Time - Don Diablo RemixZara Larsson&quot;                    
+[4] &quot;Call You Mine - Keanu Silva RemixThe Chainsmokers&quot;              
+[5] &quot;Someone You Loved - Future Humans RemixLewis Capaldi&quot;           
+[6] &quot;Beautiful People (feat. Khalid) - Jack Wins RemixEd Sheeran&quot;    </code></pre>
+</div>
+<p>I can use the <strong>sep=</strong> argument within the str_c() function to specify characters to place between the strings I’m combining.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] &quot;I Don&#39;t Care (with Justin Bieber) - Loud Luxury Remix Ed Sheeran&quot;
+[2] &quot;Memories - Dillon Francis Remix Maroon 5&quot;                        
+[3] &quot;All the Time - Don Diablo Remix Zara Larsson&quot;                    
+[4] &quot;Call You Mine - Keanu Silva Remix The Chainsmokers&quot;              
+[5] &quot;Someone You Loved - Future Humans Remix Lewis Capaldi&quot;           
+[6] &quot;Beautiful People (feat. Khalid) - Jack Wins Remix Ed Sheeran&quot;    </code></pre>
+</div>
+<h3 id="padding-a-string">Padding A String</h3>
+<p>This is where I deviated from DataQuest a bit. After reading this section of the lesson, I was a bit confused. So I decided to do some research and came across this <a href="https://stringr.tidyverse.org/reference/str_pad.html">tidyverse documentation</a> describing how to pad a string.</p>
+<p>The stringr function, <strong>str_pad()</strong> lets me specify characters into an existing string to make it a specified length.</p>
+<p>The function takes as arguments:</p>
+<ul>
+<li>The string you’re working with</li>
+<li>The minimum width of padded strings</li>
+<li>The side on which padding is added Single character padding (space is the default)</li>
+<li>To better understand the str_pad() function and its arguments, I took this screenshot of the tidyverse documentation.</li>
+</ul>
+<figure>
+<img src="documentation.png" alt="Stringr Documentation" /><figcaption>Stringr Documentation</figcaption>
+</figure>
+<p>I have a few examples where I experimented with padding strings.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'>str_pad</span><span class='op'>(</span><span class='st'>"Zara Larsson"</span>, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>8</span>, <span class='fl'>16</span>, <span class='fl'>24</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;Zara Larsson&quot;             &quot;    Zara Larsson&quot;        
+[3] &quot;            Zara Larsson&quot;</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'>str_pad</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Ed Sheeran"</span>, <span class='st'>"Maroon 5"</span>, <span class='st'>"Zara Larsson"</span><span class='op'>)</span>, <span class='fl'>10</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;Ed Sheeran&quot;   &quot;  Maroon 5&quot;   &quot;Zara Larsson&quot;</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>rbind</a></span><span class='op'>(</span>
+  <span class='fu'>str_pad</span><span class='op'>(</span><span class='st'>"Ed Sheeran"</span>, <span class='fl'>20</span>, <span class='st'>"left"</span><span class='op'>)</span>,
+  <span class='fu'>str_pad</span><span class='op'>(</span><span class='st'>"Maroon 5"</span>, <span class='fl'>20</span>, <span class='st'>"right"</span><span class='op'>)</span>,
+  <span class='fu'>str_pad</span><span class='op'>(</span><span class='st'>"Zara Larsson"</span>, <span class='fl'>20</span>, <span class='st'>"both"</span><span class='op'>)</span>
+<span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>     [,1]                  
+[1,] &quot;          Ed Sheeran&quot;
+[2,] &quot;Maroon 5            &quot;
+[3,] &quot;    Zara Larsson    &quot;</code></pre>
+</div>
+<p>I can check the length of the strings in my vector using the <strong>str_length</strong> function. The str_length function returns a vector containing the number of characters in each string.</p>
+<p>For example, I took the strings from one of my str_pad() functions and called the str_length() function on them, I got the following result.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'>str_length</span><span class='op'>(</span><span class='st'>"Maroon 5"</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] 8</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'>str_length</span><span class='op'>(</span><span class='st'>"Ed Sheeran"</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] 10</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'>str_length</span><span class='op'>(</span><span class='st'>"Zara Larsson"</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>[1] 12</code></pre>
+</div>
+<p>I can see that the “Ed Sheeran” string has 10 characters, the “Maroon 5” string also has 8 characters, and “Zara Larsson” has 12 characters.</p>
+<p>That just about covers it for string manipulation. This was a fun lesson! This lesson also marks the end of the Intermediate R Programming course in the Data Analyst in R track. I’m moving on to data visualization! Until next time…</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
