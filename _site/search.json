@@ -6,14 +6,14 @@
       "description": "Who I am and what this blog is about. ",
       "author": [],
       "contents": "\n\nFor years, I have been interested in data science. I finally decided to pursue it and be intentional about it. I wanted to start writing about my passions, my thoughts, and curious wonderings about the world of data science. Data Sci Dani is a space where I’ll share my projects and what I’m learning, giving you insight into my skillset.\nIn my free time, I’m listening to 90s Hip Hop and R&B, obsessing over podcasts or watching hair and makeup tutorials on YouTube. I’m also trying to keep with the latest trends in media.\nTake some time to explore the blog, read something interesting, and feel free to reach out.\n\n\n\n",
-      "last_modified": "2020-10-13T12:54:23-04:00"
+      "last_modified": "2020-10-13T14:31:45-04:00"
     },
     {
       "path": "index.html",
       "title": "Data Sci Dani",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-10-13T12:58:01-04:00"
+      "last_modified": "2020-10-13T14:32:06-04:00"
     },
     {
       "path": "projects.html",
@@ -26,7 +26,7 @@
       "path": "README.html",
       "author": [],
       "contents": "\ndatascidani2\nMy revamped website\n\n\n",
-      "last_modified": "2020-10-13T12:58:01-04:00"
+      "last_modified": "2020-10-13T14:32:06-04:00"
     }
   ],
   "collections": ["posts/posts.json"]
