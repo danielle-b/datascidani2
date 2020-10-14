@@ -8,6 +8,7 @@ categories:
   - exploratory data analysis
 description: |
   How to create scatter plots in R.
+base_url: https://datascidani.com/2020/03/11/scatter-plots/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

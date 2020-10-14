@@ -9,6 +9,7 @@ categories:
   - box plots
 description: |
   How to create bar charts, histograms and box plots in R.
+base_url: https://datascidani.com/2020/03/09/bar-charts-histograms-and-box-plots/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

@@ -8,6 +8,7 @@ categories:
   - vectors
 description: |
  Part one of working with vectors in R.
+base_url: https://datascidani.com/2020/01/13/working-with-vectorspart-1/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

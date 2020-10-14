@@ -2,6 +2,7 @@ name: "datascidani2"
 title: "Data Sci Dani"
 description: |
   Data Sci Dani is my journey through data science.
+base_url: https://datascidani.com/
 output_dir: "docs"
 navbar:
   right:

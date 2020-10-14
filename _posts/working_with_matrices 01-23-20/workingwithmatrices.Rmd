@@ -8,6 +8,7 @@ categories:
   - matrices
 description: |
  Working with matrices in R.
+base_url: https://datascidani.com/2020/01/23/working-with-matrices/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

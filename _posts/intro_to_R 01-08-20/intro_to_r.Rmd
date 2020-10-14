@@ -7,6 +7,7 @@ categories:
   - vectors
 description: |
  My first introduction to the R programming language.
+base_url: https://datascidani.com/2020/01/09/intro-to-r-programming/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

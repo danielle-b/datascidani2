@@ -8,6 +8,7 @@ categories:
   - lists
 description: |
  Working with lists in R.
+base_url: https://datascidani.com/2020/01/27/working-with-lists/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

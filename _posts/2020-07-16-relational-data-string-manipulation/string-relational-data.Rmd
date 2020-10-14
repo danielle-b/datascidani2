@@ -9,6 +9,7 @@ categories:
   - relational data
 description: |
   Learning more string manipulation and relational data in R.
+base_url: https://datascidani.com/2020/07/16/string-manipulation-and-relational-data/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

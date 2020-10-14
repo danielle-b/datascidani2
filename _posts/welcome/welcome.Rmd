@@ -7,6 +7,7 @@ categories:
   - statistics
 description: |
   "One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do."— Henry Ford
+base_url: https://datascidani.com/2020/01/07/welcome-to-data-sci-dani/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

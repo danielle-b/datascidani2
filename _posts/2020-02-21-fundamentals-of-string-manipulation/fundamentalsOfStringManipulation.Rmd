@@ -7,6 +7,7 @@ categories:
   - string manipulation
 description: |
   String manipulation in R.
+base_url: https://datascidani.com/2020/02/21/fundamentals-of-string-manipulation/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

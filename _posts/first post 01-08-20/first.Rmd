@@ -8,6 +8,7 @@ categories:
   - books
 description: |
  My decision to pursue data science.
+base_url: https://datascidani.com/2020/01/08/why-data-science/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

@@ -7,6 +7,7 @@ categories:
   - vectorized functions
 description: |
   Vectorized Functions in R.
+base_url: https://datascidani.com/2020/02/10/vectorized-functions/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

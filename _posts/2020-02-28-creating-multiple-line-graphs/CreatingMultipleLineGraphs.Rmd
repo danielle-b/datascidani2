@@ -7,6 +7,7 @@ categories:
   - multiple line graphs
 description: |
   How to create multiple line graphs in R.
+base_url: https://datascidani.com/2020/02/28/creating-multiple-line-graphs/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

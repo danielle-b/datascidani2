@@ -7,6 +7,7 @@ categories:
   - control structures
 description: |
   Working with control structures in R.
+base_url: https://datascidani.com/2020/02/06/control-structures/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b

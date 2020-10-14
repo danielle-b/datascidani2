@@ -8,6 +8,7 @@ categories:
   - data frames
 description: |
  Working with data frames in R.
+base_url: https://datascidani.com/2020/01/30/working-with-data-frames/
 author:
   - name: Danielle Brantley
     url: https://gist.github.com/danielle-b
