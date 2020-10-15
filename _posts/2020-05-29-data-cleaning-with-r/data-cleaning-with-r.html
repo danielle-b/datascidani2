@@ -98,12 +98,14 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <meta property="og:title" content="Data Cleaning With R"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="My experience learning to do some data cleaning in R."/>
+  <meta property="og:image" content="https://datascidani.com/2020/05/29/data-cleaning-with-r/before.jpg"/>
   <meta property="og:locale" content="en_US"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
-  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:card" content="summary_large_image"/>
   <meta property="twitter:title" content="Data Cleaning With R"/>
   <meta property="twitter:description" content="My experience learning to do some data cleaning in R."/>
+  <meta property="twitter:image" content="https://datascidani.com/2020/05/29/data-cleaning-with-r/before.jpg"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -114,7 +116,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["after.png","before.png","data-cleaning-with-r_files/anchor-4.2.2/anchor.min.js","data-cleaning-with-r_files/bowser-1.9.3/bowser.min.js","data-cleaning-with-r_files/distill-2.2.21/template.v2.js","data-cleaning-with-r_files/jquery-1.11.3/jquery.min.js","data-cleaning-with-r_files/webcomponents-2.0.0/webcomponents.js","holiday.png","online_shoppers_intention.csv","productrelated.png"]}
+  {"type":"character","attributes":{},"value":["after.jpg","before.jpg","data-cleaning-with-r_files/anchor-4.2.2/anchor.min.js","data-cleaning-with-r_files/bowser-1.9.3/bowser.min.js","data-cleaning-with-r_files/distill-2.2.21/template.v2.js","data-cleaning-with-r_files/jquery-1.11.3/jquery.min.js","data-cleaning-with-r_files/webcomponents-2.0.0/webcomponents.js","holiday.jpg","online_shoppers_intention.csv","productrelated.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1269,12 +1271,12 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <p>I decided to use the second script to convert the Weekend and Revenue columns to numeric columns. The first photo shown is before I converted the columns to numeric and the second photo shows the columns after I converted them to numeric columns.</p>
-<figure>
-<img src="before.png" alt="Before converting coluumns to numeric" /><figcaption>Before converting coluumns to numeric</figcaption>
-</figure>
-<figure>
-<img src="after.png" alt="After converting coluumns to numeric" /><figcaption>After converting coluumns to numeric</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="before.jpg" width="40%" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="after.jpg" width="40%" /></p>
+</div>
 <p>The next thing I decided to do was to filter the data frame so that values for the ProductRelated column are more than 15. The ProductRelated column refers to products pages of a shopping site. I filtered the data using the script shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
@@ -1284,9 +1286,9 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <p>This is what the column looked like after I filtered it:</p>
-<figure>
-<img src="productrelated.png" alt="Filtered ProductRelated column" /><figcaption>Filtered ProductRelated column</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="productrelated.jpg" width="20%" /></p>
+</div>
 <p>I then decided to group the data by Month and Visitor Type and sum up the columns using Informational and Informational Duration columns.</p>
 <p>The results are shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1360,9 +1362,9 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <p>This is what the SpecialDay column looked like after I changed its name to Holiday.</p>
-<figure>
-<img src="holiday.png" alt="From SpecialDay to Holiday" /><figcaption>From SpecialDay to Holiday</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="holiday.jpg" width="20%" /></p>
+</div>
 <p>Lastly with this data frame, I decided to look for duplicate values.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">

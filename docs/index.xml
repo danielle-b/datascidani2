@@ -33,6 +33,7 @@
       <category>relational data</category>
       <guid>https://datascidani.com/posts/2020-07-16-relational-data-string-manipulation</guid>
       <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://datascidani.com/posts/2020-07-16-relational-data-string-manipulation/inner_join.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Data Cleaning With R</title>
@@ -45,6 +46,7 @@
       <category>data cleaning</category>
       <guid>https://datascidani.com/posts/2020-05-29-data-cleaning-with-r</guid>
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://datascidani.com/posts/2020-05-29-data-cleaning-with-r/before.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Quick Update</title>
@@ -184,6 +186,7 @@
       <category>vectorized functions</category>
       <guid>https://datascidani.com/posts/2020-02-10-vectorized-functions</guid>
       <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://datascidani.com/posts/2020-02-10-vectorized-functions/total_reviews.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Control Structures</title>

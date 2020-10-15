@@ -98,12 +98,14 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <meta property="og:title" content="String Manipulation and Relational Data"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="Learning more string manipulation and relational data in R."/>
+  <meta property="og:image" content="https://datascidani.com/2020/07/16/string-manipulation-and-relational-data/inner_join.jpg"/>
   <meta property="og:locale" content="en_US"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
-  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:card" content="summary_large_image"/>
   <meta property="twitter:title" content="String Manipulation and Relational Data"/>
   <meta property="twitter:description" content="Learning more string manipulation and relational data in R."/>
+  <meta property="twitter:image" content="https://datascidani.com/2020/07/16/string-manipulation-and-relational-data/inner_join.jpg"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -114,7 +116,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["full_join.png","inner_join.png","left_join.png","right-join.png","string-relational-data_files/anchor-4.2.2/anchor.min.js","string-relational-data_files/bowser-1.9.3/bowser.min.js","string-relational-data_files/distill-2.2.21/template.v2.js","string-relational-data_files/jquery-1.11.3/jquery.min.js","string-relational-data_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["full_join.jpg","inner_join.jpg","left_join.jpg","right-join.jpg","string-relational-data_files/anchor-4.2.2/anchor.min.js","string-relational-data_files/bowser-1.9.3/bowser.min.js","string-relational-data_files/distill-2.2.21/template.v2.js","string-relational-data_files/jquery-1.11.3/jquery.min.js","string-relational-data_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1250,6 +1252,8 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre><code><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://yihui.org/knitr/'>knitr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://www.rforge.net/jpeg/'>jpeg</a></span><span class='op'>)</span>
 </code></pre>
 </div>
 </div>
@@ -1295,9 +1299,9 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </code></pre>
 </div>
 </div>
-<figure>
-<img src="inner_join.png" alt="Inner Join" /><figcaption>Inner Join</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="inner_join.jpg" width="120%" /></p>
+</div>
 <h2 id="outer-joins">Outer Joins</h2>
 <p>Outer joins keep values that appear in at least one of the data frames you’re combining. Any missing values will be filled in with “NA”. There are three types of outer joins:</p>
 <ul>
@@ -1317,9 +1321,9 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </code></pre>
 </div>
 </div>
-<figure>
-<img src="left_join.png" alt="Left Join" /><figcaption>Left Join</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="left_join.jpg" width="120%" /></p>
+</div>
 <h3 id="right-join">Right Join</h3>
 <p>A right join keeps values in the data frame to the right and drops the values from the data frame to the left that have no key match.</p>
 <p>The result of the following code is that when the data frames are joined together, the values of the data frame on the left (the paperback_nonfiction data frame) are dropped.</p>
@@ -1330,9 +1334,9 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </code></pre>
 </div>
 </div>
-<figure>
-<img src="right-join.png" alt="Right Join" /><figcaption>Right Join</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="right-join.jpg" width="120%" /></p>
+</div>
 <h2 id="full-join">Full Join</h2>
 <p>A full join keeps all observations from the data frames you’re joining. Again when there is no key match, values are dropped.</p>
 <p>The result of the following code is that when the data frames are joined together, the values of the data frame on the left (the paperback_nonfiction data frame) and the data frame on the right (the publisher_info data frame) are dropped since they are not a match.</p>
@@ -1343,9 +1347,9 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </code></pre>
 </div>
 </div>
-<figure>
-<img src="full_join.png" alt="Full Join" /><figcaption>Full Join</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="full_join.jpg" width="120%" /></p>
+</div>
 <p>Whew! Okay I know that was a lot but just wanted to share. The more I do these posts the better I understand these important R and programming concepts. Until next time…</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

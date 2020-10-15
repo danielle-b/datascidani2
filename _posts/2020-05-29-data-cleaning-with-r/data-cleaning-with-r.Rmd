@@ -34,6 +34,8 @@ The first thing I wanted to do was to convert the columns Weekend and Revenue fr
 
 ```{r include=FALSE}
 library(tidyverse)
+library(knitr)
+library(jpeg)
 online_shoppers_intention <- read_csv('/Users/User/datascidani2/_posts/2020-05-29-data-cleaning-with-r/online_shoppers_intention.csv')
 ```
 
@@ -57,9 +59,13 @@ online_shoppers_number <- online_shoppers_intention %>%
 
 I decided to use the second script to convert the Weekend and Revenue columns to numeric columns. The first photo shown is before I converted the columns to numeric and the second photo shows the columns after I converted them to numeric columns.
 
-![Before converting coluumns to numeric](before.png)
+```{r, out.width= "40%"}
+include_graphics("before.jpg")
+```
 
-![After converting coluumns to numeric](after.png)
+```{r, out.width= "40%"}
+include_graphics("after.jpg")
+```
 
 The next thing I decided to do was to filter the data frame so that values for the ProductRelated column are more than 15. The ProductRelated column refers to products pages of a shopping site. I filtered the data using the script shown below.
 
@@ -70,7 +76,9 @@ online_shoppers_number <-online_shoppers_number %>%
 
 This is what the column looked like after I filtered it:
 
-![Filtered ProductRelated column](productrelated.png)
+```{r, out.width= "20%"}
+include_graphics("productrelated.jpg")
+```
 
 I then decided to group the data by Month and Visitor Type and sum up the columns using Informational and Informational Duration columns.
 
@@ -106,7 +114,9 @@ online_shoppers_informational <- online_shoppers_informational %>%
 
 This is what the SpecialDay column looked like after I changed its name to Holiday.
 
-![From SpecialDay to Holiday](holiday.png)
+```{r, out.width= "20%"}
+include_graphics("holiday.jpg")
+```
 
 Lastly with this data frame, I decided to look for duplicate values.
 

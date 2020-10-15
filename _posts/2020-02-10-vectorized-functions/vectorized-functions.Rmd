@@ -36,6 +36,8 @@ I already loaded the tidyverse package and imported our data.
 
 ```{r include=FALSE}
 library(tidyverse)
+library(knitr)
+library(jpeg)
 oscars_2018 <-read_csv('/Users/User/datascidani2/_posts/2020-02-10-vectorized-functions/Big ML Oscars Dataset 2018.csv')
 ```
 
@@ -160,6 +162,8 @@ lord_rings_reviews <- oscars_2018 %>%
 
 When I type **View(lord_rings_reviews)**, a file opens up containing all the data on this Lord of the Rings movie. The column **total_reviews** has been added in as the last column in the data frame.
 
-![Total Reviews](total_reviews.jpg)
+```{r, out.width= "50%"}
+include_graphics("total_reviews.jpg")
+```
 
 Whew, that just about covers it for vectorized functions. Until next time…

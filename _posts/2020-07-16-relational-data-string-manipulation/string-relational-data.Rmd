@@ -38,6 +38,8 @@ The *parse_number()* function is part of the readr package and it drops any non-
 
 ```{r echo=TRUE, results='hide'}
 library(tidyverse)
+library(knitr)
+library(jpeg)
 ```
 
 ```{r echo=TRUE}
@@ -83,7 +85,9 @@ best_paperback_nonfiction <- paperback_nonfiction %>%
   inner_join(publisher_info, by = "ISBN_13")
 ```
 
-![Inner Join](inner_join.png)
+```{r, out.width= "120%"}
+include_graphics("inner_join.jpg")
+```
 
 ## Outer Joins
 
@@ -108,7 +112,9 @@ best_paperback_nonfiction <- paperback_nonfiction %>%
   left_join(publisher_info, by = "ISBN_13")
 ```
 
-![Left Join](left_join.png)
+```{r, out.width= "120%"}
+include_graphics("left_join.jpg")
+```
 
 ### Right Join
 
@@ -121,7 +127,9 @@ best_paperback_nonfiction <- paperback_nonfiction %>%
   right_join(publisher_info, by = "ISBN_13")
 ```
 
-![Right Join](right-join.png)
+```{r, out.width= "120%"}
+include_graphics("right-join.jpg")
+```
 
 ## Full Join
 
@@ -134,6 +142,8 @@ best_paperback_nonfiction <- paperback_nonfiction %>%
   full_join(publisher_info, by = "ISBN_13")
 ```
 
-![Full Join](full_join.png)
+```{r, out.width= "120%"}
+include_graphics("full_join.jpg")
+```
 
 Whew! Okay I know that was a lot but just wanted to share. The more I do these posts the better I understand these important R and programming concepts. Until next time…
