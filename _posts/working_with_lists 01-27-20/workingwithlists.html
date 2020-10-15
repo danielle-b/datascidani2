@@ -98,12 +98,14 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <meta property="og:title" content="Working With Lists"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="Working with lists in R."/>
+  <meta property="og:image" content="https://datascidani.com/2020/01/27/working-with-lists/music_event_title.jpg"/>
   <meta property="og:locale" content="en_US"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
-  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:card" content="summary_large_image"/>
   <meta property="twitter:title" content="Working With Lists"/>
   <meta property="twitter:description" content="Working with lists in R."/>
+  <meta property="twitter:image" content="https://datascidani.com/2020/01/27/working-with-lists/music_event_title.jpg"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -114,7 +116,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["music_event_title.png","performances.png","workingwithlists_files/anchor-4.2.2/anchor.min.js","workingwithlists_files/bowser-1.9.3/bowser.min.js","workingwithlists_files/distill-2.2.21/template.v2.js","workingwithlists_files/jquery-1.11.3/jquery.min.js","workingwithlists_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["music_event_title.jpg","performances.jpg","workingwithlists_files/anchor-4.2.2/anchor.min.js","workingwithlists_files/bowser-1.9.3/bowser.min.js","workingwithlists_files/distill-2.2.21/template.v2.js","workingwithlists_files/jquery-1.11.3/jquery.min.js","workingwithlists_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1459,9 +1461,9 @@ $music_event_location
 <h2 id="manipulating-lists">Manipulating Lists</h2>
 <h3 id="modifying-list-elements">Modifying List Elements</h3>
 <p>I can index lists to change specific list elements. Recall the element in <strong>music_event_title:</strong></p>
-<figure>
-<img src="music_event_title.png" alt="Title of Music Event" /><figcaption>Title of Music Event</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="music_event_title.jpg" width="40%" /></p>
+</div>
 <p>As you can see the “The 2020 Grammys” is the element in music_event_title. I want to change this element to the official title of the Grammys ceremony. I would write it like this:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
@@ -1502,9 +1504,9 @@ $most_nominations
 </div>
 <p>I would first index the element I want to replace, then type its replacement. When I called the music_event list, you can see that the title has changed.</p>
 <p>Let’s do another example. Let’s look at the <strong>performances</strong> element.</p>
-<figure>
-<img src="performances.png" alt="Some of the performers at the Grammys in 2020" /><figcaption>Some of the performers at the Grammys in 2020</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="performances.jpg" width="80%" /></p>
+</div>
 <p>Let’s say I wanted to replace Demi Lovato with H.E.R. I would write the following:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">

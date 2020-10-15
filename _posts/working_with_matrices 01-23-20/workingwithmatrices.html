@@ -98,12 +98,14 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <meta property="og:title" content="Working With Matrices"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="Working with matrices in R."/>
+  <meta property="og:image" content="https://datascidani.com/2020/01/23/working-with-matrices/highest_grossing_films-table.jpg"/>
   <meta property="og:locale" content="en_US"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
-  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:card" content="summary_large_image"/>
   <meta property="twitter:title" content="Working With Matrices"/>
   <meta property="twitter:description" content="Working with matrices in R."/>
+  <meta property="twitter:image" content="https://datascidani.com/2020/01/23/working-with-matrices/highest_grossing_films-table.jpg"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -114,7 +116,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["highest_grossing_films-table.png","two-highest_grossing_films-table.png","workingwithmatrices_files/anchor-4.2.2/anchor.min.js","workingwithmatrices_files/bowser-1.9.3/bowser.min.js","workingwithmatrices_files/distill-2.2.21/template.v2.js","workingwithmatrices_files/jquery-1.11.3/jquery.min.js","workingwithmatrices_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["highest_grossing_films-table.jpg","two-highest_grossing_films-table.jpg","workingwithmatrices_files/anchor-4.2.2/anchor.min.js","workingwithmatrices_files/bowser-1.9.3/bowser.min.js","workingwithmatrices_files/distill-2.2.21/template.v2.js","workingwithmatrices_files/jquery-1.11.3/jquery.min.js","workingwithmatrices_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1245,9 +1247,9 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </style>
 <p>A matrix is a collection of elements of the same data type, with the data being arranged into rows and columns. Because it consists of both rows and columns, matrices are considered two-dimensional as opposed to vectors, which are considered one-dimensional.</p>
 <p>DataQuest analyzes university rankings for this lesson. However, for this post, I decided that I would analyze six of the highest-grossing films of all time. The data that I’ll be working with in this post comes from <a href="https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW">Box Office Mojo</a>. Please note that for the last two columns, Budget in Millions and Domestic Opening in Millions, I rounded the numbers so the values in these columns are not exact.</p>
-<figure>
-<img src="highest_grossing_films-table.png" alt="Highest Grossing Movies of All Time" /><figcaption>Highest Grossing Movies of All Time</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="highest_grossing_films-table.jpg" width="60%" /></p>
+</div>
 <h2 id="combining-vectors-into-matrices">Combining Vectors into Matrices</h2>
 <p>To create a matrix using the data above, DataQuest taught me that I must first create vectors.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1365,9 +1367,9 @@ jurassic_world                       209                     652</code></pre>
 </ul>
 <h3 id="indexing-by-element">Indexing By Element</h3>
 <p>Let’s say I wanted to extract the year that Avengers: Infinity War was released. I have to specify the location of this element by row and and column. In the screenshot below, you can see that Infinity War is in <strong>row 5</strong> and the year is in <strong>column 2</strong>.</p>
-<figure>
-<img src="two-highest_grossing_films-table.png" alt="Highest Grossing Movies of All Time" /><figcaption>Highest Grossing Movies of All Time</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="two-highest_grossing_films-table.jpg" width="60%" /></p>
+</div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre><code><span class='va'>entire_matrix</span><span class='op'>[</span><span class='fl'>5</span>,<span class='fl'>2</span><span class='op'>]</span>

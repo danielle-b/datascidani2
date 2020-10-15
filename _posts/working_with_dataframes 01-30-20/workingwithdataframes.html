@@ -98,12 +98,14 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <meta property="og:title" content="Working With Data Frames"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="Working with data frames in R."/>
+  <meta property="og:image" content="https://datascidani.com/2020/01/30/working-with-data-frames/install_load_packages.jpg"/>
   <meta property="og:locale" content="en_US"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
-  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:card" content="summary_large_image"/>
   <meta property="twitter:title" content="Working With Data Frames"/>
   <meta property="twitter:description" content="Working with data frames in R."/>
+  <meta property="twitter:image" content="https://datascidani.com/2020/01/30/working-with-data-frames/install_load_packages.jpg"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -114,7 +116,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["draft-age.png","import-screen.png","index-dataframe-method-3.png","install_load_packages.png","NBA_player_of_the_week.csv","open-file.png","workingwithdataframes_files/anchor-4.2.2/anchor.min.js","workingwithdataframes_files/bowser-1.9.3/bowser.min.js","workingwithdataframes_files/distill-2.2.21/template.v2.js","workingwithdataframes_files/jquery-1.11.3/jquery.min.js","workingwithdataframes_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["draft-age.jpg","import-screen.jpg","index-dataframe-method-3.jpg","install_load_packages.jpg","NBA_player_of_the_week.csv","open-file.jpg","workingwithdataframes_files/anchor-4.2.2/anchor.min.js","workingwithdataframes_files/bowser-1.9.3/bowser.min.js","workingwithdataframes_files/distill-2.2.21/template.v2.js","workingwithdataframes_files/jquery-1.11.3/jquery.min.js","workingwithdataframes_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1253,18 +1255,18 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <li><strong>Consistency:</strong> The readr package shares a common syntax and design philosophy with other tidyverse packages that we’ll introduce in upcoming courses.</li>
 </ul>
 <p>After installing readr, I loaded the package using the <strong>library</strong> function.</p>
-<figure>
-<img src="install_load_packages.png" alt="Installing readr package" /><figcaption>Installing readr package</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="install_load_packages.jpg" width="80%" /></p>
+</div>
 <h2 id="importing-data-with-r">Importing Data with R</h2>
 <p>RStudio (the IDE I’ve been using in my posts) has an option to import data. To do this I went to <strong>File -&gt; Import Dataset -&gt; From Text(readr)</strong>. This leads to a screen that prompts me type a file name or URL. However, I decided to click on <strong>Browse</strong> which leads me to import a document. When I imported my csv that I downloaded from Kaggle, this is what I get:</p>
-<figure>
-<img src="import-screen.png" alt="Importing dataset into RStudio" /><figcaption>Importing dataset into RStudio</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="import-screen.jpg" width="80%" /></p>
+</div>
 <p>After I click import, my csv file is opened like this.</p>
-<figure>
-<img src="open-file.png" alt="Opening dataset in RStudio" /><figcaption>Opening dataset in RStudio</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="open-file.jpg" width="80%" /></p>
+</div>
 <p><em>Note:</em> The tidyverse is a collection of packages designed to make using R for data science more effective. In addition to readr, tidyverse includes dplyr which will be discussed later. Instead of installing each package, I installed tidyverse just as I did with readr example in the above screenshots.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
@@ -1350,9 +1352,9 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 # … with 1,324 more rows</code></pre>
 </div>
 <p>DataQuest also mentioned that I could use a <strong>$</strong> symbol to specify a column though when I tried this method R printed 1000 rows of data.</p>
-<figure>
-<img src="index-dataframe-method-3.png" alt="Using the dollar sign to specify a column" /><figcaption>Using the dollar sign to specify a column</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index-dataframe-method-3.jpg" width="50%" /></p>
+</div>
 <p>Here are some more examples of indexing data frames:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
@@ -1455,9 +1457,9 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 #   Weight_KG &lt;dbl&gt;, Last_Season &lt;dbl&gt;, Draft_Age &lt;dbl&gt;</code></pre>
 </div>
 <p>As you can see, a new column called <strong>Draft_Age</strong> was added to my table.</p>
-<figure>
-<img src="draft-age.png" alt="Draft Age Column" /><figcaption>Draft Age Column</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="draft-age.jpg" width="20%" /></p>
+</div>
 <h2 id="filtering-a-data-frame">Filtering A Data Frame</h2>
 <p>Using the <strong>filter()</strong> function, I could filter a data frame either using a single condition or multiple conditions. This is where the comparison operators come in.</p>
 <h3 id="single-conditions">Single Conditions</h3>

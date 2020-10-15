@@ -31,6 +31,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+```{r include=FALSE}
+library(knitr)
+library(jpeg)
+```
+
 The next topic I learned about in the DataQuest Data Analyst in R track is a list. I decided that in honor of music’s biggest night, also known the Grammys that took place last night, the examples in this post are going to be music focused. So without further ado, let’s get it started!
 
 DataQuest defines lists as specialized vectors that contain multiple types of objects. These objects can be different data structures including single data elements, vectors, and matrices. So why lists? Storing objects in lists allow me to make use of some of R’s features for performing the same operation on each object in the list. The list is created using the list() function, like so:
@@ -144,7 +149,9 @@ music_event[[c(3,2)]]
 
 I can index lists to change specific list elements. Recall the element in **music_event_title:**
 
-![Title of Music Event](music_event_title.png)
+```{r, out.width= "40%"}
+include_graphics("music_event_title.jpg")
+```
 
 As you can see the “The 2020 Grammys” is the element in music_event_title. I want to change this element to the official title of the Grammys ceremony. I would write it like this:
 
@@ -157,7 +164,9 @@ I would first index the element I want to replace, then type its replacement. Wh
 
 Let’s do another example. Let’s look at the **performances** element.
 
-![Some of the performers at the Grammys in 2020](performances.png)
+```{r, out.width= "80%"}
+include_graphics("performances.jpg")
+```
 
 Let’s say I wanted to replace Demi Lovato with H.E.R. I would write the following:
 

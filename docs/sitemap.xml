@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
+  <url>
+    <loc>https://datascidani.com/about.html</loc>
+    <lastmod>2020-10-13T11:21:55-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/</loc>
+    <lastmod>2020-10-13T10:13:41-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/projects.html</loc>
+    <lastmod>2020-10-09T14:32:38-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/README.html</loc>
+    <lastmod>2020-10-13T12:57:30-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-08-20-packages-r-conference-nyc/</loc>
+    <lastmod>2020-10-13T20:28:42-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-07-16-relational-data-string-manipulation/</loc>
+    <lastmod>2020-10-13T20:27:53-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-05-29-data-cleaning-with-r/</loc>
+    <lastmod>2020-10-13T20:27:04-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-05-28-quick-update/</loc>
+    <lastmod>2020-10-13T20:26:14-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-04-08-quarantining-and-things/</loc>
+    <lastmod>2020-10-13T20:25:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-03-17-analyzing-forest-fire-data/</loc>
+    <lastmod>2020-10-13T12:28:29-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-03-11-scatterplots/</loc>
+    <lastmod>2020-10-13T20:23:57-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-03-09-barcharts-histograms-boxplots/</loc>
+    <lastmod>2020-10-13T20:23:14-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-02-28-creating-multiple-line-graphs/</loc>
+    <lastmod>2020-10-13T20:22:13-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-02-24-creating-line-graphs/</loc>
+    <lastmod>2020-10-13T20:20:55-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-02-21-fundamentals-of-string-manipulation/</loc>
+    <lastmod>2020-10-13T20:20:09-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-02-19-functionals/</loc>
+    <lastmod>2020-10-13T20:18:51-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-02-12-custom-functions/</loc>
+    <lastmod>2020-10-13T20:17:02-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-02-10-vectorized-functions/</loc>
+    <lastmod>2020-10-13T20:16:10-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-02-06-control-structures/</loc>
+    <lastmod>2020-10-13T20:15:12-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/2020-02-03-installing-rstudio/</loc>
+    <lastmod>2020-10-13T20:14:06-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/working_with_dataframes 01-30-20/</loc>
+    <lastmod>2020-10-15T00:54:09-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/working_with_lists 01-27-20/</loc>
+    <lastmod>2020-10-15T00:29:20-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/working_with_matrices 01-23-20/</loc>
+    <lastmod>2020-10-15T00:21:10-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/working_with_vectors_two 01-16-20/</loc>
+    <lastmod>2020-10-13T20:09:34-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/working_with_vectors_one 01-13-20/</loc>
+    <lastmod>2020-10-13T20:08:22-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/intro_to_R 01-08-20/</loc>
+    <lastmod>2020-10-13T20:05:36-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/first post 01-08-20/</loc>
+    <lastmod>2020-10-15T00:21:34-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://datascidani.com/posts/welcome/</loc>
+    <lastmod>2020-10-13T20:04:11-04:00</lastmod>
+  </url>
+</urlset>

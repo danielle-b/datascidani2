@@ -32,11 +32,18 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+```{r include=FALSE}
+library(knitr)
+library(jpeg)
+```
+
 A matrix is a collection of elements of the same data type, with the data being arranged into rows and columns. Because it consists of both rows and columns, matrices are considered two-dimensional as opposed to vectors, which are considered one-dimensional. 
 
 DataQuest analyzes university rankings for this lesson. However, for this post, I decided that I would analyze six of the highest-grossing films of all time. The data that I’ll be working with in this post comes from [Box Office Mojo](https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW). Please note that for the last two columns, Budget in Millions and Domestic Opening in Millions, I rounded the numbers so the values in these columns are not exact.
 
-![Highest Grossing Movies of All Time](highest_grossing_films-table.png)
+```{r, out.width="60%"}
+include_graphics("highest_grossing_films-table.jpg")
+```
 
 ## Combining Vectors into Matrices
 
@@ -105,7 +112,10 @@ Just as I indexed vectors, I learned that I could also index matrices. Since mat
 
 Let’s say I wanted to extract the year that Avengers: Infinity War was released. I have to specify the location of this element by row and and column. In the screenshot below, you can see that Infinity War is in **row 5** and the year is in **column 2**.
 
-![Highest Grossing Movies of All Time](two-highest_grossing_films-table.png)
+```{r, out.width="60%"}
+include_graphics("two-highest_grossing_films-table.jpg")
+```
+
 
 ```{r echo=TRUE}
 entire_matrix[5,2]

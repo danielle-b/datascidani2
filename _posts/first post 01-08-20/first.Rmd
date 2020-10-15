@@ -37,7 +37,7 @@ Although I enjoyed learning UX, as I completed  my final projects for these clas
 
 My interest in data really started with data journalism. I didn’t want to be a data journalist, but I did and still do enjoy the work of people like Mona Chalabi and I follow publications like The Guardian, Five Thirty-Eight and The New York Times. Last year I took a course in my program called Big Data and Media. It was in this class that I learned about the potential of data and analytics. The class was given the assignment to choose from a list of links to articles or interviews about data and summarize it. I chose an NPR interview with Cathy O’Neil, author of Weapons of Math Destruction. In the interview, she talked about the dangers of relying on big data analytics to solve problems, using public education and recidivism as examples of areas where using big data analytics to solve problems has caused huge issues. After listening to the interview and watching her TED talk, I became really interested in learning more.
 
-```{r out.width= "70%"}
+```{r, out.width= "60%"}
 include_graphics("weaponsofmathdestruction.jpg")
 ```
 

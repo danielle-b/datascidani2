@@ -31,6 +31,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+```{r include=FALSE}
+library(knitr)
+library(jpeg)
+```
+
 Basketball has been heavy on mind lately. One reason being the All the Smoke podcast that I listen to with Matt Barnes and Stephen Jackson every week. I’ve been listening to the podcast since day one. Another reason has been the recent passing of Kobe Bryant, his daughter Gianna and the seven other lives that were taken in that helicopter accident. When I think of Kobe, I think about my brother and the kids I went to school with. They would shout ‘KOBE’ anytime they threw something. 
 
 Because of people like my brother, like those kids I went to school with, I decided to go with a basketball theme with this post. I wanted to shed light on some of the players that Kobe inspired and some that maybe inspired him. The data set that I will use for this blog post was posted on [Kaggle](https://www.kaggle.com/jacobbaruch/nba-player-of-the-week/data) by Jason Baruch. Baruch created the NBA Player of the Week data set that analyzes player of the week data from 1979-80 season to the present. I decided to download the csv and play around a bit. With that said, let’s get into data frames in R.
@@ -47,17 +52,23 @@ The first thing I did as part of the DataQuest lesson was to install the **readr
 
 After installing readr, I loaded the package using the **library** function. 
 
-![Installing readr package](install_load_packages.png)
+```{r, out.width= "80%"}
+include_graphics("install_load_packages.jpg")
+```
 
 ## Importing Data with R
 
 RStudio (the IDE I’ve been using in my posts) has an option to import data. To do this I went to **File -> Import Dataset -> From Text(readr)**. This leads to a screen that prompts me type a file name or URL. However, I decided to click on **Browse** which leads me to import a document. When I imported my csv that I downloaded from Kaggle, this is what I get:
 
-![Importing dataset into RStudio](import-screen.png)
+```{r, out.width= "80%"}
+include_graphics("import-screen.jpg")
+```
 
 After I click import, my csv file is opened like this.
 
-![Opening dataset in RStudio](open-file.png)
+```{r, out.width= "80%"}
+include_graphics("open-file.jpg")
+```
 
 *Note:* The tidyverse is a collection of packages designed to make using R for data science more effective. In addition to readr, tidyverse includes dplyr which will be discussed later. Instead of installing each package, I installed tidyverse just as I did with readr example in the above screenshots.
 
@@ -98,7 +109,9 @@ NBA_player_of_the_week[, "Team"]
 
 DataQuest also mentioned that I could use a **$** symbol to specify a column though when I tried this method R printed 1000 rows of data.
 
-![Using the dollar sign to specify a column](index-dataframe-method-3.png)
+```{r, out.width= "50%"}
+include_graphics("index-dataframe-method-3.jpg")
+```
 
 Here are some more examples of indexing data frames:
 
@@ -139,9 +152,12 @@ NBA_player_of_the_week_mutate <- NBA_player_of_the_week %>% mutate(Draft_Age = A
 NBA_player_of_the_week_mutate
 ```
 
-As you can see, a new column called **Draft_Age** was added to my table.
+As you can see, a new column called **Draft_Age** was added to my
+table.
 
-![Draft Age Column](draft-age.png)
+```{r, out.width= "20%"}
+include_graphics("draft-age.jpg")
+```
 
 ## Filtering A Data Frame
 
