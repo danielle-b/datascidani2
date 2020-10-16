@@ -1,5 +1,6 @@
 name: "datascidani2"
 title: "Data Sci Dani"
+theme: theme.css
 description: |
   Data Sci Dani is my journey through data science.
 base_url: https://datascidani.com/
