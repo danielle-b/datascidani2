@@ -221,7 +221,6 @@
       <category>data types</category>
       <category>programming</category>
       <category>R</category>
-      <category>data frames</category>
       <guid>https://datascidani.com/posts/working_with_dataframes 01-30-20</guid>
       <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
       <media:content url="https://datascidani.com/posts/working_with_dataframes 01-30-20/install_load_packages.jpg" medium="image" type="image/jpeg"/>
@@ -235,7 +234,6 @@
       <category>data types</category>
       <category>programming</category>
       <category>R</category>
-      <category>lists</category>
       <guid>https://datascidani.com/posts/working_with_lists 01-27-20</guid>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
       <media:content url="https://datascidani.com/posts/working_with_lists 01-27-20/music_event_title.jpg" medium="image" type="image/jpeg"/>
@@ -249,7 +247,6 @@
       <category>data types</category>
       <category>programming</category>
       <category>R</category>
-      <category>matrices</category>
       <guid>https://datascidani.com/posts/working_with_matrices 01-23-20</guid>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
       <media:content url="https://datascidani.com/posts/working_with_matrices 01-23-20/highest_grossing_films-table.jpg" medium="image" type="image/jpeg"/>
@@ -263,7 +260,6 @@
       <category>data types</category>
       <category>programming</category>
       <category>R</category>
-      <category>vectors</category>
       <guid>https://datascidani.com/posts/working_with_vectors_two 01-16-20</guid>
       <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
     </item>
@@ -276,7 +272,6 @@
       <category>data types</category>
       <category>programming</category>
       <category>R</category>
-      <category>vectors</category>
       <guid>https://datascidani.com/posts/working_with_vectors_one 01-13-20</guid>
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
     </item>

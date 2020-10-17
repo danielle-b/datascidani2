@@ -5,7 +5,6 @@ categories:
   - data types
   - programming
   - R
-  - vectors
 description: |
  Part two of working with vectors in R.
 base_url: https://datascidani.com/2020/01/16/working-with-vectorspart-2/
