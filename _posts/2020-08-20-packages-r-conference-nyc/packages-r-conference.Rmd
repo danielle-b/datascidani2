@@ -4,7 +4,6 @@ categories:
   - data science 
   - programming
   - R
-  - R conference
 description: |
   Packages I learned about attending R Conference NYC.
 base_url: https://datascidani.com/2020/08/20/packages-i-learned-about-at-r-conference-nyc/

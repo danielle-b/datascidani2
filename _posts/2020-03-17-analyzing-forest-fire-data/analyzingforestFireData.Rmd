@@ -4,7 +4,7 @@ categories:
   - data science 
   - programming
   - R
-  - projects
+  - data visualization
 description: |
   My experience completing my first R project.
 base_url: https://datascidani.com/2020/03/17/project-analyzing-forest-fire-data/

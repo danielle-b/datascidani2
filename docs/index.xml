@@ -16,7 +16,6 @@
       <category>data science</category>
       <category>programming</category>
       <category>R</category>
-      <category>R conference</category>
       <guid>https://datascidani.com/posts/2020-08-20-packages-r-conference-nyc</guid>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
     </item>
@@ -28,7 +27,7 @@
       <category>data science</category>
       <category>programming</category>
       <category>R</category>
-      <category>joins</category>
+      <category>data cleaning</category>
       <category>string manipulation</category>
       <category>relational data</category>
       <guid>https://datascidani.com/posts/2020-07-16-relational-data-string-manipulation</guid>
@@ -68,7 +67,7 @@
       <category>data science</category>
       <category>programming</category>
       <category>R</category>
-      <category>quarantine</category>
+      <category>update</category>
       <guid>https://datascidani.com/posts/2020-04-08-quarantining-and-things</guid>
       <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
     </item>
@@ -80,7 +79,7 @@
       <category>data science</category>
       <category>programming</category>
       <category>R</category>
-      <category>projects</category>
+      <category>data visualization</category>
       <guid>https://datascidani.com/posts/2020-03-17-analyzing-forest-fire-data</guid>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
     </item>
@@ -92,8 +91,7 @@
       <category>data science</category>
       <category>programming</category>
       <category>R</category>
-      <category>scatter plots</category>
-      <category>exploratory data analysis</category>
+      <category>data visualization</category>
       <guid>https://datascidani.com/posts/2020-03-11-scatterplots</guid>
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
       <media:content url="https://datascidani.com/posts/2020-03-11-scatterplots/ScatterPlots_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="1248" height="768"/>
@@ -106,9 +104,7 @@
       <category>data science</category>
       <category>programming</category>
       <category>R</category>
-      <category>barcharts</category>
-      <category>histograms</category>
-      <category>box plots</category>
+      <category>data visualization</category>
       <guid>https://datascidani.com/posts/2020-03-09-barcharts-histograms-boxplots</guid>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
       <media:content url="https://datascidani.com/posts/2020-03-09-barcharts-histograms-boxplots/BarChartsHistogramsBoxPlots_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="1248" height="768"/>
@@ -121,7 +117,7 @@
       <category>data science</category>
       <category>programming</category>
       <category>R</category>
-      <category>multiple line graphs</category>
+      <category>data visualization</category>
       <guid>https://datascidani.com/posts/2020-02-28-creating-multiple-line-graphs</guid>
       <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
       <media:content url="https://datascidani.com/posts/2020-02-28-creating-multiple-line-graphs/CreatingMultipleLineGraphs_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="1248" height="768"/>
@@ -134,7 +130,7 @@
       <category>data science</category>
       <category>programming</category>
       <category>R</category>
-      <category>line graphs</category>
+      <category>data visualization</category>
       <guid>https://datascidani.com/posts/2020-02-24-creating-line-graphs</guid>
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       <media:content url="https://datascidani.com/posts/2020-02-24-creating-line-graphs/CreatingLineGraphs_files/figure-html5/unnamed-chunk-3-1.png" medium="image" type="image/png" width="1248" height="768"/>
@@ -283,7 +279,7 @@
       <category>data science</category>
       <category>programming</category>
       <category>R</category>
-      <category>vectors</category>
+      <category>data types</category>
       <guid>https://datascidani.com/posts/intro_to_R 01-08-20</guid>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
     </item>

@@ -4,7 +4,7 @@ categories:
   - data science 
   - programming
   - R
-  - joins
+  - data cleaning
   - string manipulation
   - relational data
 description: |

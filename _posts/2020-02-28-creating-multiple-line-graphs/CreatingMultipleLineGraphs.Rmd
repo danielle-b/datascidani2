@@ -4,7 +4,7 @@ categories:
   - data science 
   - programming
   - R
-  - multiple line graphs
+  - data visualization
 description: |
   How to create multiple line graphs in R.
 base_url: https://datascidani.com/2020/02/28/creating-multiple-line-graphs/

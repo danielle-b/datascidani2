@@ -4,7 +4,7 @@ categories:
   - data science 
   - programming
   - R
-  - quarantine
+  - update
 description: |
   What I've been going through in quarantine.
 base_url: https://datascidani.com/2020/04/08/quarantining-and-things/
