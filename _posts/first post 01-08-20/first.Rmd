@@ -4,7 +4,6 @@ categories:
   - data science
   - programming
   - R
-  - Python
   - books
 description: |
  My decision to pursue data science.
