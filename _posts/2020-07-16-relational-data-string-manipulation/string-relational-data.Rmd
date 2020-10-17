@@ -85,7 +85,7 @@ best_paperback_nonfiction <- paperback_nonfiction %>%
   inner_join(publisher_info, by = "ISBN_13")
 ```
 
-```{r, out.width= "120%"}
+```{r, out.width= "100%"}
 include_graphics("inner_join.jpg")
 ```
 
@@ -112,7 +112,7 @@ best_paperback_nonfiction <- paperback_nonfiction %>%
   left_join(publisher_info, by = "ISBN_13")
 ```
 
-```{r, out.width= "120%"}
+```{r, out.width= "100%"}
 include_graphics("left_join.jpg")
 ```
 
@@ -127,7 +127,7 @@ best_paperback_nonfiction <- paperback_nonfiction %>%
   right_join(publisher_info, by = "ISBN_13")
 ```
 
-```{r, out.width= "120%"}
+```{r, out.width= "100%"}
 include_graphics("right-join.jpg")
 ```
 
@@ -142,7 +142,7 @@ best_paperback_nonfiction <- paperback_nonfiction %>%
   full_join(publisher_info, by = "ISBN_13")
 ```
 
-```{r, out.width= "120%"}
+```{r, out.width= "100%"}
 include_graphics("full_join.jpg")
 ```
 
