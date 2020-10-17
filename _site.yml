@@ -4,7 +4,8 @@ theme: theme.css
 description: |
   Data Sci Dani is my journey through data science.
 base_url: https://datascidani.com/
-posts:
+collections:
+  posts:
     share: [twitter, linkedin]
     subscribe: _subscribe.html
 output_dir: "docs"
