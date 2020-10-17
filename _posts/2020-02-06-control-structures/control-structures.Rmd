@@ -43,7 +43,6 @@ library(janitor)
 superbowl <-read_csv('/Users/User/datascidani2/_posts/2020-02-06-control-structures/superbowl.csv')
 clean_superbowl <-janitor::clean_names(superbowl)
 data.frame(superbowl = colnames(superbowl), clean_superbowl = colnames(clean_superbowl))
-View(clean_superbowl)
 ```
 
 ## Conditional Statements

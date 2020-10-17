@@ -1,1 +1,44 @@
-"0","View(clean_superbowl)"
+"0","library(tidyverse)"
+"2","Registered S3 methods overwritten by 'dbplyr':
+  method         from
+  print.tbl_lazy     
+  print.tbl_sql      
+"
+"2","[30m── [1mAttaching packages[22m ─────────────────────── tidyverse 1.3.0 ──[39m
+"
+"2","[30m[32m✓[30m [34mggplot2[30m 3.3.2     [32m✓[30m [34mpurrr  [30m 0.3.4
+[32m✓[30m [34mtibble [30m 3.0.3     [32m✓[30m [34mdplyr  [30m 1.0.2
+[32m✓[30m [34mtidyr  [30m 1.1.2     [32m✓[30m [34mstringr[30m 1.4.0
+[32m✓[30m [34mreadr  [30m 1.3.1     [32m✓[30m [34mforcats[30m 0.5.0[39m
+"
+"2","[30m── [1mConflicts[22m ────────────────────────── tidyverse_conflicts() ──
+[31mx[30m [34mdplyr[30m::[32mfilter()[30m masks [34mstats[30m::filter()
+[31mx[30m [34mdplyr[30m::[32mlag()[30m    masks [34mstats[30m::lag()[39m
+"
+"0","library(janitor)"
+"2","
+Attaching package: ‘janitor’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+"
+"0","superbowl <-read_csv('/Users/User/datascidani2/_posts/2020-02-06-control-structures/superbowl.csv')"
+"2","Parsed with column specification:
+cols(
+  Date = [31mcol_character()[39m,
+  SB = [31mcol_character()[39m,
+  Winner = [31mcol_character()[39m,
+  `Winner Pts` = [32mcol_double()[39m,
+  Loser = [31mcol_character()[39m,
+  `Loser Pts` = [32mcol_double()[39m,
+  MVP = [31mcol_character()[39m,
+  Stadium = [31mcol_character()[39m,
+  City = [31mcol_character()[39m,
+  State = [31mcol_character()[39m
+)
+"
+"0","clean_superbowl <-janitor::clean_names(superbowl)"
+"0","data.frame(superbowl = colnames(superbowl), clean_superbowl = colnames(clean_superbowl))"
