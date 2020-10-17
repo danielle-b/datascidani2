@@ -4,7 +4,7 @@ categories:
   - data science 
   - programming
   - R
-  - custom functions
+  - functions
 description: |
   Custom functions in R.
 base_url: https://datascidani.com/2020/02/12/custom-functions/

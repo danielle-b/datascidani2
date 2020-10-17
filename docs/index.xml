@@ -159,7 +159,7 @@
       <category>data science</category>
       <category>programming</category>
       <category>R</category>
-      <category>functionals</category>
+      <category>functions</category>
       <guid>https://datascidani.com/posts/2020-02-19-functionals</guid>
       <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
     </item>
@@ -171,7 +171,7 @@
       <category>data science</category>
       <category>programming</category>
       <category>R</category>
-      <category>custom functions</category>
+      <category>functions</category>
       <guid>https://datascidani.com/posts/2020-02-12-custom-functions</guid>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
     </item>
@@ -183,7 +183,7 @@
       <category>data science</category>
       <category>programming</category>
       <category>R</category>
-      <category>vectorized functions</category>
+      <category>functions</category>
       <guid>https://datascidani.com/posts/2020-02-10-vectorized-functions</guid>
       <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
       <media:content url="https://datascidani.com/posts/2020-02-10-vectorized-functions/total_reviews.jpg" medium="image" type="image/jpeg"/>
