@@ -85,7 +85,7 @@ The problem with conditional statements is that they are inefficient. They are l
 
 For-loops perform an operation a given number of times, allowing me to execute a piece of code repeatedly on elements of a sequence. For example, let’s say I want to print all the Super Bowl titles. I could write a for-loop that looks like this:
 
-```{r echo=TRUE}
+```{r echo=TRUE, results='hide'}
 for(i in clean_superbowl$sb) {
        print(i)
 }
@@ -99,7 +99,7 @@ I don’t always have to use i. I could use any variable name. The variable name
 
 When writing a for-loop, the elements I specify can be values, vectors, or data structures. In this next example, I wrote a for-loop to execute an operation on elements that are rows in a data frame. This for-loop calculates how many points the winning team won by for each game.
 
-```{r echo=TRUE}
+```{r echo=TRUE, results='hide'}
 for (i in 1:nrow(clean_superbowl)) {
   print(clean_superbowl$winner_pts[i] - clean_superbowl$loser_pts[i])
 }
@@ -113,7 +113,7 @@ The **nrow(clean_superbowl)** returns the number of rows in the data frame. The 
 
 As I mentioned previously, executing one or more control structures inside another is called nesting. A for-loop can be used to loop over conditional statements. In this example, I used a for-loop, that for each row in the **clean_superbowl** data frame, print “Aww it was so close!” if the difference between the winner points and loser points is less than 10 and ” A Total Blowout!” if not.
 
-```{r echo=TRUE}
+```{r echo=TRUE, results='hide'}
 for(i in 1:nrow(clean_superbowl)) {
   if (clean_superbowl$winner_pts[i]-clean_superbowl$loser_pts[i] < 10) {
     print("Aww it was so close!")
