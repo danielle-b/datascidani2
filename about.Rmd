@@ -7,7 +7,25 @@ description: |
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-![](aboutme.jpg)
+
+```{r include=FALSE}
+library(knitr)
+library(jpeg)
+
+```
+
+```{r, out.width= "50%"}
+include_graphics("aboutme.jpg")
+```
+```{css, echo=FALSE}
+img {
+  border-radius: 50%;
+  display: block;  
+  margin-left: auto;  
+  margin-right: auto; 
+}
+
+```
 
 For years, I have been interested in data science. I finally decided to pursue it and be intentional about it. I wanted to start writing about my passions, my thoughts, and curious wonderings about the world of data science. Data Sci Dani is a space where I’ll share my projects and what I’m learning, giving you insight into my skillset. 
 
