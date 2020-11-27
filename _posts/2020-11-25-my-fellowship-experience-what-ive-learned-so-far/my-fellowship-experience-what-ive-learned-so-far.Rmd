@@ -1,0 +1,26 @@
+---
+title: "My Fellowship Experience: What I've Learned So Far"
+description: |
+  A short description of the post.
+author:
+  - name: Danielle Brantley
+    url: https://gist.github.com/danielle-b
+date: 11-25-2020
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+In October, I started a new role as an analytics fellow at a digital agency. I've learned so much since I've started and I am enjoying the work I get to do. In honor of me reaching the two month mark I decided to share what I've learned so far.  
+
+1. 
+
+2. 
+
+3. 
