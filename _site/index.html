@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
+  <link rel="alternate" type="application/rss+xml" href="https://datascidani.com/index.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -84,26 +85,26 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Data Sci Dani</title>
+  <title>Data Sci Dani: Posts</title>
   
   
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Data Sci Dani"/>
+  <meta property="og:title" content="Data Sci Dani: Posts"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Data Sci Dani"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Data Sci Dani"/>
+  <meta property="twitter:title" content="Data Sci Dani: Posts"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Data Sci Dani"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Posts"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -446,267 +447,6 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-  
-  <script type="application/javascript">
-  
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-  
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-  
-  function createIndex() {
-    var options = {
-      keys: [
-        "title",
-        "categories",
-        "description",
-        "contents"
-      ]
-    };
-    return new window.Fuse([],options);
-  }
-  
-  function createFuseIndex() {
-  
-    // create fuse index
-    var options = { keys: ["title", "description", "contents"] };
-    var fuse = new window.Fuse([], options);
-  
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-  
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-  
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-  
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-  
-    createFuseIndex()
-      .then(function(fuse) {
-  
-        // make search box visible
-        searchEl.classList.remove('hidden');
-  
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-              keys: [
-                { name: 'title', weight: 20 },
-                { name: 'categories', weight: 15 },
-                { name: 'description', weight: 10 },
-                { name: 'contents', weight: 5 },
-              ],
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-              .filter(function(item) { return !!item.description; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description}
-                  </div>
-                  <div class="search-item-preview">
-                    <img src="${suggestion.preview ? offsetURL(suggestion.preview) : ''}"</img>
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-  
-  });
-  
-  </script>
-  
-  <style type="text/css">
-  
-  /* Algolioa Autocomplete */
-  
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-  
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-  
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-  
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-  
-  </style>
-  
-  
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
   
@@ -1780,6 +1520,325 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   
   </script>
   
+  <style type="text/css">
+  /* base variables */
+  
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+  
+  /* Optional: embed custom fonts here with `@import`          */
+  /* This must remain at the top of this file.                 */
+  
+  
+  
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      50px;
+    --body-size:       1.06rem;
+    --code-size:       14px;
+    --aside-size:      12px;
+    --fig-cap-size:    13px;
+    /*-- Main font colors --*/
+    --title-color:     #000000;
+    --header-color:    rgba(0, 0, 0, 0.8);
+    --body-color:      rgba(0, 0, 0, 0.8);
+    --aside-color:     rgba(0, 0, 0, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    sans-serif;
+    --mono-font:       monospace;
+    --body-font:       sans-serif;
+  }
+  
+  /*-- ARTICLE METADATA --*/
+  .d-byline {
+    --heading-size:    0.6rem;
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.8rem;
+    --body-color:      rgba(0, 0, 0, 0.8);
+  }
+  
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    18px;
+    --contents-size:   13px;
+  }
+  
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    15px;
+    --heading-color:   rgba(0, 0, 0, 0.65);
+    --text-size:       0.8em;
+    --text-color:      rgba(0, 0, 0, 0.5);
+  }
+  
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+  
+  .distill-site-header {
+    --title-size:       18px;
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #0F2E3D;
+  }
+  
+  .distill-site-footer {
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #0F2E3D;
+  }</style>
+  <style type="text/css">/* base variables */
+  
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+  
+  /* Optional: embed custom fonts here with `@import`          */
+  /* This must remain at the top of this file.                 */
+  @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:300, 300i&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+  
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      50px;
+    --body-size:       1.06rem;
+    --code-size:       14px;
+    --aside-size:      12px;
+    --fig-cap-size:    13px;
+    /*-- Main font colors --*/
+    --title-color:     #ca225e;
+    --header-color:    #ca225e;                    /* edited */
+    --body-color:      #404040;                    /* edited */
+    --aside-color:     rgba(0, 0, 0, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    "Noto Serif JP", sans-serif; /* edited */
+    --mono-font:       "IBM Plex Mono", monospace;  /* edited */
+    --body-font:       "Lato", sans-serif;          /* edited */
+    --navbar-font:     "Lato", sans-serif;          /* edited */
+  }
+  
+  /*-- ARTICLE METADATA --*/
+  d-byline {
+    --heading-size:    0.9rem;                      /* edited */
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.95rem;                     /* edited */
+    --body-color:      rgba(0, 0, 0, 0.8);
+  }
+  
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    18px;
+    --contents-size:   13px;
+  }
+  
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    15px;
+    --heading-color:   rgba(0, 0, 0, 0.65);      
+    --text-size:       0.9rem;                    /* edited */
+    --text-color:      #1a162d;                   /* edited */
+  }
+  
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+  
+  .distill-site-header {
+    --title-size:       18px;
+    --text-color:       #1f1f1f;                   /* edited */
+    --text-size:        15px;
+    --hover-color:      #787878;                   /* edited */
+    --bkgd-color:       #fff;                     /* edited */
+  }
+  
+  .distill-site-footer {
+    --text-color:       #7e7b88;                   /* edited */
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #ca225e3d;                 /* edited */
+  }
+  
+  /*-- Additional custom styles --*/
+  
+  ul > li::marker {
+    color: #ca225e;
+  }
+  
+  .distill-site-header { 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  
+  .distill-site-header .logo img{
+    max-height: 40px; /* Makes logo bigger, default was 20px */
+  }
+  
+  .distill-site-header {
+    padding-top: 1rem;
+  }
+  
+  d-title h1,
+  d-article h2,
+  .posts-list .description h2,
+  .posts-list > h1 {
+      font-weight: 300;
+  }
+  
+  d-appendix {
+    background-color: #fdf7f9;
+    border-top: none;
+  }</style>
+  <style type="text/css">
+  /* base style */
+  
+  /* FONT FAMILIES */
+  
+  :root {
+    --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  body {
+    font-family: var(--body-font), var(--body-default);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font), var(--heading-default);
+  }
+  
+  d-article div.sourceCode code,
+  d-article pre code {
+  	font-family: var(--mono-font), var(--mono-default);
+  }
+  
+  
+  /*-- TITLE --*/
+  d-title h1,
+  .posts-list > h1 {
+    color: var(--title-color, black);
+  }
+  
+  d-title h1 {
+    font-size: var(--title-size, 50px);
+  }
+  
+  /*-- HEADERS --*/
+  d-article h1,
+  d-article h2,
+  d-article h3,
+  d-article h4,
+  d-article h5,
+  d-article h6 {
+    color: var(--header-color, rgba(0, 0, 0, 0.8));
+  }
+  
+  /*-- BODY --*/
+  /* only text inside of <p> tags */
+  d-article > p {
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+    font-size: var(--body-size, 1.06rem);
+  }
+  
+  /*-- CODE --*/
+  d-article div.sourceCode code,
+  d-article pre code {
+  	font-size: var(--code-size, 14px);
+  }
+  
+  /*-- ASIDE --*/
+  d-article aside {
+  	font-size: var(--aside-size, 12px);
+  	color: var(--aside-color, rgba(0, 0, 0, 0.6));
+  }
+  
+  /*-- FIGURE CAPTIONS --*/
+  figure .caption,
+  figure figcaption,
+  .figure .caption {
+  	font-size: var(--fig-cap-size, 13px);
+  	color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
+  }
+  
+  /*-- METADATA --*/
+  d-byline h3 {
+  	font-size: var(--heading-size, 0.6rem);
+  	color: var(--heading-color, rgba(0, 0, 0, 0.5));
+  }
+  
+  d-byline {
+  	font-size: var(--body-size, 0.8rem);
+  	color: var(--body-color, rgba(0, 0, 0, 0.8));
+  }
+  
+  d-byline a,
+  d-article d-byline a {
+  	color: var(--body-color, rgba(0, 0, 0, 0.8));
+  }
+  
+  /*-- TABLE OF CONTENTS --*/
+  .d-contents nav h3 {
+  	font-size: var(--heading-size, 18px);
+  }
+  
+  .d-contents nav a {
+  	font-size: var(--contents-size, 13px);
+  }
+  
+  /*-- APPENDIX --*/
+  d-appendix h3 {
+    font-size: var(--heading-size, 15px);
+  	color: var(--heading-color, rgba(0, 0, 0, 0.65));
+  }
+  
+  d-appendix {
+    font-size: var(--text-size, 0.8em);
+  	color: var(--text-color, rgba(0, 0, 0, 0.5));
+  }
+  
+  d-appendix d-footnote-list a.footnote-backlink {
+  	color: var(--text-color, rgba(0, 0, 0, 0.5));
+  }
+  
+  /*-- WEBSITE HEADER + FOOTER --*/
+  .distill-site-header .title {
+  	font-size: var(--title-size, 18px);
+  }
+  
+  .distill-site-header {
+  	font-size: var(--text-size, 15px);
+  	color: var(--text-color, rgba(255, 255, 255, 0.8));
+  	background-color: var(--bkgd-color, #0F2E3D);
+  }
+  
+  .distill-site-header a:hover {
+  	color: var(--hover-color, white);
+  }
+  
+  .distill-site-footer {
+  	font-size: var(--text-size, 15px);
+  	color: var(--text-color, rgba(255, 255, 255, 0.8));
+  	background-color: var(--bkgd-color, #0F2E3D);
+  }
+  
+  .distill-site-footer a:hover {
+  	color: var(--hover-color, white);
+  }</style>
   <!--/radix_placeholder_distill-->
   <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
   <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
@@ -1797,7 +1856,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Data Sci Dani","authors":[]}
+{"title":"Posts","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1806,7 +1865,6 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a href="index.html" class="title">Data Sci Dani</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
@@ -1820,6 +1878,9 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </a>
 <a href="https://twitter.com/daniebrant">
 <i class="fa fa-twitter" aria-hidden="true"></i>
+</a>
+<a href="index.xml">
+<i class="fa fa-rss" aria-hidden="true"></i>
 </a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
@@ -2174,9 +2235,9 @@ function init_posts_list() {
 
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Data Sci Dani">Data Sci Dani</h1>
+<h1 class="posts-list-caption" data-caption="Posts">Posts</h1>
 <a href="posts/2020-08-20-packages-r-conference-nyc/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","R conference"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R"]}</script>
 <div class="metadata">
 <div class="publishedDate">Aug. 20, 2020</div>
 <div class="dt-authors">
@@ -2192,13 +2253,12 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">R conference</div>
 </div>
 <p>Packages I learned about attending R Conference NYC.</p>
 </div>
 </a>
 <a href="posts/2020-07-16-relational-data-string-manipulation/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","joins","string manipulation","relational data"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","data cleaning","string manipulation","relational data"]}</script>
 <div class="metadata">
 <div class="publishedDate">July 16, 2020</div>
 <div class="dt-authors">
@@ -2206,7 +2266,7 @@ function init_posts_list() {
 </div>
 </div>
 <div class="thumbnail">
-<img/>
+<img src="posts/2020-07-16-relational-data-string-manipulation/inner_join.jpg"/>
 </div>
 <div class="description">
 <h2>String Manipulation and Relational Data</h2>
@@ -2214,7 +2274,7 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">joins</div>
+<div class="dt-tag">data cleaning</div>
 <div class="dt-tag">string manipulation</div>
 <div class="dt-tag">relational data</div>
 </div>
@@ -2230,7 +2290,7 @@ function init_posts_list() {
 </div>
 </div>
 <div class="thumbnail">
-<img/>
+<img src="posts/2020-05-29-data-cleaning-with-r/before.jpg"/>
 </div>
 <div class="description">
 <h2>Data Cleaning With R</h2>
@@ -2266,7 +2326,7 @@ function init_posts_list() {
 </div>
 </a>
 <a href="posts/2020-04-08-quarantining-and-things/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","quarantine"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","update"]}</script>
 <div class="metadata">
 <div class="publishedDate">April 8, 2020</div>
 <div class="dt-authors">
@@ -2282,13 +2342,13 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">quarantine</div>
+<div class="dt-tag">update</div>
 </div>
 <p>What I've been going through in quarantine.</p>
 </div>
 </a>
 <a href="posts/2020-03-17-analyzing-forest-fire-data/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","projects"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","data visualization"]}</script>
 <div class="metadata">
 <div class="publishedDate">March 17, 2020</div>
 <div class="dt-authors">
@@ -2304,13 +2364,13 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">projects</div>
+<div class="dt-tag">data visualization</div>
 </div>
 <p>My experience completing my first R project.</p>
 </div>
 </a>
 <a href="posts/2020-03-11-scatterplots/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","scatter plots","exploratory data analysis"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","data visualization"]}</script>
 <div class="metadata">
 <div class="publishedDate">March 11, 2020</div>
 <div class="dt-authors">
@@ -2326,14 +2386,13 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">scatter plots</div>
-<div class="dt-tag">exploratory data analysis</div>
+<div class="dt-tag">data visualization</div>
 </div>
 <p>How to create scatter plots in R.</p>
 </div>
 </a>
 <a href="posts/2020-03-09-barcharts-histograms-boxplots/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","barcharts","histograms","box plots"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","data visualization"]}</script>
 <div class="metadata">
 <div class="publishedDate">March 9, 2020</div>
 <div class="dt-authors">
@@ -2349,15 +2408,13 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">barcharts</div>
-<div class="dt-tag">histograms</div>
-<div class="dt-tag">box plots</div>
+<div class="dt-tag">data visualization</div>
 </div>
 <p>How to create bar charts, histograms and box plots in R.</p>
 </div>
 </a>
 <a href="posts/2020-02-28-creating-multiple-line-graphs/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","multiple line graphs"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","data visualization"]}</script>
 <div class="metadata">
 <div class="publishedDate">Feb. 28, 2020</div>
 <div class="dt-authors">
@@ -2373,13 +2430,13 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">multiple line graphs</div>
+<div class="dt-tag">data visualization</div>
 </div>
 <p>How to create multiple line graphs in R.</p>
 </div>
 </a>
 <a href="posts/2020-02-24-creating-line-graphs/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","line graphs"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","data visualization"]}</script>
 <div class="metadata">
 <div class="publishedDate">Feb. 24, 2020</div>
 <div class="dt-authors">
@@ -2395,7 +2452,7 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">line graphs</div>
+<div class="dt-tag">data visualization</div>
 </div>
 <p>How to create line graphs in R.</p>
 </div>
@@ -2423,7 +2480,7 @@ function init_posts_list() {
 </div>
 </a>
 <a href="posts/2020-02-19-functionals/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","functionals"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","functions"]}</script>
 <div class="metadata">
 <div class="publishedDate">Feb. 19, 2020</div>
 <div class="dt-authors">
@@ -2439,13 +2496,13 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">functionals</div>
+<div class="dt-tag">functions</div>
 </div>
 <p>Functionals in R.</p>
 </div>
 </a>
 <a href="posts/2020-02-12-custom-functions/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","custom functions"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","functions"]}</script>
 <div class="metadata">
 <div class="publishedDate">Feb. 12, 2020</div>
 <div class="dt-authors">
@@ -2461,13 +2518,13 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">custom functions</div>
+<div class="dt-tag">functions</div>
 </div>
 <p>Custom functions in R.</p>
 </div>
 </a>
 <a href="posts/2020-02-10-vectorized-functions/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","vectorized functions"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","functions"]}</script>
 <div class="metadata">
 <div class="publishedDate">Feb. 10, 2020</div>
 <div class="dt-authors">
@@ -2475,7 +2532,7 @@ function init_posts_list() {
 </div>
 </div>
 <div class="thumbnail">
-<img/>
+<img data-src="posts/2020-02-10-vectorized-functions/total_reviews.jpg"/>
 </div>
 <div class="description">
 <h2>Vectorized Functions</h2>
@@ -2483,7 +2540,7 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">vectorized functions</div>
+<div class="dt-tag">functions</div>
 </div>
 <p>Vectorized Functions in R.</p>
 </div>
@@ -2533,7 +2590,7 @@ function init_posts_list() {
 </div>
 </a>
 <a href="posts/working_with_dataframes 01-30-20/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","data types","programming","R","data frames"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","data types","programming","R"]}</script>
 <div class="metadata">
 <div class="publishedDate">Jan. 30, 2020</div>
 <div class="dt-authors">
@@ -2541,7 +2598,7 @@ function init_posts_list() {
 </div>
 </div>
 <div class="thumbnail">
-<img/>
+<img data-src="posts/working_with_dataframes 01-30-20/install_load_packages.jpg"/>
 </div>
 <div class="description">
 <h2>Working With Data Frames</h2>
@@ -2550,13 +2607,12 @@ function init_posts_list() {
 <div class="dt-tag">data types</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">data frames</div>
 </div>
 <p>Working with data frames in R.</p>
 </div>
 </a>
 <a href="posts/working_with_lists 01-27-20/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","data types","programming","R","lists"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","data types","programming","R"]}</script>
 <div class="metadata">
 <div class="publishedDate">Jan. 27, 2020</div>
 <div class="dt-authors">
@@ -2564,7 +2620,7 @@ function init_posts_list() {
 </div>
 </div>
 <div class="thumbnail">
-<img/>
+<img data-src="posts/working_with_lists 01-27-20/music_event_title.jpg"/>
 </div>
 <div class="description">
 <h2>Working With Lists</h2>
@@ -2573,13 +2629,12 @@ function init_posts_list() {
 <div class="dt-tag">data types</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">lists</div>
 </div>
 <p>Working with lists in R.</p>
 </div>
 </a>
 <a href="posts/working_with_matrices 01-23-20/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","data types","programming","R","matrices"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","data types","programming","R"]}</script>
 <div class="metadata">
 <div class="publishedDate">Jan. 23, 2020</div>
 <div class="dt-authors">
@@ -2587,7 +2642,7 @@ function init_posts_list() {
 </div>
 </div>
 <div class="thumbnail">
-<img/>
+<img data-src="posts/working_with_matrices 01-23-20/highest_grossing_films-table.jpg"/>
 </div>
 <div class="description">
 <h2>Working With Matrices</h2>
@@ -2596,13 +2651,12 @@ function init_posts_list() {
 <div class="dt-tag">data types</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">matrices</div>
 </div>
 <p>Working with matrices in R.</p>
 </div>
 </a>
 <a href="posts/working_with_vectors_two 01-16-20/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","data types","programming","R","vectors"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","data types","programming","R"]}</script>
 <div class="metadata">
 <div class="publishedDate">Jan. 16, 2020</div>
 <div class="dt-authors">
@@ -2619,13 +2673,12 @@ function init_posts_list() {
 <div class="dt-tag">data types</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">vectors</div>
 </div>
 <p>Part two of working with vectors in R.</p>
 </div>
 </a>
 <a href="posts/working_with_vectors_one 01-13-20/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","data types","programming","R","vectors"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","data types","programming","R"]}</script>
 <div class="metadata">
 <div class="publishedDate">Jan. 13, 2020</div>
 <div class="dt-authors">
@@ -2642,13 +2695,12 @@ function init_posts_list() {
 <div class="dt-tag">data types</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">vectors</div>
 </div>
 <p>Part one of working with vectors in R.</p>
 </div>
 </a>
 <a href="posts/intro_to_R 01-08-20/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","vectors"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","data types"]}</script>
 <div class="metadata">
 <div class="publishedDate">Jan. 9, 2020</div>
 <div class="dt-authors">
@@ -2664,13 +2716,13 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">vectors</div>
+<div class="dt-tag">data types</div>
 </div>
 <p>My first introduction to the R programming language.</p>
 </div>
 </a>
 <a href="posts/first post 01-08-20/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","Python","books"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming","R","books"]}</script>
 <div class="metadata">
 <div class="publishedDate">Jan. 8, 2020</div>
 <div class="dt-authors">
@@ -2686,34 +2738,45 @@ function init_posts_list() {
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
 <div class="dt-tag">R</div>
-<div class="dt-tag">Python</div>
 <div class="dt-tag">books</div>
 </div>
 <p>My decision to pursue data science.</p>
 </div>
 </a>
 <a href="posts/welcome/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","programming","learning","statistics"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["data science","programming"]}</script>
 <div class="metadata">
 <div class="publishedDate">Jan. 7, 2020</div>
 <div class="dt-authors">
 <div class="dt-author">Danielle Brantley</div>
 </div>
 </div>
-<div class="thumbnail"></div>
+<div class="thumbnail">
+<img/>
+</div>
 <div class="description">
 <h2>Welcome to Data Sci Dani</h2>
 <div class="dt-tags">
 <div class="dt-tag">data science</div>
 <div class="dt-tag">programming</div>
-<div class="dt-tag">learning</div>
-<div class="dt-tag">statistics</div>
 </div>
 <p>"One of the greatest discoveries a man makes, one of his great surprises, is to find he can do what he was afraid he couldn’t do."— Henry Ford</p>
 </div>
 </a>
 </div>
 <div class="posts-sidebar">
+<div class="sidebar-section subscribe">
+<h3>Subscribe</h3>
+<!DOCTYPE HTML>
+<form method='post' action='https://blogtrottr.com'>
+  <p>Enjoy this blog? Get notified of new posts via email:</p>
+  <input type='text' name='btr_email' />
+  <input type='hidden' name='btr_url'
+         value='https://datascidani.com/'/>
+  <input type='hidden' name='schedule_type' value='0' />
+  <input type='submit' value='Subscribe' />
+</form>
+</div>
 <div class="sidebar-section categories">
 <h3>Categories</h3>
 <ul>
@@ -2722,15 +2785,7 @@ function init_posts_list() {
 <span class="category-count">(24)</span>
 </li>
 <li>
-<a href="#category:barcharts">barcharts</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
 <a href="#category:books">books</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:box_plots">box plots</a>
 <span class="category-count">(1)</span>
 </li>
 <li>
@@ -2738,16 +2793,8 @@ function init_posts_list() {
 <span class="category-count">(1)</span>
 </li>
 <li>
-<a href="#category:custom_functions">custom functions</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
 <a href="#category:data_cleaning">data cleaning</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:data_frames">data frames</a>
-<span class="category-count">(1)</span>
+<span class="category-count">(2)</span>
 </li>
 <li>
 <a href="#category:data_science">data science</a>
@@ -2755,67 +2802,23 @@ function init_posts_list() {
 </li>
 <li>
 <a href="#category:data_types">data types</a>
+<span class="category-count">(6)</span>
+</li>
+<li>
+<a href="#category:data_visualization">data visualization</a>
 <span class="category-count">(5)</span>
 </li>
 <li>
-<a href="#category:exploratory_data_analysis">exploratory data analysis</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:functionals">functionals</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:histograms">histograms</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:joins">joins</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:learning">learning</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:line_graphs">line graphs</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:lists">lists</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:matrices">matrices</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:multiple_line_graphs">multiple line graphs</a>
-<span class="category-count">(1)</span>
+<a href="#category:functions">functions</a>
+<span class="category-count">(3)</span>
 </li>
 <li>
 <a href="#category:programming">programming</a>
 <span class="category-count">(24)</span>
 </li>
 <li>
-<a href="#category:projects">projects</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:Python">Python</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:quarantine">quarantine</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
 <a href="#category:R">R</a>
 <span class="category-count">(23)</span>
-</li>
-<li>
-<a href="#category:R_conference">R conference</a>
-<span class="category-count">(1)</span>
 </li>
 <li>
 <a href="#category:R_Studio">R Studio</a>
@@ -2826,28 +2829,12 @@ function init_posts_list() {
 <span class="category-count">(1)</span>
 </li>
 <li>
-<a href="#category:scatter_plots">scatter plots</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:statistics">statistics</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
 <a href="#category:string_manipulation">string manipulation</a>
 <span class="category-count">(2)</span>
 </li>
 <li>
 <a href="#category:update">update</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:vectorized_functions">vectorized functions</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:vectors">vectors</a>
-<span class="category-count">(3)</span>
+<span class="category-count">(2)</span>
 </li>
 </ul>
 </div>
@@ -2859,7 +2846,7 @@ function init_posts_list() {
 <!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Data Sci Dani</h1>
+<h1>Posts</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
