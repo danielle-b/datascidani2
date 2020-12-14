@@ -1,0 +1,37 @@
+---
+title: "My Fellowship Experience: What I've Learned So Far"
+description: |
+  What I've learned two months into my analytics fellowship.
+author:
+  - name: Danielle Brantley
+    url: https://gist.github.com/danielle-b
+date: 12-16-2020
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+In October, I started a new role as an analytics fellow at a digital agency. I've learned so much since I've started. In honor of me reaching the two month mark I decided to share what I've learned so far.  
+
+**Writing and communication skills are essential.** 
+  In my role, I have had to provide written reports and analysis and present them to the team. Everyone I work with has various levels of understanding when it comes to data. When I present my findings I have to make sure that I present them in a digestible way no matter the platform. I can have the prettiest visualization or dashboard, but it doesn't mean anything if I cannot articulate my insights from them. 
+
+**Domain Knowledge is key.** 
+  Having context about my multiple clients and their objectives are very important as it informs my analyses. With this information, I can compare the current trends I'm seeing to trends from the past. This has been one of the most challenging parts for me working at an agency but I do enjoy the variety of work I get to do. 
+
+**Learning on the fly comes with the territory.***
+  During my two months as a fellow, I've had to learn a lot on the fly. For example, I've had to learn about email testing on the job. I had no prior experience with email testing prior to this job. I have since written a test plan and determined winners of email tests we run. This also involved a bit of stats knowledge that I had no exposure to. I'm also learning so many of the tools that our clients use. Everyday I'm learning something new and that's exciting!
+  
+**Data is messy.**
+  There is no way of getting around this. Though most of the datasets I've encountered have been pretty clean, there are some that require a bit of cleaning up. This work isn't glamorous but it's important for obtaining the insights I want. I've been very fortunate thus far that I've not encountered a dataset that required days or weeks of cleaning but I'm sure I will at some point. 
+  
+**Never Stop Asking Questions***
+  Part of the role of an analyst is to be curious. Curious about the data and the insights you gather from it(or just curious in general). It's almost like being a detective. I'm learning to not be afraid to ask questions, no matter how silly or beginner they may seem. I'm encouraging everyone who reads this post to ask questions. Ask clarifying questions. There is no harm in asking questions.
+
+Until next time...

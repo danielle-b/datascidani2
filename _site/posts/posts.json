@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/2020-12-14-same-content-new-look/",
+    "title": "Same Content, New Look",
+    "description": "My site has a brand new look.",
+    "author": [
+      {
+        "name": "Danielle Brantley",
+        "url": "https://gist.github.com/danielle-b"
+      }
+    ],
+    "date": "2020-12-14",
+    "categories": [
+      "data science",
+      "programming",
+      "R",
+      "R Studio"
+    ],
+    "contents": "\nWhen I first decided to start my Data Sci Dani blog, I did a lot of research into website builders in an effort to find one that would be easiest to use. After doing much research, I decided on WordPress because I was most familiar with it, having previously blogged on the platform and used it for school. It was also cheaper than what I had previously used.\nWordPress was a great option for me for a while but I longed to cut costs further. At the time I was not working and with no money coming in, I knew that I wouldn’t be able to keep it up for long. I remembered the very first website I made many years ago and I recalled that it was a lot less expensive than than using a CMS service. I was looking for a way to build a website that was simple and didn’t have a lot of bells and whistles.\nI did some preliminary research and came across Hugo and Github Pages. I had heard a bit about Github Pages but not Hugo so I decided to take to Twitter:\n\n\n\nI got a few responses about Jekyll and Github Pages but it looked a bit too complex for me. Several folks suggested Hugo and Blogdown but I was overwhelmed by the number of themes to choose from. Then I recieved a reply by Shannon Pileggi better known as PipingHotData on Twitter. She shared a bit about her experience with blogdown before sharing that she now uses distill, with a link to the distill documentation. I had never heard of distill so I checked out the documentation. As I read the documentation, I had an aha moment. This was exactly what I was looking for.\nSo one Saturday morning, I looked up distill on YouTube and came across this distill tutorial by Matt Crump:\nBlogging with R and Github Using Distill\nI followed his video step-by-step and I was surprised by how easily and how quickly I was able to build a distill blog.\nThe most time-consuming part of building the site at this point was bringing all my content from WordPress to this new distill site. I actually just copied and pasted my posts from WordPress to Distill(I’m sure there is an easier way to do this that I haven’t figured out yet!).\nThere were a few hiccups along the way. Somehow I accidentially deleted the folder with all my distill website content from my computer. Fortunately, I had already uploaded everything to Github so I downloaded those files, deleted the repo and then created a new repo with the downloaded files. I then had issues resizing my images. I asked twitter about reszizing photos in R Markdown and was directed to this article. I also had trouble publishing the site to netlify. It turns out that I had to change the output directory in the yaml file to \"_site\" before publishing the site. Additionally, I had to transfer my domain name away from WordPress to another domain provider.\nAfter all the hiccups, my website is finally up and running. I decided to use the Tidymodels theme by Desirée De Leon. There are a few things I want to work on:\nHow to set up an email subscription. I’d love for folks to recieve an email when I’ve published a new post.\nHow to set up a gallery of featured/most recent posts.\nHow to implement Google Analytics on my site for tracking activity.\nThe look of my site needs just a bit of tweaking. I want to to add a favicon, a logo, search bar, and maybe change the colors.\nAs you can see, the site is still a work in progress but I’m happy with how far the site has come.\nUntil next time…\n\n\n\n",
+    "preview": "posts/2020-12-14-same-content-new-look/distill_post_one.png",
+    "last_modified": "2020-12-14T13:42:44-05:00",
+    "input_file": "same-content-new-look.utf8.md",
+    "preview_width": 392,
+    "preview_height": 255
+  },
+  {
     "path": "posts/2020-08-20-packages-r-conference-nyc/",
     "title": "Packages I Learned about at R Conference NYC",
     "description": "Packages I learned about attending R Conference NYC.",

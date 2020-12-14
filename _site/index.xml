@@ -7,7 +7,20 @@
     <description>Data Sci Dani is my journey through data science.
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Same Content, New Look</title>
+      <dc:creator>Danielle Brantley</dc:creator>
+      <link>https://datascidani.com/posts/2020-12-14-same-content-new-look</link>
+      <description>My site has a brand new look.</description>
+      <category>data science</category>
+      <category>programming</category>
+      <category>R</category>
+      <category>R Studio</category>
+      <guid>https://datascidani.com/posts/2020-12-14-same-content-new-look</guid>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://datascidani.com/posts/2020-12-14-same-content-new-look/distill_post_one.png" medium="image" type="image/png" width="392" height="255"/>
+    </item>
     <item>
       <title>Packages I Learned about at R Conference NYC</title>
       <dc:creator>Danielle Brantley</dc:creator>
