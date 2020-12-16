@@ -6,27 +6,27 @@
       "description": "Who I am and what this blog is about. ",
       "author": [],
       "contents": "\n\n\n\n\n\nimg {\n  border-radius: 50%;\n  display: block;  \n  margin-left: auto;  \n  margin-right: auto; \n}\n\n\nFor years, I have been interested in data science. I finally decided to pursue it and be intentional about it. I wanted to start writing about my passions, my thoughts, and curious wonderings about the world of data science. Data Sci Dani is a space where I’ll share my projects and what I’m learning, giving you insight into my skillset.\nIn my free time, I’m listening to 90s Hip Hop and R&B, obsessing over podcasts or watching hair and makeup tutorials on YouTube. I’m also trying to keep with the latest trends in media.\nTake some time to explore the blog, read something interesting, and feel free to reach out.\n\n\n\n",
-      "last_modified": "2020-12-16T08:34:21-05:00"
+      "last_modified": "2020-12-16T08:37:58-05:00"
     },
     {
       "path": "index.html",
       "title": "Posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-12-16T08:34:23-05:00"
+      "last_modified": "2020-12-16T08:38:00-05:00"
     },
     {
       "path": "projects.html",
       "title": "Projects",
       "author": [],
       "contents": "\nPython\nAnalyzing US Economic Data and Building a Dashboard\nIn this project, I used Python to analyze US Economic Data including GDP and unemployment.\nR\nAnalyzing Forest Fire Data\nUsing R and the Tidyverse, I analyzed forest fire data. The goal of this project was learning how to use data visualizations for exploratory analysis.\nSQL\nAnalyzing CIA Factbook Data\nUsing SQL, I analyzed factbook data. The goals of this project were to learn how to work with data using SQL in Jupyter notebooks and use SQL to generate summary statistics.\n\n\n\n",
-      "last_modified": "2020-12-16T08:34:24-05:00"
+      "last_modified": "2020-12-16T08:38:01-05:00"
     },
     {
       "path": "README.html",
       "author": [],
       "contents": "\ndatascidani2\nMy revamped website\n\n\n",
-      "last_modified": "2020-12-16T08:34:24-05:00"
+      "last_modified": "2020-12-16T08:38:01-05:00"
     }
   ],
   "collections": ["posts/posts.json"]

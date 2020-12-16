@@ -1,5 +1,9 @@
 ---
 title: "My Fellowship Experience: What I've Learned So Far"
+categories:
+  - fellowship 
+  - analytics
+  - job
 description: |
   What I've learned two months into my analytics fellowship.
 author:
