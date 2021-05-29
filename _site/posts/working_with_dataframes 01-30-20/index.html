@@ -2263,6 +2263,12 @@ d-appendix d-footnote-list a.footnote-backlink {
 <h2 id="arranging-data-frames-by-variables">Arranging Data Frames by Variables</h2>
 <p>Another dplyr function, <strong>arrange()</strong> allows me to specify a variable I want to use to reorder rows of my data frame. Let’s say that I want to arrange my data so that the players’ draft year is in ascending order. I would type this:</p>
 <div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week_draft_yrs</span><span class='op'>&lt;-</span> <span class='va'>NBA_player_of_the_week</span> <span class='op'>%&gt;%</span> <span class='fu'>arrange</span><span class='op'>(</span><span class='va'>Draft_Year</span><span class='op'>)</span>
+
+<span class='va'>NBA_player_of_the_week_draft_yrs</span>
+</code></pre>
+</div>
 <pre><code># A tibble: 1,334 x 17
    Player Team  Conference Date  Position Height Weight   Age
    &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;
@@ -2283,6 +2289,12 @@ d-appendix d-footnote-list a.footnote-backlink {
 </div>
 <p>Let’s say I change my mind and I want the players’ draft year to be in descending order. It would look like this:</p>
 <div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>NBA_player_of_the_week_draft_yr</span> <span class='op'>&lt;-</span> <span class='va'>NBA_player_of_the_week</span> <span class='op'>%&gt;%</span> <span class='fu'>arrange</span><span class='op'>(</span><span class='fu'>desc</span><span class='op'>(</span><span class='va'>Draft_Year</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='va'>NBA_player_of_the_week_draft_yr</span>
+</code></pre>
+</div>
 <pre><code># A tibble: 1,334 x 17
    Player Team  Conference Date  Position Height Weight   Age
    &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;

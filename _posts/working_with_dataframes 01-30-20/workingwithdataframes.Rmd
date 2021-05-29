@@ -202,7 +202,7 @@ NBA_player_of_the_week_draft
 
 Another dplyr function, **arrange()** allows me to specify a variable I want to use to reorder rows of my data frame. Let’s say that I want to arrange my data so that the players’ draft year is in ascending order. I would type this:
 
-```{r}
+```{r echo=TRUE}
 NBA_player_of_the_week_draft_yrs<- NBA_player_of_the_week %>% arrange(Draft_Year)
 
 NBA_player_of_the_week_draft_yrs
@@ -210,7 +210,7 @@ NBA_player_of_the_week_draft_yrs
 
 Let’s say I change my mind and I want the players’ draft year to be in descending order. It would look like this:
 
-```{r}
+```{r echo=TRUE}
 NBA_player_of_the_week_draft_yr <- NBA_player_of_the_week %>% arrange(desc(Draft_Year))
 
 NBA_player_of_the_week_draft_yr
