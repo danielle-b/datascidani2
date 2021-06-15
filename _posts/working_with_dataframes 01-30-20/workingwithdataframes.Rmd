@@ -5,6 +5,8 @@ categories:
   - data types
   - programming
   - R
+  - basketball
+  - sports
 description: |
  Working with data frames in R.
 base_url: https://datascidani.com/2020/01/30/working-with-data-frames/

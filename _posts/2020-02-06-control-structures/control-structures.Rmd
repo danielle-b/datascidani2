@@ -5,6 +5,8 @@ categories:
   - programming
   - R
   - control structures
+  - football
+  - superbowl 
 description: |
   Working with control structures in R.
 base_url: https://datascidani.com/2020/02/06/control-structures/

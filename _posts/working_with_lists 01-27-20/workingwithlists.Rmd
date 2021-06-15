@@ -5,6 +5,8 @@ categories:
   - data types
   - programming
   - R
+  - music
+  - Grammys
 description: |
  Working with lists in R.
 base_url: https://datascidani.com/2020/01/27/working-with-lists/
